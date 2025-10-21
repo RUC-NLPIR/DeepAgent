@@ -1,0 +1,93 @@
+# ---------------------------- API Config ----------------------------
+
+# ToolBench, GAIA, HLE
+toolbench_api: YOUR_TOOLBENCH_API_KEY
+toolbench_service_url: YOUR_TOOLBENCH_SERVICE_URL
+
+# GAIA, HLE
+google_serper_api: YOUR_GOOGLE_SERPER_API_KEY
+use_jina: True
+jina_api_key: YOUR_JINA_API_KEY
+
+# RestBench-TMDB
+tmdb_access_token: YOUR_TMDB_ACCESS_TOKEN
+
+# RestBench-Spotify
+spotipy_client_id: YOUR_SPOTIPY_CLIENT_ID
+spotipy_client_secret: YOUR_SPOTIPY_CLIENT_SECRET
+spotipy_redirect_uri: https://example.org/callback
+
+# WebShop
+webshop_service_url: http://127.0.0.1:3000
+
+# ToolHop: No API requirements
+
+
+# ---------------------------- Model Config ----------------------------
+
+# Main Reasoning LLM
+model_name: qwq-32b
+
+base_url: YOUR_REASONING_MODEL_API_BASE  # H800*8
+api_key: YOUR_REASONING_MODEL_API_KEY
+tokenizer_path: /path/to/your/reasoning/model/tokenizer
+
+# Auxiliary LLM
+aux_model_name: qwen2.5-32b-instruct
+aux_base_url: YOUR_AUX_MODEL_API_BASE
+aux_api_key: YOUR_AUX_MODEL_API_KEY
+aux_tokenizer_path: /path/to/your/aux/model/tokenizer
+
+# VQA
+vqa_model_name: qwen2.5-vl-32b-instruct
+vqa_base_url: YOUR_VQA_MODEL_API_BASE
+vqa_api_key: YOUR_VQA_MODEL_API_KEY
+
+# Tool Retriever
+tool_retriever_model_path: /path/to/your/retriever/model
+tool_retriever_api_base: YOUR_TOOL_RETRIEVER_API_BASE
+
+# ---------------------------- Data Path Config ----------------------------
+
+# ToolBench
+toolbench_data_path: ./data/ToolBench/test_instruction/G3_instruction.json
+# toolbench_data_path: ./data/ToolBench/test_instruction/G2_instruction.json
+toolbench_toolset_path: ./data/ToolBench/toolenv
+toolbench_corpus_tsv_path: ./data/ToolBench/retrieval/G1/corpus.tsv
+
+# API-Bank
+api_bank_data_path: ./data/API-Bank
+api_bank_apis_dir: ./data/API-Bank/apis
+api_bank_lv3_apis_dir: ./data/API-Bank/lv3_apis
+api_bank_database_dir: ./data/API-Bank/init_database
+
+# RestBench
+tmdb_data_path: ./data/RestBench/datasets/tmdb.json
+spotify_data_path: ./data/RestBench/datasets/spotify.json
+tmdb_toolset_path: ./data/RestBench/specs/tmdb_oas.json
+spotify_toolset_path: ./data/RestBench/specs/spotify_oas.json
+
+# ToolHop
+toolhop_data_path: ./data/ToolHop/ToolHop.json
+
+# ALFWorld
+alfworld_data_path: ./data/ALFWorld/test.json
+
+# WebShop
+webshop_data_path: ./data/WebShop/test.json
+
+# GAIA
+gaia_data_path: ./data/GAIA/all.json
+# gaia_data_path: ./data/GAIA/file.json
+# gaia_data_path: ./data/GAIA/mm.json
+gaia_file_dir: ./data/GAIA/files
+
+# HLE
+hle_data_path: ./data/HLE/all_500.json
+hle_image_dir: ./data/HLE/images
+
+# Cache
+tool_index_cache_dir: ./cache/tool_index
+search_cache_dir: ./cache/search
+url_cache_dir: ./cache/url
+

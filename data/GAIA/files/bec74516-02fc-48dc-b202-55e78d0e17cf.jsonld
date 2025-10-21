@@ -1,0 +1,1 @@
+[{"name": "Alice", "works": [{"date": {"year": 2018}}, {"publicationDate": "2019-03-15"}, {"publicationYear": "2021"}]}, {"name": "Bob", "works": [{"publicationYear": 2015}, {"date": {"year": 2010}}, {"publicationDate": "2020-12-31"}]}, {"name": "Charlie", "works": []}]
