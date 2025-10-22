@@ -22,10 +22,10 @@
   <tbody>
     <tr>
       <td align="center">
-        <video src="./figures/rapidapi.mp4" width="50%"></video>
+        <video src="https://github.com/user-attachments/assets/d9cff12e-5256-44d0-b2ba-f6d4d0d12500" width="50%"></video>
       </td>
       <td align="center">
-        <video src="./figures/alfworld.mp4" width="50%"></video>
+        <video src="https://github.com/user-attachments/assets/9665412e-cb3a-4006-9641-25abb542a961" width="50%"></video>
       </td>
     </tr>
     <tr>
