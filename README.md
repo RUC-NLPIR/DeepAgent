@@ -22,7 +22,7 @@
   <tbody>
     <tr>
       <td align="center">
-        <video src="./figures/toolbench.mp4" width="50%"></video>
+        <video src="./figures/rapidapi.mp4" width="50%"></video>
       </td>
       <td align="center">
         <video src="./figures/alfworld.mp4" width="50%"></video>
