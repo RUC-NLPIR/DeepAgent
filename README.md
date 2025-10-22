@@ -11,12 +11,18 @@
 </div>
 
 ## 🎬 Demo
-
+      <td align="left">
+        <b>Agent TARS</b> is a general multimodal AI Agent stack, it brings the power of GUI Agent and Vision into your terminal, computer, browser and product.
+        <br>
+        <br>
+        It primarily ships with a <a href="https://agent-tars.com/guide/basic/cli.html" target="_blank">CLI</a> and <a href="https://agent-tars.com/guide/basic/web-ui.html" target="_blank">Web UI</a> for usage.
+        It aims to provide a workflow that is closer to human-like task completion through cutting-edge multimodal LLMs and seamless integration with various real-world <a href="https://agent-tars.com/guide/basic/mcp.html" target="_blank">MCP</a> tools.
+      </td>
 <table>
   <thead>
     <tr>
-      <th width="50%" align="center">General Task with 16,000+ RapidAPIs</a></th>
-      <th width="50%" align="center">Embodied AI Task in ALFWorld Env.</a></th>
+      <th width="50%" align="center">General Agent Task with 16,000+ RapidAPIs</a></th>
+      <th width="50%" align="center">Embodied AI Agent Task in ALFWorld Env.</a></th>
     </tr>
   </thead>
   <tbody>
@@ -30,10 +36,16 @@
     </tr>
     <tr>
       <td align="left">
-        <b>DeepAgent</b> is a reasoning agent with scalable toolsets, it can handle general tasks with 16,000+ RapidAPIs by searching for and using the appropriate tools.
+        <b>DeepAgent</b> is a reasoning agent with scalable toolsets, it can handle general tasks with 16,000+ RapidAPIs by searching for and using the appropriate tools with deep agentic reasoning. 
+        <br>
+        <br>
+        Rather than requiring humans to pre-define relevant tools for each task scenario, the model autonomously explores and selects appropriate tools to use, which fully unleashes the agent's autonomy.
       </td>
       <td align="left">
-        <b>DeepAgent</b> is a reasoning agent with scalable toolsets, it can handle embodied tasks in ALFWorld Env.
+        <b>DeepAgent</b> can also handle navigation tasks (e.g., Web Agent and Embodied AI Agent tasks) with pluggable actions (e.g., moving, looking, taking, etc). 
+        <br>
+        <br>
+        It can adjust the strategy dynamically based on the environment feedback, thus accomplishing the task within an end-to-end agentic reasoning process.
       </td>
     </tr>
   </tbody>
