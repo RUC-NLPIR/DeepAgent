@@ -19,9 +19,9 @@ A key innovation in DeepAgent is **Thought Folding**, a mechanism that allows th
 
 ### 📊 Overall Performance
 
-<p align="center">
+<div align="center">
   <img src="./figures/overall_results.png" width="70%" />
-</p>
+</div>
 
 As shown in our results, DeepAgent demonstrates strong performance across a wide variety of benchmarks, including complex question answering, embodied AI tasks, and web navigation.
 
