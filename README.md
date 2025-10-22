@@ -10,39 +10,30 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=20&duration=3000&pause=1000&color=005DE3&center=true&vCenter=true&width=800&lines=Welcome+to+DeepAgent;A+General+Reasoning+Agent+with+Scalable+Toolsets" alt="Typing Animation" />
 </div>
 
-<b>TARS<sup>\*</sup></b> is a Multimodal AI Agent stack, currently shipping two projects: [Agent TARS](#agent-tars) and [UI-TARS-desktop](#ui-tars-desktop):
+## 🎬 Demo
 
 <table>
   <thead>
     <tr>
-      <th width="50%" align="center"><a href="#agent-tars">Agent TARS</a></th>
-      <th width="50%" align="center"><a href="#ui-tars-desktop">UI-TARS-desktop</a></th>
+      <th width="50%" align="center"><a href="#toolbench">General Task with 16,000+ RapidAPIs</a></th>
+      <th width="50%" align="center"><a href="#alfworld">Embodied AI Task in ALFWorld Env.</a></th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td align="center">
-        <video src="https://github.com/user-attachments/assets/c9489936-afdc-4d12-adda-d4b90d2a869d" width="50%"></video>
+        <video src="./figures/toolbench.mp4" width="50%"></video>
       </td>
       <td align="center">
-        <video src="https://github.com/user-attachments/assets/e0914ce9-ad33-494b-bdec-0c25c1b01a27" width="50%"></video>
+        <video src="./figures/alfworld.mp4" width="50%"></video>
       </td>
     </tr>
     <tr>
       <td align="left">
-        <b>Agent TARS</b> is a general multimodal AI Agent stack, it brings the power of GUI Agent and Vision into your terminal, computer, browser and product.
-        <br>
-        <br>
-        It primarily ships with a <a href="https://agent-tars.com/guide/basic/cli.html" target="_blank">CLI</a> and <a href="https://agent-tars.com/guide/basic/web-ui.html" target="_blank">Web UI</a> for usage.
-        It aims to provide a workflow that is closer to human-like task completion through cutting-edge multimodal LLMs and seamless integration with various real-world <a href="https://agent-tars.com/guide/basic/mcp.html" target="_blank">MCP</a> tools.
+        <b>DeepAgent</b> is a reasoning agent with scalable toolsets, it can handle general tasks with 16,000+ RapidAPIs by searching for and using the appropriate tools.
       </td>
       <td align="left">
-        <b>UI-TARS Desktop</b> is a desktop application that provides a native GUI Agent based on the <a href="https://github.com/bytedance/UI-TARS" target="_blank">UI-TARS</a> model.
-        <br>
-        <br>
-        It primarily ships a
-        <a href="https://github.com/bytedance/UI-TARS-desktop/blob/main/docs/quick-start.md#get-model-and-run-local-operator" target="_blank">local</a> and 
-        <a href="https://github.com/bytedance/UI-TARS-desktop/blob/main/docs/quick-start.md#run-remote-operator" target="_blank">remote</a> computer as well as browser operators.
+        <b>DeepAgent</b> is a reasoning agent with scalable toolsets, it can handle embodied tasks in ALFWorld Env.
       </td>
     </tr>
   </tbody>
