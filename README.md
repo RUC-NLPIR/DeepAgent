@@ -15,8 +15,8 @@
 <table>
   <thead>
     <tr>
-      <th width="50%" align="center"><a href="#toolbench">General Task with 16,000+ RapidAPIs</a></th>
-      <th width="50%" align="center"><a href="#alfworld">Embodied AI Task in ALFWorld Env.</a></th>
+      <th width="50%" align="center">General Task with 16,000+ RapidAPIs</a></th>
+      <th width="50%" align="center">Embodied AI Task in ALFWorld Env.</a></th>
     </tr>
   </thead>
   <tbody>
