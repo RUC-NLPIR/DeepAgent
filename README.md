@@ -31,9 +31,7 @@ As shown in our results, DeepAgent demonstrates strong performance across a wide
 
 **DeepAgent** enhances LLMs with the ability to reason about which tools they need, find them, and use them to accomplish tasks. The thought-folding mechanism provides a structured way to handle very long reasoning chains and recover from errors.
 
-<p align="center">
-  <img src="./figures/framework.png" width="100%" />
-</p>
+![Model Comparison](<./figures/framework.png>)
 
 **Key Features:**
 - **Dynamic Tool Search**: DeepAgent can search for tools when it doesn't have the right one for the job, making it adaptable to new problems.
