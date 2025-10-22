@@ -48,8 +48,7 @@
 ### General Agent Task with 16,000+ RapidAPIs
 
 <div align="center">
-    <video src="./rapidapi.mp4" />
-    <!-- <video src="https://github.com/user-attachments/assets/7aa586e9-a47a-425d-8d41-99226d2f6835" /> -->
+    <video src="https://github.com/user-attachments/assets/7aa586e9-a47a-425d-8d41-99226d2f6835" />
 </div>
 
 **DeepAgent** is a reasoning agent with scalable toolsets, it can handle general tasks with 16,000+ RapidAPIs by searching for and using the appropriate tools with deep agentic reasoning. 
@@ -58,8 +57,7 @@ Rather than requiring humans to pre-define relevant tools for each task scenario
 
 ### Embodied AI Agent Task in ALFWorld Env.
 <div align="center">
-  <video src="./alfworld.mp4" />
-  <!-- <video src="https://github.com/user-attachments/assets/0fa74beb-cc9a-4316-a49c-54dbaa22ad81" /> -->
+  <video src="https://github.com/user-attachments/assets/0fa74beb-cc9a-4316-a49c-54dbaa22ad81" />
 </div>
 
 **DeepAgent** can also handle navigation tasks (e.g., Web Agent and Embodied AI Agent tasks) with pluggable actions (e.g., moving, looking, taking, etc). 
