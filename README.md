@@ -12,6 +12,8 @@
 
 ## 🎬 Demos
 
+*Note: If demo videos cannot be displayed on Anonymous GitHub, you can download them and view locally. We compressed each video to < 10MB.*
+
 <!-- <table>
   <thead>
     <tr>
@@ -45,7 +47,7 @@
   </tbody>
 </table> -->
 
-### General Agent Task with 16,000+ RapidAPIs
+### 1. General Agent Task with 16,000+ RapidAPIs
 
 <div align="center">
     <video src="https://github.com/user-attachments/assets/7aa586e9-a47a-425d-8d41-99226d2f6835" />
@@ -53,24 +55,31 @@
 
 **DeepAgent** is a reasoning agent with scalable toolsets, it can handle general tasks with 16,000+ RapidAPIs by searching for and using the appropriate tools with deep agentic reasoning. 
 
-Rather than requiring humans to pre-define relevant tools for each task scenario, the model autonomously explores and selects appropriate tools to use, which fully unleashes the agent's autonomy.
 
-### Embodied AI Agent Task in ALFWorld Env.
+### 2. Embodied AI Agent Task in ALFWorld Env.
+
 <div align="center">
   <video src="https://github.com/user-attachments/assets/0fa74beb-cc9a-4316-a49c-54dbaa22ad81" />
 </div>
 
-**DeepAgent** can also handle navigation tasks (e.g., Web Agent and Embodied AI Agent tasks) with pluggable actions (e.g., moving, looking, taking, etc). 
+**DeepAgent** can also handle navigation tasks (e.g., web browsing, OS interactions, embodied AI tasks, etc.) with pluggable actions (e.g., moving, looking, taking, etc.). 
 
-It can adjust the strategy dynamically based on the environment feedback, thus accomplishing the task within an end-to-end agentic reasoning process.
+### 3. Deep Research Task with specialized tools (e.g., web search, browser, coding, etc.)
+
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/cbb95801-5188-47b6-91b8-6a24c2865d1c" />
+</div>
+
+**DeepAgent** can also become your information assistant with research-related tools (e.g., web search, browser, code executor, visual QA, file processor, etc.).
+
 
 
 
 ## 💡 Overview
 
-**DeepAgent** is an advanced reasoning framework that empowers large language models to solve complex tasks by dynamically searching for and utilizing tools. Unlike traditional agents with fixed toolsets, DeepAgent can operate in both open-set (searching for tools) and closed-set (using a given set of tools) environments.
+**DeepAgent** is an reasoning agent that empowers large language models to solve complex tasks by dynamically searching for and utilizing tools. Unlike traditional agents with fixed toolsets, DeepAgent can operate in both open-set (searching for tools) and closed-set (using a given set of tools) environments.
 
-A key innovation in DeepAgent is **Thought Folding**, a mechanism that allows the agent to manage long and complex reasoning processes. When an agent gets stuck, or its reasoning history becomes too long, it can "fold" its thoughts. The framework then summarizes the progress, creating condensed "episode," "working," and "tool" memories, allowing the agent to start a new line of reasoning with the benefit of past experience but without the overwhelming context.
+When an agent gets stuck, or its reasoning history becomes too long, it can "fold" its thoughts. The framework then summarizes the progress, creating condensed "episode," "working," and "tool" memories, allowing the agent to start a new line of reasoning with the benefit of past experience but without the overwhelming context.
 
 ### 📊 Overall Performance
 
