@@ -50,9 +50,13 @@
 <details open>
 <summary><h3>1. General Agent Task with 16,000+ RapidAPIs</h3></summary>
 
-<div align="center">
-    <video src="https://github.com/user-attachments/assets/7aa586e9-a47a-425d-8d41-99226d2f6835" width="80%" />
-</div>
+<table width="80%" align="center">
+  <tr>
+    <td>
+      <video src="https://github.com/user-attachments/assets/7aa586e9-a47a-425d-8d41-99226d2f6835" />
+    </td>
+  </tr>
+</table>
 
 **DeepAgent** is a reasoning agent with scalable toolsets, capable of tackling general tasks by searching for and using the appropriate tools from over 16,000 RapidAPIs in an end-to-end agentic reasoning process. *(Note: Due to some APIs in ToolBench being unavailable, API responses are simulated in this demo to show the system's normal functionality.)*
 
@@ -61,9 +65,13 @@
 <details open>
 <summary><h3>2. Embodied AI Agent Task in ALFWorld Env.</h3></summary>
 
-<div align="center">
-  <video src="https://github.com/user-attachments/assets/fe309384-9102-4d1e-a929-f8b9b4041243" width="80%" />
-</div>
+<table width="80%" align="center">
+  <tr>
+    <td>
+      <video src="https://github.com/user-attachments/assets/fe309384-9102-4d1e-a929-f8b9b4041243" />
+    </td>
+  </tr>
+</table>
 
 **DeepAgent** also excels at navigation-based tasks (e.g., web browsing, OS interaction, and embodied AI) by using a versatile set of pluggable actions such as moving, looking, and taking.
 </details>
@@ -71,9 +79,13 @@
 <details open>
 <summary><h3>3. Deep Research Task with Specialized Tools</h3></summary>
 
-<div align="center">
-  <video src="https://github.com/user-attachments/assets/a6278bfd-2ee9-44aa-9f74-82aa826d8778" width="80%" />
-</div>
+<table width="80%" align="center">
+  <tr>
+    <td>
+      <video src="https://github.com/user-attachments/assets/a6278bfd-2ee9-44aa-9f74-82aa826d8778" />
+    </td>
+  </tr>
+</table>
 
 **DeepAgent** can also serve as a powerful research assistant, equipped with specialized tools for web search, browsing, code execution, visual QA, and file processing.
 </details>
