@@ -62,7 +62,7 @@
 <summary><h3>2. Embodied AI Agent Task in ALFWorld Env.</h3></summary>
 
 <div align="center">
-  <video src="https://github.com/user-attachments/assets/0fa74beb-cc9a-4316-a49c-54dbaa22ad81" />
+  <video src="https://github.com/user-attachments/assets/fe309384-9102-4d1e-a929-f8b9b4041243" />
 </div>
 
 **DeepAgent** also excels at navigation-based tasks (e.g., web browsing, OS interaction, and embodied AI) by using a versatile set of pluggable actions such as moving, looking, and taking.
