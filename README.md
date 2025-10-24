@@ -54,11 +54,11 @@
     <video src="https://github.com/user-attachments/assets/7aa586e9-a47a-425d-8d41-99226d2f6835" />
 </div>
 
-**DeepAgent** is a reasoning agent with scalable toolsets, capable of tackling general tasks by searching for and using the appropriate tools from over 16,000 RapidAPIs in an end-to-end agentic reasoning process.
+**DeepAgent** is a reasoning agent with scalable toolsets, capable of tackling general tasks by searching for and using the appropriate tools from over 16,000 RapidAPIs in an end-to-end agentic reasoning process. *(Note: Due to some APIs in ToolBench being unavailable, API responses are simulated in this demo to demonstrate the system's capabilities.)*
 
 </details>
 
-<details open>
+<details>
 <summary><h3>2. Embodied AI Agent Task in ALFWorld Env.</h3></summary>
 
 <div align="center">
@@ -68,7 +68,7 @@
 **DeepAgent** also excels at navigation-based tasks (e.g., web browsing, OS interaction, and embodied AI) by using a versatile set of pluggable actions such as moving, looking, and taking.
 </details>
 
-<details open>
+<details>
 <summary><h3>3. Deep Research Task with Specialized Tools</h3></summary>
 
 <div align="center">
