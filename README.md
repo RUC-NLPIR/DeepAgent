@@ -67,7 +67,7 @@
 ### 3. Deep Research Task with specialized tools (e.g., web search, browser, coding, etc.)
 
 <div align="center">
-  <video src="https://github.com/user-attachments/assets/cbb95801-5188-47b6-91b8-6a24c2865d1c" />
+  <video src="https://github.com/user-attachments/assets/a6278bfd-2ee9-44aa-9f74-82aa826d8778" />
 </div>
 
 **DeepAgent** can also become your information assistant with research-related tools (e.g., web search, browser, code executor, visual QA, file processor, etc.).
