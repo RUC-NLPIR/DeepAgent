@@ -69,7 +69,7 @@
 </details>
 
 <details open>
-<summary><h3>3. Deep Research Task with specialized tools</h3></summary>
+<summary><h3>3. Deep Research Task with Specialized Tools</h3></summary>
 
 <div align="center">
   <video src="https://github.com/user-attachments/assets/a6278bfd-2ee9-44aa-9f74-82aa826d8778" />
