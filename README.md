@@ -50,7 +50,7 @@
 <details open>
 <summary><h3>1. General Agent Task with 16,000+ RapidAPIs</h3></summary>
 
-<table width="80%" align="center">
+<table width="50%" align="center">
   <tr>
     <td>
       <video src="https://github.com/user-attachments/assets/7aa586e9-a47a-425d-8d41-99226d2f6835" />
