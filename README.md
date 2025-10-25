@@ -1,4 +1,4 @@
-<h1 align="center"> <img src="./figures/logo_deepagent.png" width="275" style="vertical-align:middle;"/><br>A General Reasoning Agent with Scalable Toolsets</a></h1>
+<h1 align="center"> <img src="./figures/logo_deepagent.png" width="270" style="vertical-align:middle;"/><br>A General Reasoning Agent with Scalable Toolsets</a></h1>
 
 <div align="center"> 
 
