@@ -81,11 +81,17 @@
 
 
 
+
 ## 💡 Overview
 
-**DeepAgent** is an reasoning agent that empowers large language models to solve complex tasks by dynamically searching for and utilizing tools. Unlike traditional agents with fixed toolsets, DeepAgent can operate in both open-set (searching for tools) and closed-set (using a given set of tools) environments.
 
-When an agent gets stuck, or its reasoning history becomes too long, it can "fold" its thoughts. The framework then summarizes the progress, creating condensed "episode," "working," and "tool" memories, allowing the agent to start a new line of reasoning with the benefit of past experience but without the overwhelming context.
+![Model Comparison](<./figures/comparison.png>)
+
+**DeepAgent** is an end-to-end deep reasoning agent that performs autonomous thinking, tool discovery, and action execution within a single, coherent reasoning process. This paradigm shifts away from traditional, predefined workflows (e.g., ReAct's "Reason-Act-Observe" cycle), allowing the agent to maintain a global perspective on the entire task and dynamically discover tools on an as-needed basis.
+
+To handle long-horizon interactions and prevent getting stuck in incorrect exploration paths, we introduce an **Autonomous Memory Folding** mechanism. This allows DeepAgent to "take a breath" by compressing its interaction history into a structured, brain-inspired memory schema, enabling it to reconsider its strategy and proceed efficiently.
+
+Furthermore, we propose **ToolPO**, an end-to-end reinforcement learning (RL) training method tailored for general tool use, which enhances the agent's proficiency in mastering these complex mechanisms.
 
 ### 📊 Overall Performance
 
@@ -93,24 +99,29 @@ When an agent gets stuck, or its reasoning history becomes too long, it can "fol
   <img src="./figures/overall_results.png" width="70%" />
 </div>
 
-As shown in our results, DeepAgent demonstrates strong performance across a wide variety of benchmarks, including complex question answering, embodied AI tasks, and web navigation.
+We conduct extensive experiments on a wide range of benchmarks:
+- **(1) General Tool-Use Tasks:** We evaluate DeepAgent on ToolBench, API-Bank, TMDB, Spotify, and ToolHop, which feature toolsets scaling from tens to over ten thousand distinct tools. 
+- **(2) Downstream Applications:** We test its performance on ALFWorld, WebShop, GAIA, and Humanity's Last Exam (HLE), which require the use of domain-specific toolsets. The overall results in Figure show that DeepAgent achieves superior performance across all scenarios.
 
 ### ✨ The DeepAgent Framework
 
-![Model Comparison](<./figures/comparison.png>)
-
-**DeepAgent** enhances LLMs with the ability to reason about which tools they need, find them, and use them to accomplish tasks. The thought-folding mechanism provides a structured way to handle very long reasoning chains and recover from errors.
-
-![Model Comparison](<./figures/framework.png>)
-
+![Framework](<./figures/framework.png>)
 **Key Features:**
-- **Dynamic Tool Search**: DeepAgent can search for tools when it doesn't have the right one for the job, making it adaptable to new problems.
-- **Versatile Tool Calling**: It can interact with a wide array of tools, from web search and Python execution to specialized APIs for embodied agents in environments like ALFWorld and WebShop.
-- **Thought Folding for Long-Context Reasoning**: When faced with a complex problem requiring many steps, DeepAgent can use "thought folding" to summarize its progress and prune its reasoning history. This creates three types of memory:
-    - **Episode Memory**: A summary of key events and decisions.
-    - **Working Memory**: A snapshot of the immediate goal and challenges.
-    - **Tool Memory**: A synthesis of tool usage patterns, successes, and failures.
+
+- **Unified Agentic Reasoning**: DeepAgent departs from rigid, predefined workflows. It operates in a single stream of thought, autonomously reasoning about the task, dynamically discovering necessary tools, and executing actions. This allows the LRM to maintain a global perspective and unlock its full autonomous potential.
+
+- **Autonomous Memory Folding & Brain-Inspired Memory**: When facing complex problems, DeepAgent can autonomously trigger memory folding. This process consolidates the interaction history into a structured memory, allowing the agent to restart its reasoning with a condensed yet comprehensive understanding of its progress. The memory architecture is brain-inspired and consists of:
+    - **Episodic Memory**: A high-level log of key events, decisions, and sub-task completions.
+    - **Working Memory**: Contains the most recent information, including the current sub-goal and near-term plans.
+    - **Tool Memory**: Consolidates tool-related interactions, allowing the agent to learn from experience and refine its strategies.
+
+- **End-to-End RL Training with ToolPO**: To effectively train the agent, we introduce ToolPO, a policy optimization method featuring:
+    - An **LLM-based Tool Simulator** that mimics real-world APIs, ensuring stable and efficient training.
+    - **Tool-Call Advantage Attribution**, which assigns fine-grained credit to correct tool invocation tokens, providing a more precise learning signal.
+
 - **Broad Benchmark Support**: DeepAgent is designed to work with a diverse set of challenging benchmarks, including GAIA, HLE, ToolBench, ALFWorld, WebShop, and more.
+
+
 
 ## 🔧 Installation
 
