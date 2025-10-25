@@ -85,7 +85,7 @@
 ## 💡 Overview
 
 
-![Model Comparison](<./figures/comparison.png>)
+<!-- ![Model Comparison](<./figures/comparison.png>) -->
 
 **DeepAgent** is an end-to-end deep reasoning agent that performs autonomous thinking, tool discovery, and action execution within a single, coherent reasoning process. This paradigm shifts away from traditional, predefined workflows (e.g., ReAct's "Reason-Act-Observe" cycle), allowing the agent to maintain a global perspective on the entire task and dynamically discover tools on an as-needed basis.
 
