@@ -110,10 +110,10 @@ cd DeepAgent-main
 pip install -r requirements.txt
 ```
 
-## Pre-preparation
+## 📦 Pre-preparation
 
 <details open>
-<summary><h3>Benchmarks</h3></summary>
+<summary><h3>📊 Benchmarks</h3></summary>
 
 The benchmarks we utilize are categorized into several types:
 - **General Tool Use Benchmarks:**
@@ -134,7 +134,7 @@ All the pre-processed data can be found in the `./data/` directory, except for T
 </details>
 
 <details open>
-<summary><h3>Model Serving</h3></summary>
+<summary><h3>🤖 Model Serving</h3></summary>
 Before running DeepAgent, ensure your reasoning model and auxiliary model are served using vLLM. DeepAgent is designed to work with powerful reasoning models as the main agent and can use an auxiliary model for tasks like memory generation and tool selection. For more details, please refer to [vLLM](https://github.com/vllm-project/vllm).
 
 For the main reasoning model, we recommend using the following models. Performance improves from top to bottom, but computational cost also increases accordingly. You can choose a cost-effective model based on your needs:
@@ -152,7 +152,7 @@ For the auxiliary model, we recommend using the [Qwen2.5-Instruct](https://huggi
 </details>
 
 <details open>
-<summary><h3>Configuration</h3></summary>
+<summary><h3>⚙️ Configuration</h3></summary>
 
 All configurations are in `./config/base_config.yaml`, including API keys, service URLs and paths. You need to modify them to your actual configurations:
 
@@ -222,7 +222,7 @@ All benchmark datasets are stored in the `./data/` directory. You can modify the
 
 </details>
 
-## Run DeepAgent
+## 🚀 Run DeepAgent
 
 To run on a benchmark dataset with tool search enabled, use the following command:
     
@@ -260,6 +260,10 @@ python src/run_deep_agent.py \
 ### Evaluation
 
 Our model inference script can automatically save the model's input and output for evaluation. To run the evaluation, use the `--eval` flag when running `./src/run_deep_agent.py`. The evaluation scripts for each dataset are located in `./src/evaluate/`.
+
+
+
+
 
 ## 📄 Citation
 
