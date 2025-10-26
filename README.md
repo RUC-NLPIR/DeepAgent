@@ -96,7 +96,6 @@ We conduct extensive experiments on a wide range of benchmarks:
     - An **LLM-based Tool Simulator** that mimics real-world APIs, ensuring stable and efficient training.
     - **Tool-Call Advantage Attribution**, which assigns fine-grained credit to correct tool invocation tokens, providing a more precise learning signal.
 
-- **Broad Benchmark Support**: DeepAgent is designed to work with a diverse set of challenging benchmarks, including GAIA, HLE, ToolBench, ALFWorld, WebShop, and more.
 
 ## 🔧 Installation
 
@@ -139,6 +138,7 @@ All the pre-processed data can be found in the `./data/` directory, except for T
 Before running DeepAgent, ensure your reasoning model and auxiliary model are served using vLLM. DeepAgent is designed to work with powerful reasoning models as the main agent and can use an auxiliary model for tasks like memory generation and tool selection. For more details, please refer to [vLLM](https://github.com/vllm-project/vllm).
 
 For the main reasoning model, we recommend using the following models. Performance improves from top to bottom, but computational cost also increases accordingly. You can choose a cost-effective model based on your needs:
+
 | Model | Size | Type | Link |
 |-------|------|------|---------|
 | Qwen3-4B-Thinking | 4B | Thinking | [🤗 HuggingFace](https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507) |
