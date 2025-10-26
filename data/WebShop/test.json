@@ -1,0 +1,1508 @@
+[
+    {
+      "id": 0,
+      "goal": "i need a long clip-in hair extension which is natural looking, and price lower than 40.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['hair extensions']"
+    },
+    {
+      "id": 1,
+      "goal": "i want a noise cancelling cosycost usb microphone, and price lower than 70.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['noise cancelling']"
+    },
+    {
+      "id": 2,
+      "goal": "i'm looking for hair treatments that are sulfate and paraben free and are of high quality too. i need it in bottle for with 60 capsules, and price lower than 60.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['sulfate free', 'paraben free', 'high quality']"
+    },
+    {
+      "id": 3,
+      "goal": "i need gluten free vegetarian smoked peppered bacon - 4 ounce (pack of 2), and price lower than 60.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['gluten free']"
+    },
+    {
+      "id": 4,
+      "goal": "find me a high speed dual style package with  12\" power amplifier car subwoofer, and price lower than 200.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['power amplifier', 'high speed']"
+    },
+    {
+      "id": 5,
+      "goal": "i'm looking for a space-saving ottoman bench to match my blue living room. pick that one that's 100x45x45cm, and price lower than 420.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['space saving', 'living room']"
+    },
+    {
+      "id": 6,
+      "goal": "i'm looking for a queen size bedspread set in the color redwood, and price lower than 70.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['queen size']"
+    },
+    {
+      "id": 7,
+      "goal": "i'm looking for a styling cream that is cruelty free and for short hair, and price lower than 30.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['cruelty free']"
+    },
+    {
+      "id": 8,
+      "goal": "i want to find xx-large black workout sweatpants with a relaxed fit, and price lower than 40.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['relaxed fit']"
+    },
+    {
+      "id": 9,
+      "goal": "i am looking for a grey sectional sofa for my living room",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['living room']"
+    },
+    {
+      "id": 10,
+      "goal": "i would like a bundle of crackers, spicy beef and cheese which is shelf stable. it also needs to be keto and gluten free, and price lower than 50.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['shelf stable', 'keto friendly', 'gluten free']"
+    },
+    {
+      "id": 11,
+      "goal": "i am looking to buy a woman's us size 5 high heel shoe with a rubber sole and color patent-beige, and price lower than 80.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['high heel', 'rubber sole']"
+    },
+    {
+      "id": 12,
+      "goal": "i am looking for a remote control for an lg blu-ray dvd home theater system, and price lower than 70.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['blu ray']"
+    },
+    {
+      "id": 13,
+      "goal": "i need a long lasting 6.76 fl oz bottle of l'eau d'issey, and price lower than 100.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['long lasting']"
+    },
+    {
+      "id": 14,
+      "goal": "i am looking for dairy free and apple variety pack of chips, and price lower than 40.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['dairy free']"
+    },
+    {
+      "id": 15,
+      "goal": "i need a gingko light and 20\"x20\" pillow cover that is hand painted, and price lower than 50.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['hand painted']"
+    },
+    {
+      "id": 16,
+      "goal": "i'm looking for lead free luxury scented candle which last for 25+ hours, it should be in tin voyager, and price lower than 50.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['lead free']"
+    },
+    {
+      "id": 17,
+      "goal": "i am looking for mn4 color foundation for my sensitive skin, and price lower than 20.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['sensitive skin']"
+    },
+    {
+      "id": 18,
+      "goal": "i want double horn bluetooth wireless speakers which is portable and easy to carry, and price lower than 70.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['easy carry', 'wireless bluetooth']"
+    },
+    {
+      "id": 19,
+      "goal": "i am looking for a high power sound column subwoofer, that uses bluetooth and is also a 3d surround sound system, and price lower than 660.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['high power']"
+    },
+    {
+      "id": 20,
+      "goal": "i need a six pack of manual toothbrushes that are good for sensitive teeth, and price lower than 50.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['sensitive teeth']"
+    },
+    {
+      "id": 21,
+      "goal": "can you find me a shelf stable potato side dish?  i want something that i can cook in the microwave, and price lower than 50.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['shelf stable']"
+    },
+    {
+      "id": 22,
+      "goal": "i need a highspeed hdmi cable that is purple, and price lower than 80.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['high speed']"
+    },
+    {
+      "id": 23,
+      "goal": "i'm looking for machine wasable savannan burlap placemat with compatible table runner with dahlia flower print table set of 6 pcs. also choose color golden circlesan4455 with size 13x70inch+13x19inch*4, and price lower than 70.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['machine washable']"
+    },
+    {
+      "id": 24,
+      "goal": "i am looking for a high speed 3 foot red usb cable, and price lower than 50.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['high speed']"
+    },
+    {
+      "id": 25,
+      "goal": "i'm looking for a great river organic milling flour, and price lower than 70.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['certified organic']"
+    },
+    {
+      "id": 26,
+      "goal": "i would like a 20m digital 4g lte coaxial cable that's male to female, and price lower than 60.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['coaxial cable', '4g lte']"
+    },
+    {
+      "id": 27,
+      "goal": "i need high quality pillow covers in color a-8 and it should be fade resistant, and price lower than 60.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['high quality']"
+    },
+    {
+      "id": 28,
+      "goal": "i am looking for an oral hygiene toothbrush. it should be easy to carry, and price lower than 30.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['easy carry', 'oral hygiene']"
+    },
+    {
+      "id": 29,
+      "goal": "i need a long lasting fragrance gift set for women, and price lower than 70.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['long lasting']"
+    },
+    {
+      "id": 30,
+      "goal": "i need gluten free popcorn, and price lower than 140.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['gluten free']"
+    },
+    {
+      "id": 31,
+      "goal": "i am looking for  gluten free black rock salt made by himalayan . and i choose the 2.8 ounce pack with himalayan pink salt coarse grind, and price lower than 30.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['gluten free']"
+    },
+    {
+      "id": 32,
+      "goal": "i am looking for a black fast wireless universal charging stand, and price lower than 50.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['fast charging', 'wireless charging']"
+    },
+    {
+      "id": 33,
+      "goal": "i need a set of leak proof, bpa free jars, and price lower than 30.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['leak proof', 'bpa free']"
+    },
+    {
+      "id": 34,
+      "goal": "i'm looking for  made a cookies for birthday parties, and price lower than 50.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['birthday party']"
+    },
+    {
+      "id": 35,
+      "goal": "i am searching for a gold color smart watch bands compatible for apple and any one of the sizes 38mm | 40mm | 41mm, and price lower than 30.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['compatible apple']"
+    },
+    {
+      "id": 36,
+      "goal": "i'm looking for a single pack of old style, brown hair dye, and price lower than 40.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['hair dye']"
+    },
+    {
+      "id": 37,
+      "goal": "i am looking for a pendant light to go in my dining room with dimmer switch, and price lower than 120.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['pendant light', 'dining room']"
+    },
+    {
+      "id": 38,
+      "goal": "i am searching for a high gloss tv stand with additional storage space. also, choose an ob color, and price lower than 190.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['high gloss', 'storage space']"
+    },
+    {
+      "id": 39,
+      "goal": "i want to buy a pair of but lifting grey skinny jean shorts, and price lower than 20.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['butt lifting']"
+    },
+    {
+      "id": 40,
+      "goal": "i need a futon and chaise set that is made with faux leather. and i would prefer the navy linen color, and price lower than 140.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['faux leather']"
+    },
+    {
+      "id": 41,
+      "goal": "i'm trying to find white bluetooth speakers that are not only water resistant but also come with stereo sound, and price lower than 70.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['water resistant', 'stereo sound']"
+    },
+    {
+      "id": 42,
+      "goal": "i would like a 8 fluid ounce bottle of tea tree lotion, and price lower than 30.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['tea tree']"
+    },
+    {
+      "id": 43,
+      "goal": "i'm looking for some black high heeled sandals for my mom. she wears size 5.5, and price lower than 70.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['high heel']"
+    },
+    {
+      "id": 44,
+      "goal": "i'm looking for a silicon exfoliating body scrubber which would be easy to use, and price lower than 40.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['easy clean']"
+    },
+    {
+      "id": 45,
+      "goal": "i am looking for some easy to install gold plated banana plugs for speaker wire, and price lower than 30.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['gold plated', 'easy install']"
+    },
+    {
+      "id": 46,
+      "goal": "i'm looking for hair extensions for natural hair and straight hair so need to buy it, and price lower than 50.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['hair extensions', 'natural hair']"
+    },
+    {
+      "id": 47,
+      "goal": "i want capri sun pacific cooler mixed fruit naturally flavored juice drinks, and price lower than 30.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['natural ingredients']"
+    },
+    {
+      "id": 48,
+      "goal": "find me a motion detection high definition outdoor camera with 1080p hd definition, and price lower than 170.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['1080p hd', 'high definition', 'motion detection']"
+    },
+    {
+      "id": 49,
+      "goal": "i need an engineered wood end table, and price lower than 160.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['engineered wood']"
+    },
+    {
+      "id": 50,
+      "goal": "i want to find a women's gift set that contains long-lasting edt spray and body cream, and price lower than 110.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['long lasting']"
+    },
+    {
+      "id": 51,
+      "goal": "locate the ambesonne harbour stripe throw pillow cover, 18 x 18 inch, double sided.  i want the salmon brown color, and price lower than 50.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['double sided']"
+    },
+    {
+      "id": 52,
+      "goal": "i want a body wash that is dermatologist tested. it should have a cucumber and aloe scent, and price lower than 20.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['dermatologist tested']"
+    },
+    {
+      "id": 53,
+      "goal": "i need a beige or green shower brush with a long handle, and price lower than 40.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['long handle']"
+    },
+    {
+      "id": 54,
+      "goal": "i would like a 16.9 fluid ounce amber bottle that could be used in a hair salon, and price lower than 30.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['hair salon']"
+    },
+    {
+      "id": 55,
+      "goal": "im looking for a black alarm clock radio that displays the temperature and uses a usb port, and price lower than 90.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['usb port']"
+    },
+    {
+      "id": 56,
+      "goal": "i'm looking for a high performance paint contrast projector, and price lower than 250.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['high performance']"
+    },
+    {
+      "id": 57,
+      "goal": "i need some kosher sea salt, and price lower than 40.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['kosher certified']"
+    },
+    {
+      "id": 58,
+      "goal": "can i get a 2 light bath vanity lighting set with nickel finish?, and price lower than 150.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['nickel finish']"
+    },
+    {
+      "id": 59,
+      "goal": "i am looking for non gmo sesame pretzels that come in a 12 pack, and price lower than 130.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['non gmo']"
+    },
+    {
+      "id": 60,
+      "goal": "i want to find a yellow manual toothbrush suitable for 7-14 year old kids with sensitive teeth, and price lower than 30.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['sensitive teeth']"
+    },
+    {
+      "id": 61,
+      "goal": "hey i need some new press on nails.  get me babalal cat eye ones that aren't toxic and make sure the color you get is purple, and price lower than 40.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['non toxic']"
+    },
+    {
+      "id": 62,
+      "goal": "i am looking for dell ultra small desktop computer with core i5 , 16gb ram , 256gb ssd and windows 10 pro, and price lower than 220.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['core i5']"
+    },
+    {
+      "id": 63,
+      "goal": "i am looking for a kahuna colored capri pant that has a relaxed fit and is in a size 20 plus, and price lower than 60.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['relaxed fit']"
+    },
+    {
+      "id": 64,
+      "goal": "get a tongue cleaner that is easy clean and use, and is also stainless steel, and price lower than 30.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['easy clean', 'easy use', 'stainless steel']"
+    },
+    {
+      "id": 65,
+      "goal": "i nee all natural but no artificial ingredients savory and spicy sauce, 3 pack with sweet kick mustard flavor, and price lower than 140.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['artificial ingredients']"
+    },
+    {
+      "id": 66,
+      "goal": "i am looking for some alcohol free skin care, and price lower than 70.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['alcohol free']"
+    },
+    {
+      "id": 67,
+      "goal": "i need a stainless steel gua sha set that includes the roller and box, and price lower than 110.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['stainless steel']"
+    },
+    {
+      "id": 68,
+      "goal": "i would like a pair of brown size 7 shoes with a rubber sole, and price lower than 70.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['rubber sole']"
+    },
+    {
+      "id": 69,
+      "goal": "i need a 30 pair pack of skin care masks for eyes and wrinkles, and price lower than 40.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['anti aging', 'dark circles']"
+    },
+    {
+      "id": 70,
+      "goal": "i need a purple braces brush that is easy to carry, and price lower than 40.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['easy carry']"
+    },
+    {
+      "id": 71,
+      "goal": "i'm looking for a long lasting foundation that has spf50+.  also, choose the color no. 21, and price lower than 50.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['long lasting']"
+    },
+    {
+      "id": 72,
+      "goal": "i am looking for easy spirit traveltime529 mule shoes with arch support, rubber soles and in size 7.5 wide, and price lower than 110.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['arch support', 'rubber sole']"
+    },
+    {
+      "id": 73,
+      "goal": "find me the fomiyes 4pcs silicone travel bottles that are easy to carry, and price lower than 60.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['easy carry', 'travel bottles']"
+    },
+    {
+      "id": 74,
+      "goal": "i would like a pink ottoman with a solid wooden frame, and price lower than 360.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['wood frame', 'solid wood']"
+    },
+    {
+      "id": 75,
+      "goal": "i would like a three pack of 4 fluid ounce green envy hair dye, and price lower than 40.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['hair dye']"
+    },
+    {
+      "id": 76,
+      "goal": "i want a mid century console sofa table, and price lower than 60.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['mid century']"
+    },
+    {
+      "id": 77,
+      "goal": "i would like a pink cosmetic bag that is easy to clean, and price lower than 40.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['easy clean']"
+    },
+    {
+      "id": 78,
+      "goal": "i am looking for a grey  mules & clogs for day comfert, and price lower than 70.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['day comfort']"
+    },
+    {
+      "id": 79,
+      "goal": "i would like to get a 24 pack of 7.5 ounce bottles of non-gmo classic tonic, and price lower than 60.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['non gmo']"
+    },
+    {
+      "id": 80,
+      "goal": "i need a 9.5 rubber soled hiking shoe made of light weight vinyl acetate, and price lower than 140.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['light weight', 'vinyl acetate', 'rubber sole']"
+    },
+    {
+      "id": 81,
+      "goal": "i need a french vanilla soy wax candle, and price lower than 50.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['soy wax']"
+    },
+    {
+      "id": 82,
+      "goal": "i would like a black brown to tan hairpiece made from synthetic hair, and price lower than 20.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['synthetic hair']"
+    },
+    {
+      "id": 83,
+      "goal": "i need a slim fit gray colored coat that has long sleeves. it should be in x-large size, and price lower than 50.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['slim fit', 'long sleeve', 'daily wear']"
+    },
+    {
+      "id": 84,
+      "goal": "i would like to have a plug and play high speed usb flash drive that is blue and black, the quantity should be 3 of 32g or 2 of 64g, and price lower than 40.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['plug play', 'high speed']"
+    },
+    {
+      "id": 85,
+      "goal": "i need a chocolate coated wafers with a 4.41 ounce size. and i choose the caramel flavor, and price lower than 70.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['kosher certified']"
+    },
+    {
+      "id": 86,
+      "goal": "i need high speed hdmi cables that are 10 feet long and in a 5 pack, and price lower than 80.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['high speed']"
+    },
+    {
+      "id": 87,
+      "goal": "i want yellow machine washable batmerry summer bright decorative pillow covers, and price lower than 50.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['machine washable']"
+    },
+    {
+      "id": 88,
+      "goal": "i'm looking for women's bootcut pants in the brand of tapata, and price lower than 80.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['fashion design', 'regular fit', 'daily wear']"
+    },
+    {
+      "id": 89,
+      "goal": "i need khaki steel toe shoes in size 11 women, and price lower than 70.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['steel toe']"
+    },
+    {
+      "id": 90,
+      "goal": "i would like a 7 piece king comforter set decorated with flowers and is machine washable, and price lower than 90.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['machine washable']"
+    },
+    {
+      "id": 91,
+      "goal": "im looking for a earbud headphones for stereo sound quality of style je-04b which will be more comfortable for me to use without disturbing others , and price lower than 60.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['stereo sound']"
+    },
+    {
+      "id": 92,
+      "goal": "i would like a blue 2.95 foot wire pendent light for my living room, and price lower than 210.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['living room']"
+    },
+    {
+      "id": 93,
+      "goal": "i am looking for wireless bluetooth speakers in the color a, and price lower than 140.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['wireless bluetooth']"
+    },
+    {
+      "id": 94,
+      "goal": "i am looking for a x- large casual dresses with long sleeves, and price lower than 30.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['long sleeve']"
+    },
+    {
+      "id": 95,
+      "goal": "i would like to have a kosher gelato, and price lower than 140.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['kosher certified']"
+    },
+    {
+      "id": 96,
+      "goal": "i want to find a pink women's quilted puffy vest that i can machine wash. the size needs to be extra large, and price lower than 50.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['machine wash']"
+    },
+    {
+      "id": 97,
+      "goal": "looking for light weight fitbit versa bands for men women also choose size large, and price lower than 50.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['light weight']"
+    },
+    {
+      "id": 98,
+      "goal": "i need a fragrance free facial wash, and price lower than 50.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['fragrance free']"
+    },
+    {
+      "id": 99,
+      "goal": "i would like to buy a 14 inch rose gold throw pillow cover for my living room, and price lower than 60.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['living room']"
+    },
+    {
+      "id": 100,
+      "goal": "i want a rca cable that is high def, and price lower than 40.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['high definition']"
+    },
+    {
+      "id": 101,
+      "goal": "i want mivofun 11pcs cute dinosaur cake toppers for a baby shower, and price lower than 30.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['baby shower']"
+    },
+    {
+      "id": 102,
+      "goal": "i am in need of elastic waist winter active running joggers pants of small size and dark grey color, and price lower than 50.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['elastic waist']"
+    },
+    {
+      "id": 103,
+      "goal": "i am looking for a 32gb 1tb ssd pcle nvme m.2 size intel core minis",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['intel core']"
+    },
+    {
+      "id": 104,
+      "goal": "looking for an easy to deliver vintage barbecue sauce needle sleeve white women's halloween t-shirt by tomorrow? forgot to machine wash, and price lower than 40.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['machine wash', 'needle sleeve']"
+    },
+    {
+      "id": 105,
+      "goal": "i'm looking for black colored high quality hair removal cream it easy to use, and price lower than 20.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['high quality', 'hair removal']"
+    },
+    {
+      "id": 106,
+      "goal": "i am looking for a white platform bed that is easy to assemble, and price lower than 300.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['easy assemble']"
+    },
+    {
+      "id": 107,
+      "goal": "i am looking for shoes that are grey and light blue with a rubber sole in a size 11-11.5 women, and price lower than 50.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['rubber sole']"
+    },
+    {
+      "id": 108,
+      "goal": "i am looking for open toe sandals with an ankle strap. i want it in size 10, and price lower than 60.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['open toe', 'ankle strap']"
+    },
+    {
+      "id": 109,
+      "goal": "i need a wall lamp with clear glass, and price lower than 180.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['clear glass']"
+    },
+    {
+      "id": 110,
+      "goal": "i want a black and high quality cenglings womens cowl neck sweatshirt, and price lower than 40.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['high quality']"
+    },
+    {
+      "id": 111,
+      "goal": "i need a s20 tv sound bar that comes with a wireless bluetooth speaker, and price lower than 90.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['wireless bluetooth']"
+    },
+    {
+      "id": 112,
+      "goal": "i am looking for a headphones case that is apple compatible and is navy blue colored, and price lower than 40.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['compatible apple']"
+    },
+    {
+      "id": 113,
+      "goal": "i need a pair of low rise yellow briefs in a large, and price lower than 30.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['low rise']"
+    },
+    {
+      "id": 114,
+      "goal": "i want a easy install roller sades window tretment  size w45*h56 in color pastel blue, and price lower than 100.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['easy install', 'living room']"
+    },
+    {
+      "id": 115,
+      "goal": "i'd like to find a large pink tankini swimsuit that's loose-fitting, and price lower than 40.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['loose fit']"
+    },
+    {
+      "id": 116,
+      "goal": "i'm looking for a mini pc intel core desktop computer which supports with windows 11, and price lower than 740.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['intel core']"
+    },
+    {
+      "id": 117,
+      "goal": "i'm looking for headphones are color it was wireless charging it was outside of noise cancellation, and price lower than 200.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['noise cancelling', 'wireless charging']"
+    },
+    {
+      "id": 118,
+      "goal": "i need a hair elastic for my hair extensions, and price lower than 50.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['hair extensions']"
+    },
+    {
+      "id": 119,
+      "goal": "i want to find a loofah back scrubber with a long handle, and price lower than 50.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['long handle']"
+    },
+    {
+      "id": 120,
+      "goal": "i am looking for a satin brass and frosted hallway light fixtures, and price lower than 80.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['living room']"
+    },
+    {
+      "id": 121,
+      "goal": "i need an oval soft rug that is easy to clean. also, it should be in eggplant purple color, and price lower than 290.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['easy clean']"
+    },
+    {
+      "id": 122,
+      "goal": "i need a gold plated hdmi adapter that is capable of 4k, and price lower than 40.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['gold plated']"
+    },
+    {
+      "id": 123,
+      "goal": "i need a smartwatch case that is compatible with apple and is in a size 45 mm, and price lower than 50.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['compatible apple']"
+    },
+    {
+      "id": 124,
+      "goal": "i want to buy a box of savory fava bean snacks that are non-gmo.  find the pack that has 21 bags, and price lower than 120.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['non gmo']"
+    },
+    {
+      "id": 125,
+      "goal": "i need a leak proof travel bottle that is reusable and comes in 6 pack, and price lower than 50.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['leak proof', 'travel bottles']"
+    },
+    {
+      "id": 126,
+      "goal": "i am looking for the perfect gift, with quality ingredients like jack daniel's pecan, and price lower than 50.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['quality ingredients', 'perfect gift']"
+    },
+    {
+      "id": 127,
+      "goal": "i want to buy a skin cream which is fragrance free and it is for smoothing eye contour, and price lower than 60.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['fragrance free']"
+    },
+    {
+      "id": 128,
+      "goal": "i want a 10 ounce bottle of low calorie fries seasonings, and price lower than 50.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['low calorie']"
+    },
+    {
+      "id": 129,
+      "goal": "i need some teeth whitening that also freshens breath, and price lower than 20.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['fresh breath']"
+    },
+    {
+      "id": 130,
+      "goal": "i'd like to find a pair of size-12 men's waterproof sneakers. it should have ethylene vinyl and ideally i want the color to be breen, and price lower than 130.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['ethylene vinyl']"
+    },
+    {
+      "id": 131,
+      "goal": "i am looking for super soft and fleece throw blanket in multi 10 color, and price lower than 70.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['super soft', 'fleece throw']"
+    },
+    {
+      "id": 132,
+      "goal": "find me a non alcoholic and zero sugar mocktail, and price lower than 50.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['non alcoholic', 'zero sugar']"
+    },
+    {
+      "id": 133,
+      "goal": "i am interested in hand crafted hors d'oeuvres, and price lower than 450.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['hand crafted']"
+    },
+    {
+      "id": 134,
+      "goal": "i want a 512gb samsung galaxy tab s7 with usb port, and price lower than 750.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['usb port']"
+    },
+    {
+      "id": 135,
+      "goal": "i would like a xlarge plus red camellia fleece jacket that can be machine washed, and price lower than 170.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['machine wash']"
+    },
+    {
+      "id": 136,
+      "goal": "i am looking for an easy to clean jewelry box with 10 slots, and price lower than 60.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['easy clean']"
+    },
+    {
+      "id": 137,
+      "goal": "i am looking for fuchsia colored comfortable fit levi's bomber jacket for women, and price lower than 110.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['comfortable fit']"
+    },
+    {
+      "id": 138,
+      "goal": "i am looking for a double sided white apron for shaving and trimming, and price lower than 50.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['double sided']"
+    },
+    {
+      "id": 139,
+      "goal": "i am looking for dark denim color ethylene vinyl ultra train of size 10, 3rd generation for  men, and price lower than 150.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['ethylene vinyl']"
+    },
+    {
+      "id": 140,
+      "goal": "i'm looking for some women's sneakers with rubber soles.  make sure they are fabric and in a size 6.5, and price lower than 180.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['rubber sole']"
+    },
+    {
+      "id": 141,
+      "goal": "i want something that will let me use my cell phone hands free and has the kansas city chiefs' logo on it. it should allow for wireless charging, and price lower than 50.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['hands free', 'wireless charging']"
+    },
+    {
+      "id": 142,
+      "goal": "i am looking for red storage benches that are made of engineered wood and are 90 by 40 by 45, and price lower than 130.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['engineered wood']"
+    },
+    {
+      "id": 143,
+      "goal": "i am looking for a high resolution background of size 9x6ftpolyester, and price lower than 60.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['high resolution']"
+    },
+    {
+      "id": 144,
+      "goal": "i am looking for a 4 light vanity light with a contemporary design, and price lower than 170.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['vanity light', 'contemporary design']"
+    },
+    {
+      "id": 145,
+      "goal": "i'm looking to buy a high resolution marine animal themed backdrop. the size should be 12x10ft, and price lower than 110.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['high resolution']"
+    },
+    {
+      "id": 146,
+      "goal": "i would like a 34 piece set of some long lasting press on nails, and price lower than 40.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['long lasting']"
+    },
+    {
+      "id": 147,
+      "goal": "i'm looking for 8.12 fluid ounces of sulfate-free shampoo that helps prevent hair loss, and price lower than 60.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['sulfate free', 'hair loss']"
+    },
+    {
+      "id": 148,
+      "goal": "i am looking for a square area rug that is grey and ivory and measures 2 feet by 2 inch by 17 feet, and price lower than 160.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['living room']"
+    },
+    {
+      "id": 149,
+      "goal": "i would like a cruelty-free coconut scented shampoo, and price lower than 40.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['cruelty free']"
+    },
+    {
+      "id": 150,
+      "goal": "i would like a extra round 53mm brush for hair styling, and price lower than 50.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['hair styling']"
+    },
+    {
+      "id": 151,
+      "goal": "i want machine washable dream catcher light proof curtains that is 55\" w x 45\" l, and price lower than 70.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['machine washable']"
+    },
+    {
+      "id": 152,
+      "goal": "find cookies made with high fructose, and price lower than 40.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['high fructose']"
+    },
+    {
+      "id": 153,
+      "goal": "i'm looking for a black 2-ounce makeup storage jar that is leak proof and easy to use, and price lower than 30.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['leak proof', 'easy use']"
+    },
+    {
+      "id": 154,
+      "goal": "i need a fleece jacket that is regular fit size 3x in the color of sea salt, and price lower than 90.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['regular fit']"
+    },
+    {
+      "id": 155,
+      "goal": "i'm looking for 20 inch double sided tape hair extensions of balayage color, and price lower than 50.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['double sided', 'hair extensions']"
+    },
+    {
+      "id": 156,
+      "goal": "i'm looking for a sturdy and solid dummy camera that's portable and made of stainless steel. also, choose the one that's easy to install, and price lower than 60.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['easy install', 'stainless steel']"
+    },
+    {
+      "id": 157,
+      "goal": "i am looking for ladies large size black06 colored jeans with straight leg fit, and price lower than 140.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['straight leg']"
+    },
+    {
+      "id": 158,
+      "goal": "show me flip flops that are unisex and made of ethylene vinyl. i am a size 6, and price lower than 100.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['ethylene vinyl']"
+    },
+    {
+      "id": 159,
+      "goal": "i am looking for a cruelty free shampoo for a hair salon. also choose 250ml pack and copper style, and price lower than 40.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['cruelty free', 'hair salon']"
+    },
+    {
+      "id": 160,
+      "goal": "i am looking for a blue, fast charging usb cord that is compatible with apple and is 16 feet long, and price lower than 40.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['compatible apple', 'fast charging']"
+    },
+    {
+      "id": 161,
+      "goal": "i would like a blue long sleeved sweatshirt that is the size 4x-large, and price lower than 30.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['long sleeve']"
+    },
+    {
+      "id": 162,
+      "goal": "i want to find gluten free maple syrup that comes in a 32 fluid ounce bottle, and price lower than 170.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['gluten free']"
+    },
+    {
+      "id": 163,
+      "goal": "i am looking for  a lace closure water booties & socks of red color, and price lower than 50.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['lace closure']"
+    },
+    {
+      "id": 164,
+      "goal": "i'm looking for breastfeeding shits maternity cloths double layer postpartum shirt, and price lower than 60.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['light weight', 'soft material']"
+    },
+    {
+      "id": 165,
+      "goal": "look for a pair of open toed sandals with an ankle strap. i want them in beige, size 8, and price lower than 140.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['open toe', 'ankle strap']"
+    },
+    {
+      "id": 166,
+      "goal": "i would like a large gray pair of leggings with a high waist, and price lower than 40.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['high waist']"
+    },
+    {
+      "id": 167,
+      "goal": "i need ten 12 foot high speed hdmi male to male cables, and price lower than 50.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['high speed']"
+    },
+    {
+      "id": 168,
+      "goal": "i'm looking for navy colored large sized jackets it can use for winter warm, and price lower than 60.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['winter warm', 'machine wash']"
+    },
+    {
+      "id": 169,
+      "goal": "i would like a anti perspirant, and price lower than 100.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['anti perspirant']"
+    },
+    {
+      "id": 170,
+      "goal": "i need an alcohol free hair fragrance that is island vanilla scent, and price lower than 50.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['alcohol free']"
+    },
+    {
+      "id": 171,
+      "goal": "i want long lasting wrangler mens smoke storm cowboy cut jeans, and price lower than 70.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['long lasting']"
+    },
+    {
+      "id": 172,
+      "goal": "i am looking for a sugar free energy drink of zero ultra flavor, and price lower than 140.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['sugar free']"
+    },
+    {
+      "id": 173,
+      "goal": "i'm looking for a car amp/speaker combo with 8 gauge amp wiring kit with four 450 watt kickers cs series with 2 way car coaxials and a 4 channel bluetooth amp included, and price lower than 240.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['high power']"
+    },
+    {
+      "id": 174,
+      "goal": "i'm looking for 2 pcs detangling hair brush for natural hair. also it's color should be in green-black, and price lower than 30.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['natural hair']"
+    },
+    {
+      "id": 175,
+      "goal": "i want cheese pretzelhaus soft individually wrapped bavarian baked pretzels, and price lower than 60.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['individually wrapped']"
+    },
+    {
+      "id": 176,
+      "goal": "i want to find a height-adjustable desk chair in the color petal green, and price lower than 140.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['height adjustable']"
+    },
+    {
+      "id": 177,
+      "goal": "i'm looking for wall art for hanging through the wall, and price lower than 50.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['ready hang', 'living room']"
+    },
+    {
+      "id": 178,
+      "goal": "i need 15 pounds of non gmo beans, and price lower than 140.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['non gmo']"
+    },
+    {
+      "id": 179,
+      "goal": "i want mitchum roll-on anti-perspirant, and price lower than 130.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['anti perspirant']"
+    },
+    {
+      "id": 180,
+      "goal": "i'm looking for a lip pencil high pigmented for long lasting and melrose place color, and price lower than 50.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['long lasting', 'highly pigmented']"
+    },
+    {
+      "id": 181,
+      "goal": "i need a cosmetic bag that is easy to carry and is leopard print, and price lower than 70.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['easy carry']"
+    },
+    {
+      "id": 182,
+      "goal": "i'm looking for d17(dedicated right, back) high performance 3-way tower speaker made with carbon fiber",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['high performance', 'carbon fiber']"
+    },
+    {
+      "id": 183,
+      "goal": "i would like a 3.52 ounce packet of kat a kat seasoning that's easy to use, and price lower than 50.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['easy use']"
+    },
+    {
+      "id": 184,
+      "goal": "i am looking to buy a paraben free makeup remover containing hyaluronic acid, and price lower than 140.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['paraben free', 'hyaluronic acid']"
+    },
+    {
+      "id": 185,
+      "goal": "i am looking for x-large mint green snow boots that have a rubber outsole, and price lower than 30.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['rubber outsole']"
+    },
+    {
+      "id": 186,
+      "goal": "i am looking for a short sleeve top for a teenage girl. it should in xx-large size, and price lower than 40.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['short sleeve', 'teen girls']"
+    },
+    {
+      "id": 187,
+      "goal": "i'm looking for a dining room table that's made out of solid wood and easy to assemble, and price lower than 260.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['easy assemble', 'solid wood', 'dining room']"
+    },
+    {
+      "id": 188,
+      "goal": "i am looking for a wall mounted mid-century sconce that preferably has a plug in 2 pack, and price lower than 180.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['wall mounted', 'mid century']"
+    },
+    {
+      "id": 189,
+      "goal": "i want to get a super soft blue fleece throw that's 50 inches by 63 inches, and price lower than 40.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['super soft', 'fleece throw']"
+    },
+    {
+      "id": 190,
+      "goal": "i would like a ac adapter that has output protection, and price lower than 30.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['output protection']"
+    },
+    {
+      "id": 191,
+      "goal": "storage ottoman bench with hinged lid which size 40*40*43cm, and price lower than 130.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['storage space']"
+    },
+    {
+      "id": 192,
+      "goal": "i am interested in a non slip area rug that is 70 by 55 inch, and price lower than 40.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['non slip']"
+    },
+    {
+      "id": 193,
+      "goal": "i'm looking for an 8-pack of 8-inch portable hair extensions. the color needs to be wine red, and price lower than 40.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['hair extensions']"
+    },
+    {
+      "id": 194,
+      "goal": "i need a large sized coat with long sleeves, and price lower than 80.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['long sleeve']"
+    },
+    {
+      "id": 195,
+      "goal": "i would like 36 packets of black tea bags that are usda certified organic, and price lower than 30.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['usda organic', 'certified organic']"
+    },
+    {
+      "id": 196,
+      "goal": "i am looking for a high quality purple ice roller skin care tool kit, and price lower than 40.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['high quality', 'easy use']"
+    },
+    {
+      "id": 197,
+      "goal": "i am looking for a star wars the mandalorian t-shirt which is machine washable and is in the baby blue color, and price lower than 60.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['machine wash']"
+    },
+    {
+      "id": 198,
+      "goal": "i'm looking for rubber stole shoes for light wearing it was brown in color, and price lower than 70.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['rubber sole']"
+    },
+    {
+      "id": 199,
+      "goal": "i would like some old fashioned summer sausage, and price lower than 20.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['old fashioned']"
+    },
+    {
+      "id": 200,
+      "goal": "i would like a small blue blazer that can be dry cleaned, and price lower than 100.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['button closure']"
+    },
+    {
+      "id": 201,
+      "goal": "i'm looking for curtains for living room and it color was white, and price lower than 50.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['living room']"
+    },
+    {
+      "id": 202,
+      "goal": "i am looking for a ready to use cocktail mixer that is authentic michelada mix and is 33.8 fl oz, and price lower than 30.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['ready use']"
+    },
+    {
+      "id": 203,
+      "goal": "i want to find white blackout shades that are 66 inches in width and 66 inches in height. they need to be easy to install, and price lower than 110.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['white item', 'easy install']"
+    },
+    {
+      "id": 204,
+      "goal": "i am looking for men classic fit t-shirt. please choose black color, and price lower than 60.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['classic fit']"
+    },
+    {
+      "id": 205,
+      "goal": "i need to buy a vanity light in brushed nickel with two lights, and price lower than 200.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['vanity light']"
+    },
+    {
+      "id": 206,
+      "goal": "i am looking for human hair toppers for hair loss. i would like something in a medium brown, and price lower than 140.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['hair loss']"
+    },
+    {
+      "id": 207,
+      "goal": "i need a ready to hang wall mirror in a champagne sunburst color, and price lower than 80.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['ready hang']"
+    },
+    {
+      "id": 208,
+      "goal": "i need 3v long lasting and high performance batteries in a pack of 6, and price lower than 30.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['long lasting', 'high performance']"
+    },
+    {
+      "id": 209,
+      "goal": "i am looking for a 6x9 ft backgrounds for digital photography, and price lower than 140.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['digital photography']"
+    },
+    {
+      "id": 210,
+      "goal": "i'm looking for a meals with zero added sugar and also free from gluten and bpa. also, choose applesauce flavored one, and price lower than 30.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['bpa free', 'gluten free', 'zero sugar']"
+    },
+    {
+      "id": 211,
+      "goal": "i want to buy a mid-back drafting chair that has an adjustable height and lumbar support. look for a blue one, and price lower than 160.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['height adjustable', 'lumbar support']"
+    },
+    {
+      "id": 212,
+      "goal": "i am looking for wireless bluetooth headphones that are easy to use, and price lower than 120.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['easy use', 'wireless bluetooth']"
+    },
+    {
+      "id": 213,
+      "goal": "i want a 24w led light with high power lamp. it should mount on a wall, and price lower than 120.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['wall mounted', 'high power']"
+    },
+    {
+      "id": 214,
+      "goal": "i'm looking for a pair of water resistant brown pants, and price lower than 40.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['water resistant']"
+    },
+    {
+      "id": 215,
+      "goal": "i need a fluoride free toothpaste for fresh breath. i will need a pack of 4 in 3.5 ounce size, and price lower than 50.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['fluoride free', 'fresh breath']"
+    },
+    {
+      "id": 216,
+      "goal": "i want to find a pack of nine low-carb cheese bites from trader joe's, and price lower than 50.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['trader joe', 'low carb']"
+    },
+    {
+      "id": 217,
+      "goal": "i want to buy canvas prints for the living room preferably having airplanes on them, and price lower than 140.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['living room']"
+    },
+    {
+      "id": 218,
+      "goal": "i would like a ready hang poster that has blue roads, and price lower than 170.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['ready hang']"
+    },
+    {
+      "id": 219,
+      "goal": "i want to get a two pack vanity light with brushed nickel finish in color type 2, and price lower than 80.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['brushed nickel', 'vanity light']"
+    },
+    {
+      "id": 220,
+      "goal": "i would like a medium sized black sleep set that is light weight, and price lower than 60.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['light weight']"
+    },
+    {
+      "id": 221,
+      "goal": "i need to buy a ready to hang art print that's sixteen by twenty-four inches. look for one that has women and palm leaves on it, and price lower than 50.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['ready hang']"
+    },
+    {
+      "id": 222,
+      "goal": "i want a monocular telescope for bird watching, and price lower than 130.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['bird watching']"
+    },
+    {
+      "id": 223,
+      "goal": "i'm looking for a topper for a birthday cake, and price lower than 40.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['birthday cake']"
+    },
+    {
+      "id": 224,
+      "goal": "i want a juniper and fully assembled rivet decatur modern upholstered dining chair, and price lower than 320.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['fully assembled']"
+    },
+    {
+      "id": 225,
+      "goal": "i am looking for a organic and gluten free almond nut butter with kosher certified. also choose chocolate favor and 4-pack size, and price lower than 80.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['certified organic', 'gluten free', 'kosher certified']"
+    },
+    {
+      "id": 226,
+      "goal": "i'm looking for a solid wood bookcase in espresso color. would prefer it to be in the size of 5-shelf, and price lower than 150.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['solid wood']"
+    },
+    {
+      "id": 227,
+      "goal": "i am looking fort a travel size skincare kit with tea tree toner, and price lower than 40.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['travel size', 'tea tree']"
+    },
+    {
+      "id": 228,
+      "goal": "i'm looking for cake toppers for a birthday party, and price lower than 50.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['birthday party']"
+    },
+    {
+      "id": 229,
+      "goal": "i am looking for red popcorn boxes for a baby shower, and price lower than 40.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['baby shower']"
+    },
+    {
+      "id": 230,
+      "goal": "i am looking for resilient memory foam loveseat sofa",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['memory foam']"
+    },
+    {
+      "id": 231,
+      "goal": "get me some twin-sized flat sheets in gray, and price lower than 70.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['twin size']"
+    },
+    {
+      "id": 232,
+      "goal": "i'm looking for a 10 pack of hydrating sheet masks with anti aging properties. i would like to select the spa hairband option, and price lower than 40.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['anti aging']"
+    },
+    {
+      "id": 233,
+      "goal": "i am looking for a blue ottomans for living room, and price lower than 140.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['living room']"
+    },
+    {
+      "id": 234,
+      "goal": "i am looking for a straight leg jeans in sandblast light color. also in 40w x 34l size, and price lower than 130.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['straight leg']"
+    },
+    {
+      "id": 235,
+      "goal": "i need a faux fur white andeworld swivel barrel chair for my living room, and price lower than 320.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['living room']"
+    },
+    {
+      "id": 236,
+      "goal": "i need an evening gown in purple that is a size four, and price lower than 110.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['unique design']"
+    },
+    {
+      "id": 237,
+      "goal": "i am looking for a 12 ounce jar of raspberry preserve that is nut and gluten free, and price lower than 130.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['nut free', 'gluten free']"
+    },
+    {
+      "id": 238,
+      "goal": "i want an officially licensed white marvel guardians of the galaxy retro logo tee, and price lower than 60.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['officially licensed']"
+    },
+    {
+      "id": 239,
+      "goal": "i need some extra large butt lifting leggings in mint green, and price lower than 50.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['butt lifting']"
+    },
+    {
+      "id": 240,
+      "goal": "i want to buy some chunky red glitter. make sure it's non-toxic and eco-friendly, and price lower than 50.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['eco friendly', 'non toxic']"
+    },
+    {
+      "id": 241,
+      "goal": "i want a highly pigmented lip gloss that is in the color r901, and price lower than 50.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['highly pigmented']"
+    },
+    {
+      "id": 242,
+      "goal": "i want a high quality tooth brush for my sensitive teeth. it should be pale yellow in color, and price lower than 40.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['high quality']"
+    },
+    {
+      "id": 243,
+      "goal": "i want a pack of wall lamps for a living room, and price lower than 90.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['living room']"
+    },
+    {
+      "id": 244,
+      "goal": "i'm looking for an easy carry and light weight photography backdrop. also, choose the 7x5ft size, and price lower than 30.00 dollars",
+      "difficulty": "hard",
+      "subgoals": "attribute constraints:['light weight', 'easy carry']"
+    },
+    {
+      "id": 245,
+      "goal": "i'm looking for a ottoman 6 seater sofa",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['living room']"
+    },
+    {
+      "id": 246,
+      "goal": "i would like a solid wood sideboard, and price lower than 980.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['solid wood']"
+    },
+    {
+      "id": 247,
+      "goal": "i want a black 1080p hd mini projector, and price lower than 130.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['1080p hd']"
+    },
+    {
+      "id": 248,
+      "goal": "please select a 1 pound, certified organic sea salt shaker in the flavor triple blend flakes, and price lower than 40.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['certified organic']"
+    },
+    {
+      "id": 249,
+      "goal": "get me some black lounge pants with an elastic waistband, and price lower than 30.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['elastic waist']"
+    },
+    {
+      "id": 250,
+      "goal": "i want a x-large short sleeve mayntop womens t-shirt, and price lower than 40.00 dollars",
+      "difficulty": "easy",
+      "subgoals": "attribute constraints:['short sleeve']"
+    }
+  ]

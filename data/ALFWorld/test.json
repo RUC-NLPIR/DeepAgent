@@ -1,0 +1,806 @@
+[
+    {
+      "id": 0,
+      "goal": "look at bowl under the desklamp.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a bowl \\d+)\nSubgoal 2: You pick up the bowl \\d+\nSubgoal 3: ^(?=.* you see)(?=.*a desklamp)"
+    },
+    {
+      "id": 1,
+      "goal": "put two soapbar in garbagecan.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a soapbar \\d+)\nSubgoal 2: You pick up the soapbar \\d+\nSubgoal 3: You put the soapbar \\d+ in/on the garbagecan \\d+"
+    },
+    {
+      "id": 2,
+      "goal": "put a cool tomato in microwave.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a tomato \\d+)\nSubgoal 2: You pick up the tomato \\d+\nSubgoal 3: You cool the tomato \\d+ using the"
+    },
+    {
+      "id": 3,
+      "goal": "put a clean plate in countertop.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a plate \\d+)\nSubgoal 2: You pick up the plate \\d+\nSubgoal 3: You clean the plate \\d+"
+    },
+    {
+      "id": 4,
+      "goal": "put a clean soapbar in countertop.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a soapbar \\d+)\nSubgoal 2: You pick up the soapbar \\d+\nSubgoal 3: You clean the soapbar \\d+"
+    },
+    {
+      "id": 5,
+      "goal": "cool some lettuce and put it in countertop.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a lettuce \\d+)\nSubgoal 2: You pick up the lettuce \\d+\nSubgoal 3: You cool the lettuce \\d+ using the"
+    },
+    {
+      "id": 6,
+      "goal": "clean some pan and put it in countertop.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a pan \\d+)\nSubgoal 2: You pick up the pan \\d+\nSubgoal 3: You clean the pan \\d+"
+    },
+    {
+      "id": 7,
+      "goal": "put a clean plate in countertop.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a plate \\d+)\nSubgoal 2: You pick up the plate \\d+\nSubgoal 3: You clean the plate \\d+"
+    },
+    {
+      "id": 8,
+      "goal": "put a hot mug in coffeemachine.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a mug \\d+)\nSubgoal 2: You pick up the mug \\d+\nSubgoal 3: You heat the mug \\d+ using the"
+    },
+    {
+      "id": 9,
+      "goal": "put some saltshaker on drawer.",
+      "difficulty": "easy",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a saltshaker \\d+)\nSubgoal 2: You pick up the saltshaker \\d+"
+    },
+    {
+      "id": 10,
+      "goal": "clean some bowl and put it in cabinet.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a bowl \\d+)\nSubgoal 2: You pick up the bowl \\d+\nSubgoal 3: You clean the bowl \\d+"
+    },
+    {
+      "id": 11,
+      "goal": "put a vase in safe.",
+      "difficulty": "easy",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a vase \\d+)\nSubgoal 2: You pick up the vase \\d+"
+    },
+    {
+      "id": 12,
+      "goal": "cool some potato and put it in microwave.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a potato \\d+)\nSubgoal 2: You pick up the potato \\d+\nSubgoal 3: You cool the potato \\d+ using the"
+    },
+    {
+      "id": 13,
+      "goal": "cool some mug and put it in coffeemachine.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a mug \\d+)\nSubgoal 2: You pick up the mug \\d+\nSubgoal 3: You cool the mug \\d+ using the"
+    },
+    {
+      "id": 14,
+      "goal": "heat some egg and put it in garbagecan.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a egg \\d+)\nSubgoal 2: You pick up the egg \\d+\nSubgoal 3: You heat the egg \\d+ using the"
+    },
+    {
+      "id": 15,
+      "goal": "put a cool mug in coffeemachine.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a mug \\d+)\nSubgoal 2: You pick up the mug \\d+\nSubgoal 3: You cool the mug \\d+ using the"
+    },
+    {
+      "id": 16,
+      "goal": "put a hot cup in cabinet.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a cup \\d+)\nSubgoal 2: You pick up the cup \\d+\nSubgoal 3: You heat the cup \\d+ using the"
+    },
+    {
+      "id": 17,
+      "goal": "put a clean mug in coffeemachine.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a mug \\d+)\nSubgoal 2: You pick up the mug \\d+\nSubgoal 3: You clean the mug \\d+"
+    },
+    {
+      "id": 18,
+      "goal": "clean some soapbar and put it in cabinet.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a soapbar \\d+)\nSubgoal 2: You pick up the soapbar \\d+\nSubgoal 3: You clean the soapbar \\d+"
+    },
+    {
+      "id": 19,
+      "goal": "put a hot cup in cabinet.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a cup \\d+)\nSubgoal 2: You pick up the cup \\d+\nSubgoal 3: You heat the cup \\d+ using the"
+    },
+    {
+      "id": 20,
+      "goal": "clean some knife and put it in countertop.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a knife \\d+)\nSubgoal 2: You pick up the knife \\d+\nSubgoal 3: You clean the knife \\d+"
+    },
+    {
+      "id": 21,
+      "goal": "clean some cloth and put it in countertop.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a cloth \\d+)\nSubgoal 2: You pick up the cloth \\d+\nSubgoal 3: You clean the cloth \\d+"
+    },
+    {
+      "id": 22,
+      "goal": "examine the bowl with the desklamp.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a bowl \\d+)\nSubgoal 2: You pick up the bowl \\d+\nSubgoal 3: ^(?=.* you see)(?=.*a desklamp)"
+    },
+    {
+      "id": 23,
+      "goal": "put a clean egg in microwave.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a egg \\d+)\nSubgoal 2: You pick up the egg \\d+\nSubgoal 3: You clean the egg \\d+"
+    },
+    {
+      "id": 24,
+      "goal": "put some peppershaker on drawer.",
+      "difficulty": "easy",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a peppershaker \\d+)\nSubgoal 2: You pick up the peppershaker \\d+"
+    },
+    {
+      "id": 25,
+      "goal": "put a pencil in shelf.",
+      "difficulty": "easy",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a pencil \\d+)\nSubgoal 2: You pick up the pencil \\d+"
+    },
+    {
+      "id": 26,
+      "goal": "put a soapbottle in toilet.",
+      "difficulty": "easy",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a soapbottle \\d+)\nSubgoal 2: You pick up the soapbottle \\d+"
+    },
+    {
+      "id": 27,
+      "goal": "put some saltshaker on cabinet.",
+      "difficulty": "easy",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a saltshaker \\d+)\nSubgoal 2: You pick up the saltshaker \\d+"
+    },
+    {
+      "id": 28,
+      "goal": "put some saltshaker on cabinet.",
+      "difficulty": "easy",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a saltshaker \\d+)\nSubgoal 2: You pick up the saltshaker \\d+"
+    },
+    {
+      "id": 29,
+      "goal": "put a cool lettuce in countertop.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a lettuce \\d+)\nSubgoal 2: You pick up the lettuce \\d+\nSubgoal 3: You cool the lettuce \\d+ using the"
+    },
+    {
+      "id": 30,
+      "goal": "put some watch on safe.",
+      "difficulty": "easy",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a watch \\d+)\nSubgoal 2: You pick up the watch \\d+"
+    },
+    {
+      "id": 31,
+      "goal": "heat some apple and put it in garbagecan.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a apple \\d+)\nSubgoal 2: You pick up the apple \\d+\nSubgoal 3: You heat the apple \\d+ using the"
+    },
+    {
+      "id": 32,
+      "goal": "heat some apple and put it in garbagecan.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a apple \\d+)\nSubgoal 2: You pick up the apple \\d+\nSubgoal 3: You heat the apple \\d+ using the"
+    },
+    {
+      "id": 33,
+      "goal": "look at cd under the desklamp.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a cd \\d+)\nSubgoal 2: You pick up the cd \\d+\nSubgoal 3: ^(?=.* you see)(?=.*a desklamp)"
+    },
+    {
+      "id": 34,
+      "goal": "put a cool pan in countertop.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a pan \\d+)\nSubgoal 2: You pick up the pan \\d+\nSubgoal 3: You cool the pan \\d+ using the"
+    },
+    {
+      "id": 35,
+      "goal": "put two pillow in sofa.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a pillow \\d+)\nSubgoal 2: You pick up the pillow \\d+\nSubgoal 3: You put the pillow \\d+ in/on the sofa \\d+"
+    },
+    {
+      "id": 36,
+      "goal": "put a hot cup in cabinet.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a cup \\d+)\nSubgoal 2: You pick up the cup \\d+\nSubgoal 3: You heat the cup \\d+ using the"
+    },
+    {
+      "id": 37,
+      "goal": "put a clean knife in countertop.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a knife \\d+)\nSubgoal 2: You pick up the knife \\d+\nSubgoal 3: You clean the knife \\d+"
+    },
+    {
+      "id": 38,
+      "goal": "examine the alarmclock with the desklamp.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a alarmclock \\d+)\nSubgoal 2: You pick up the alarmclock \\d+\nSubgoal 3: ^(?=.* you see)(?=.*a desklamp)"
+    },
+    {
+      "id": 39,
+      "goal": "cool some mug and put it in coffeemachine.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a mug \\d+)\nSubgoal 2: You pick up the mug \\d+\nSubgoal 3: You cool the mug \\d+ using the"
+    },
+    {
+      "id": 40,
+      "goal": "cool some bread and put it in countertop.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a bread \\d+)\nSubgoal 2: You pick up the bread \\d+\nSubgoal 3: You cool the bread \\d+ using the"
+    },
+    {
+      "id": 41,
+      "goal": "examine the pencil with the desklamp.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a pencil \\d+)\nSubgoal 2: You pick up the pencil \\d+\nSubgoal 3: ^(?=.* you see)(?=.*a desklamp)"
+    },
+    {
+      "id": 42,
+      "goal": "put two keychain in safe.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a keychain \\d+)\nSubgoal 2: You pick up the keychain \\d+\nSubgoal 3: You put the keychain \\d+ in/on the safe \\d+"
+    },
+    {
+      "id": 43,
+      "goal": "put two peppershaker in drawer.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a peppershaker \\d+)\nSubgoal 2: You pick up the peppershaker \\d+\nSubgoal 3: You put the peppershaker \\d+ in/on the drawer \\d+"
+    },
+    {
+      "id": 44,
+      "goal": "cool some pan and put it in countertop.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a pan \\d+)\nSubgoal 2: You pick up the pan \\d+\nSubgoal 3: You cool the pan \\d+ using the"
+    },
+    {
+      "id": 45,
+      "goal": "put a pencil in shelf.",
+      "difficulty": "easy",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a pencil \\d+)\nSubgoal 2: You pick up the pencil \\d+"
+    },
+    {
+      "id": 46,
+      "goal": "put some soapbottle on toilet.",
+      "difficulty": "easy",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a soapbottle \\d+)\nSubgoal 2: You pick up the soapbottle \\d+"
+    },
+    {
+      "id": 47,
+      "goal": "put two peppershaker in drawer.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a peppershaker \\d+)\nSubgoal 2: You pick up the peppershaker \\d+\nSubgoal 3: You put the peppershaker \\d+ in/on the drawer \\d+"
+    },
+    {
+      "id": 48,
+      "goal": "clean some plate and put it in countertop.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a plate \\d+)\nSubgoal 2: You pick up the plate \\d+\nSubgoal 3: You clean the plate \\d+"
+    },
+    {
+      "id": 49,
+      "goal": "heat some egg and put it in garbagecan.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a egg \\d+)\nSubgoal 2: You pick up the egg \\d+\nSubgoal 3: You heat the egg \\d+ using the"
+    },
+    {
+      "id": 50,
+      "goal": "cool some potato and put it in microwave.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a potato \\d+)\nSubgoal 2: You pick up the potato \\d+\nSubgoal 3: You cool the potato \\d+ using the"
+    },
+    {
+      "id": 51,
+      "goal": "put a mug in desk.",
+      "difficulty": "easy",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a mug \\d+)\nSubgoal 2: You pick up the mug \\d+"
+    },
+    {
+      "id": 52,
+      "goal": "put a hot potato in garbagecan.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a potato \\d+)\nSubgoal 2: You pick up the potato \\d+\nSubgoal 3: You heat the potato \\d+ using the"
+    },
+    {
+      "id": 53,
+      "goal": "find two soapbar and put them in cabinet.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a soapbar \\d+)\nSubgoal 2: You pick up the soapbar \\d+\nSubgoal 3: You put the soapbar \\d+ in/on the cabinet \\d+"
+    },
+    {
+      "id": 54,
+      "goal": "heat some apple and put it in fridge.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a apple \\d+)\nSubgoal 2: You pick up the apple \\d+\nSubgoal 3: You heat the apple \\d+ using the"
+    },
+    {
+      "id": 55,
+      "goal": "put two pillow in sofa.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a pillow \\d+)\nSubgoal 2: You pick up the pillow \\d+\nSubgoal 3: You put the pillow \\d+ in/on the sofa \\d+"
+    },
+    {
+      "id": 56,
+      "goal": "put a clean mug in coffeemachine.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a mug \\d+)\nSubgoal 2: You pick up the mug \\d+\nSubgoal 3: You clean the mug \\d+"
+    },
+    {
+      "id": 57,
+      "goal": "put a peppershaker in drawer.",
+      "difficulty": "easy",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a peppershaker \\d+)\nSubgoal 2: You pick up the peppershaker \\d+"
+    },
+    {
+      "id": 58,
+      "goal": "put some watch on safe.",
+      "difficulty": "easy",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a watch \\d+)\nSubgoal 2: You pick up the watch \\d+"
+    },
+    {
+      "id": 59,
+      "goal": "heat some tomato and put it in garbagecan.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a tomato \\d+)\nSubgoal 2: You pick up the tomato \\d+\nSubgoal 3: You heat the tomato \\d+ using the"
+    },
+    {
+      "id": 60,
+      "goal": "examine the book with the desklamp.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a book \\d+)\nSubgoal 2: You pick up the book \\d+\nSubgoal 3: ^(?=.* you see)(?=.*a desklamp)"
+    },
+    {
+      "id": 61,
+      "goal": "cool some potato and put it in microwave.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a potato \\d+)\nSubgoal 2: You pick up the potato \\d+\nSubgoal 3: You cool the potato \\d+ using the"
+    },
+    {
+      "id": 62,
+      "goal": "examine the cd with the desklamp.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a cd \\d+)\nSubgoal 2: You pick up the cd \\d+\nSubgoal 3: ^(?=.* you see)(?=.*a desklamp)"
+    },
+    {
+      "id": 63,
+      "goal": "heat some mug and put it in coffeemachine.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a mug \\d+)\nSubgoal 2: You pick up the mug \\d+\nSubgoal 3: You heat the mug \\d+ using the"
+    },
+    {
+      "id": 64,
+      "goal": "look at pencil under the desklamp.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a pencil \\d+)\nSubgoal 2: You pick up the pencil \\d+\nSubgoal 3: ^(?=.* you see)(?=.*a desklamp)"
+    },
+    {
+      "id": 65,
+      "goal": "clean some soapbar and put it in cabinet.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a soapbar \\d+)\nSubgoal 2: You pick up the soapbar \\d+\nSubgoal 3: You clean the soapbar \\d+"
+    },
+    {
+      "id": 66,
+      "goal": "heat some apple and put it in fridge.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a apple \\d+)\nSubgoal 2: You pick up the apple \\d+\nSubgoal 3: You heat the apple \\d+ using the"
+    },
+    {
+      "id": 67,
+      "goal": "examine the book with the desklamp.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a book \\d+)\nSubgoal 2: You pick up the book \\d+\nSubgoal 3: ^(?=.* you see)(?=.*a desklamp)"
+    },
+    {
+      "id": 68,
+      "goal": "heat some mug and put it in cabinet.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a mug \\d+)\nSubgoal 2: You pick up the mug \\d+\nSubgoal 3: You heat the mug \\d+ using the"
+    },
+    {
+      "id": 69,
+      "goal": "look at bowl under the desklamp.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a bowl \\d+)\nSubgoal 2: You pick up the bowl \\d+\nSubgoal 3: ^(?=.* you see)(?=.*a desklamp)"
+    },
+    {
+      "id": 70,
+      "goal": "find two pillow and put them in sofa.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a pillow \\d+)\nSubgoal 2: You pick up the pillow \\d+\nSubgoal 3: You put the pillow \\d+ in/on the sofa \\d+"
+    },
+    {
+      "id": 71,
+      "goal": "heat some mug and put it in coffeemachine.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a mug \\d+)\nSubgoal 2: You pick up the mug \\d+\nSubgoal 3: You heat the mug \\d+ using the"
+    },
+    {
+      "id": 72,
+      "goal": "put a cool tomato in microwave.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a tomato \\d+)\nSubgoal 2: You pick up the tomato \\d+\nSubgoal 3: You cool the tomato \\d+ using the"
+    },
+    {
+      "id": 73,
+      "goal": "put a mug in desk.",
+      "difficulty": "easy",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a mug \\d+)\nSubgoal 2: You pick up the mug \\d+"
+    },
+    {
+      "id": 74,
+      "goal": "clean some egg and put it in microwave.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a egg \\d+)\nSubgoal 2: You pick up the egg \\d+\nSubgoal 3: You clean the egg \\d+"
+    },
+    {
+      "id": 75,
+      "goal": "put a hot tomato in garbagecan.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a tomato \\d+)\nSubgoal 2: You pick up the tomato \\d+\nSubgoal 3: You heat the tomato \\d+ using the"
+    },
+    {
+      "id": 76,
+      "goal": "clean some bowl and put it in cabinet.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a bowl \\d+)\nSubgoal 2: You pick up the bowl \\d+\nSubgoal 3: You clean the bowl \\d+"
+    },
+    {
+      "id": 77,
+      "goal": "put a cool mug in cabinet.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a mug \\d+)\nSubgoal 2: You pick up the mug \\d+\nSubgoal 3: You cool the mug \\d+ using the"
+    },
+    {
+      "id": 78,
+      "goal": "put a clean spatula in drawer.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a spatula \\d+)\nSubgoal 2: You pick up the spatula \\d+\nSubgoal 3: You clean the spatula \\d+"
+    },
+    {
+      "id": 79,
+      "goal": "put a clean mug in coffeemachine.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a mug \\d+)\nSubgoal 2: You pick up the mug \\d+\nSubgoal 3: You clean the mug \\d+"
+    },
+    {
+      "id": 80,
+      "goal": "clean some spatula and put it in drawer.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a spatula \\d+)\nSubgoal 2: You pick up the spatula \\d+\nSubgoal 3: You clean the spatula \\d+"
+    },
+    {
+      "id": 81,
+      "goal": "put some watch on safe.",
+      "difficulty": "easy",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a watch \\d+)\nSubgoal 2: You pick up the watch \\d+"
+    },
+    {
+      "id": 82,
+      "goal": "examine the pencil with the desklamp.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a pencil \\d+)\nSubgoal 2: You pick up the pencil \\d+\nSubgoal 3: ^(?=.* you see)(?=.*a desklamp)"
+    },
+    {
+      "id": 83,
+      "goal": "clean some cloth and put it in cabinet.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a cloth \\d+)\nSubgoal 2: You pick up the cloth \\d+\nSubgoal 3: You clean the cloth \\d+"
+    },
+    {
+      "id": 84,
+      "goal": "put a saltshaker in drawer.",
+      "difficulty": "easy",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a saltshaker \\d+)\nSubgoal 2: You pick up the saltshaker \\d+"
+    },
+    {
+      "id": 85,
+      "goal": "put two cd in safe.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a cd \\d+)\nSubgoal 2: You pick up the cd \\d+\nSubgoal 3: You put the cd \\d+ in/on the safe \\d+"
+    },
+    {
+      "id": 86,
+      "goal": "heat some apple and put it in garbagecan.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a apple \\d+)\nSubgoal 2: You pick up the apple \\d+\nSubgoal 3: You heat the apple \\d+ using the"
+    },
+    {
+      "id": 87,
+      "goal": "examine the mug with the desklamp.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a mug \\d+)\nSubgoal 2: You pick up the mug \\d+\nSubgoal 3: ^(?=.* you see)(?=.*a desklamp)"
+    },
+    {
+      "id": 88,
+      "goal": "cool some pan and put it in countertop.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a pan \\d+)\nSubgoal 2: You pick up the pan \\d+\nSubgoal 3: You cool the pan \\d+ using the"
+    },
+    {
+      "id": 89,
+      "goal": "put a hot apple in fridge.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a apple \\d+)\nSubgoal 2: You pick up the apple \\d+\nSubgoal 3: You heat the apple \\d+ using the"
+    },
+    {
+      "id": 90,
+      "goal": "put some saltshaker on cabinet.",
+      "difficulty": "easy",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a saltshaker \\d+)\nSubgoal 2: You pick up the saltshaker \\d+"
+    },
+    {
+      "id": 91,
+      "goal": "clean some cloth and put it in cabinet.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a cloth \\d+)\nSubgoal 2: You pick up the cloth \\d+\nSubgoal 3: You clean the cloth \\d+"
+    },
+    {
+      "id": 92,
+      "goal": "put a clean pan in countertop.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a pan \\d+)\nSubgoal 2: You pick up the pan \\d+\nSubgoal 3: You clean the pan \\d+"
+    },
+    {
+      "id": 93,
+      "goal": "clean some spatula and put it in drawer.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a spatula \\d+)\nSubgoal 2: You pick up the spatula \\d+\nSubgoal 3: You clean the spatula \\d+"
+    },
+    {
+      "id": 94,
+      "goal": "examine the mug with the desklamp.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a mug \\d+)\nSubgoal 2: You pick up the mug \\d+\nSubgoal 3: ^(?=.* you see)(?=.*a desklamp)"
+    },
+    {
+      "id": 95,
+      "goal": "cool some mug and put it in cabinet.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a mug \\d+)\nSubgoal 2: You pick up the mug \\d+\nSubgoal 3: You cool the mug \\d+ using the"
+    },
+    {
+      "id": 96,
+      "goal": "put a hot mug in cabinet.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a mug \\d+)\nSubgoal 2: You pick up the mug \\d+\nSubgoal 3: You heat the mug \\d+ using the"
+    },
+    {
+      "id": 97,
+      "goal": "clean some soapbar and put it in cabinet.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a soapbar \\d+)\nSubgoal 2: You pick up the soapbar \\d+\nSubgoal 3: You clean the soapbar \\d+"
+    },
+    {
+      "id": 98,
+      "goal": "look at mug under the desklamp.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a mug \\d+)\nSubgoal 2: You pick up the mug \\d+\nSubgoal 3: ^(?=.* you see)(?=.*a desklamp)"
+    },
+    {
+      "id": 99,
+      "goal": "put some mug on desk.",
+      "difficulty": "easy",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a mug \\d+)\nSubgoal 2: You pick up the mug \\d+"
+    },
+    {
+      "id": 100,
+      "goal": "look at alarmclock under the desklamp.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a alarmclock \\d+)\nSubgoal 2: You pick up the alarmclock \\d+\nSubgoal 3: ^(?=.* you see)(?=.*a desklamp)"
+    },
+    {
+      "id": 101,
+      "goal": "examine the book with the desklamp.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a book \\d+)\nSubgoal 2: You pick up the book \\d+\nSubgoal 3: ^(?=.* you see)(?=.*a desklamp)"
+    },
+    {
+      "id": 102,
+      "goal": "put two soapbar in garbagecan.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a soapbar \\d+)\nSubgoal 2: You pick up the soapbar \\d+\nSubgoal 3: You put the soapbar \\d+ in/on the garbagecan \\d+"
+    },
+    {
+      "id": 103,
+      "goal": "cool some bread and put it in countertop.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a bread \\d+)\nSubgoal 2: You pick up the bread \\d+\nSubgoal 3: You cool the bread \\d+ using the"
+    },
+    {
+      "id": 104,
+      "goal": "examine the alarmclock with the desklamp.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a alarmclock \\d+)\nSubgoal 2: You pick up the alarmclock \\d+\nSubgoal 3: ^(?=.* you see)(?=.*a desklamp)"
+    },
+    {
+      "id": 105,
+      "goal": "examine the cd with the desklamp.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a cd \\d+)\nSubgoal 2: You pick up the cd \\d+\nSubgoal 3: ^(?=.* you see)(?=.*a desklamp)"
+    },
+    {
+      "id": 106,
+      "goal": "heat some egg and put it in garbagecan.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a egg \\d+)\nSubgoal 2: You pick up the egg \\d+\nSubgoal 3: You heat the egg \\d+ using the"
+    },
+    {
+      "id": 107,
+      "goal": "put a clean soapbar in countertop.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a soapbar \\d+)\nSubgoal 2: You pick up the soapbar \\d+\nSubgoal 3: You clean the soapbar \\d+"
+    },
+    {
+      "id": 108,
+      "goal": "put two soapbar in garbagecan.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a soapbar \\d+)\nSubgoal 2: You pick up the soapbar \\d+\nSubgoal 3: You put the soapbar \\d+ in/on the garbagecan \\d+"
+    },
+    {
+      "id": 109,
+      "goal": "put a soapbottle in toilet.",
+      "difficulty": "easy",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a soapbottle \\d+)\nSubgoal 2: You pick up the soapbottle \\d+"
+    },
+    {
+      "id": 110,
+      "goal": "put some vase on safe.",
+      "difficulty": "easy",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a vase \\d+)\nSubgoal 2: You pick up the vase \\d+"
+    },
+    {
+      "id": 111,
+      "goal": "cool some lettuce and put it in countertop.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a lettuce \\d+)\nSubgoal 2: You pick up the lettuce \\d+\nSubgoal 3: You cool the lettuce \\d+ using the"
+    },
+    {
+      "id": 112,
+      "goal": "put two cd in safe.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a cd \\d+)\nSubgoal 2: You pick up the cd \\d+\nSubgoal 3: You put the cd \\d+ in/on the safe \\d+"
+    },
+    {
+      "id": 113,
+      "goal": "put a clean egg in microwave.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a egg \\d+)\nSubgoal 2: You pick up the egg \\d+\nSubgoal 3: You clean the egg \\d+"
+    },
+    {
+      "id": 114,
+      "goal": "find two toiletpaper and put them in cabinet.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a toiletpaper \\d+)\nSubgoal 2: You pick up the toiletpaper \\d+\nSubgoal 3: You put the toiletpaper \\d+ in/on the cabinet \\d+"
+    },
+    {
+      "id": 115,
+      "goal": "put a cool bread in countertop.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a bread \\d+)\nSubgoal 2: You pick up the bread \\d+\nSubgoal 3: You cool the bread \\d+ using the"
+    },
+    {
+      "id": 116,
+      "goal": "cool some mug and put it in cabinet.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a mug \\d+)\nSubgoal 2: You pick up the mug \\d+\nSubgoal 3: You cool the mug \\d+ using the"
+    },
+    {
+      "id": 117,
+      "goal": "clean some soapbar and put it in countertop.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a soapbar \\d+)\nSubgoal 2: You pick up the soapbar \\d+\nSubgoal 3: You clean the soapbar \\d+"
+    },
+    {
+      "id": 118,
+      "goal": "put a cool tomato in microwave.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a tomato \\d+)\nSubgoal 2: You pick up the tomato \\d+\nSubgoal 3: You cool the tomato \\d+ using the"
+    },
+    {
+      "id": 119,
+      "goal": "heat some potato and put it in garbagecan.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a potato \\d+)\nSubgoal 2: You pick up the potato \\d+\nSubgoal 3: You heat the potato \\d+ using the"
+    },
+    {
+      "id": 120,
+      "goal": "put two keychain in safe.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a keychain \\d+)\nSubgoal 2: You pick up the keychain \\d+\nSubgoal 3: You put the keychain \\d+ in/on the safe \\d+"
+    },
+    {
+      "id": 121,
+      "goal": "clean some pan and put it in countertop.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a pan \\d+)\nSubgoal 2: You pick up the pan \\d+\nSubgoal 3: You clean the pan \\d+"
+    },
+    {
+      "id": 122,
+      "goal": "find two cd and put them in safe.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a cd \\d+)\nSubgoal 2: You pick up the cd \\d+\nSubgoal 3: You put the cd \\d+ in/on the safe \\d+"
+    },
+    {
+      "id": 123,
+      "goal": "put some peppershaker on drawer.",
+      "difficulty": "easy",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a peppershaker \\d+)\nSubgoal 2: You pick up the peppershaker \\d+"
+    },
+    {
+      "id": 124,
+      "goal": "find two peppershaker and put them in drawer.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a peppershaker \\d+)\nSubgoal 2: You pick up the peppershaker \\d+\nSubgoal 3: You put the peppershaker \\d+ in/on the drawer \\d+"
+    },
+    {
+      "id": 125,
+      "goal": "put a hot mug in cabinet.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a mug \\d+)\nSubgoal 2: You pick up the mug \\d+\nSubgoal 3: You heat the mug \\d+ using the"
+    },
+    {
+      "id": 126,
+      "goal": "find two soapbar and put them in cabinet.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a soapbar \\d+)\nSubgoal 2: You pick up the soapbar \\d+\nSubgoal 3: You put the soapbar \\d+ in/on the cabinet \\d+"
+    },
+    {
+      "id": 127,
+      "goal": "put a clean bowl in cabinet.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a bowl \\d+)\nSubgoal 2: You pick up the bowl \\d+\nSubgoal 3: You clean the bowl \\d+"
+    },
+    {
+      "id": 128,
+      "goal": "put a saltshaker in drawer.",
+      "difficulty": "easy",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a saltshaker \\d+)\nSubgoal 2: You pick up the saltshaker \\d+"
+    },
+    {
+      "id": 129,
+      "goal": "put a pencil in shelf.",
+      "difficulty": "easy",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a pencil \\d+)\nSubgoal 2: You pick up the pencil \\d+"
+    },
+    {
+      "id": 130,
+      "goal": "put a hot tomato in garbagecan.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a tomato \\d+)\nSubgoal 2: You pick up the tomato \\d+\nSubgoal 3: You heat the tomato \\d+ using the"
+    },
+    {
+      "id": 131,
+      "goal": "put a clean knife in countertop.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a knife \\d+)\nSubgoal 2: You pick up the knife \\d+\nSubgoal 3: You clean the knife \\d+"
+    },
+    {
+      "id": 132,
+      "goal": "put a vase in safe.",
+      "difficulty": "easy",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a vase \\d+)\nSubgoal 2: You pick up the vase \\d+"
+    },
+    {
+      "id": 133,
+      "goal": "put a clean cloth in countertop.",
+      "difficulty": "hard",
+      "subgoals": "Subgoal 1: ^(?=.* you see)(?=.*a cloth \\d+)\nSubgoal 2: You pick up the cloth \\d+\nSubgoal 3: You clean the cloth \\d+"
+    }
+  ]
