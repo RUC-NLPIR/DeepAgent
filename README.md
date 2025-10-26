@@ -247,9 +247,8 @@ python src/run_deep_agent.py \
 - `--config_path`: Path to the main configuration file.
 - `--dataset_name`: Name of the dataset to use (e.g., `toolbench`, `api_bank`, `tmdb`, `spotify`, `toolhop`, `gaia`, `hle`, `alfworld`, `webshop`).
 - `--subset_num`: Number of samples to run from the dataset.
+- `--concurrent_limit`: Maximum number of concurrent requests. Default is 32.
 - `--enable_tool_search`: Allows the agent to search for tools. If disabled, it will only use the tools provided for the task (closed-set).
-- `--concurrent_limit`: Maximum number of concurrent requests.
-- `--max_search_limit`: Maximum number of search queries per reasoning session.
 - `--enable_thought_folding`: Allows the agent to use the thought folding mechanism.
 - `--max_action_limit`: Maximum number of actions (tool search and tool call) per question.
 - `--max_fold_limit`: Maximum number of thought folds per question.
