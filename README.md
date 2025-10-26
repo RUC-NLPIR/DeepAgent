@@ -110,7 +110,7 @@ cd DeepAgent-main
 pip install -r requirements.txt
 ```
 
-## 📦 Pre-preparation
+  
 
 <details open>
 <summary><h3>📊 Benchmarks</h3></summary>
