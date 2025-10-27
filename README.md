@@ -2,8 +2,8 @@
 
 <div align="center"> 
 
-[![Paper](https://img.shields.io/badge/Paper-arXiv-b5212f.svg?logo=arxiv)](https://arxiv.org/abs/2510.xxxxxx)
-[![Model](https://img.shields.io/badge/Model-Hugging%20Face-yellow?logo=huggingface)](https://huggingface.co/papers/2510.xxxxxx)
+[![Paper](https://img.shields.io/badge/Paper-arXiv-b5212f.svg?logo=arxiv)](https://arxiv.org/abs/2510.21618)
+[![Paper](https://img.shields.io/badge/Paper-Hugging%20Face-yellow?logo=huggingface)](https://huggingface.co/papers/2510.21618)
 [![License](https://img.shields.io/badge/LICENSE-MIT-green.svg)](https://opensource.org/licenses/MIT) 
 [![Python 3.10+](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/downloads/release/python-390/) 
 [![X (formerly Twitter) URL](https://img.shields.io/twitter/url?url=https%3A%2F%2Fx.com%2FDeepAgent)](https://x.com/DeepAgent)
@@ -18,7 +18,7 @@
 
 ## 📣 Latest News
 
-- **[October 27, 2025]**: 📄 Our paper is now available on **[arXiv](https://arxiv.org/abs/2510.xxxxxx)** and **[Hugging Face](https://huggingface.co/papers/2510.xxxxxx)**.
+- **[October 27, 2025]**: 📄 Our paper is now available on **[arXiv](https://arxiv.org/abs/2510.21618)** and **[Hugging Face](https://huggingface.co/papers/2510.21618)**.
 - **[October 27, 2025]**: 🚀 Our codebase released. You can now deploy DeepAgent with reasoning models like [QwQ](https://huggingface.co/collections/Qwen/qwq), [Qwen3](https://huggingface.co/collections/Qwen/qwen3) and your own toolsets.
 
 
@@ -268,10 +268,10 @@ Our model inference script can automatically save the model's input and output f
 <details open><summary>Welcome to try our deep research agent series: </summary><p>
 
 
-> [**DeepAgent: A General Reasoning Agent with Scalable Toolsets (New!)**](https://arxiv.org/abs/2510.xxxxxx) <br>
+> [**DeepAgent: A General Reasoning Agent with Scalable Toolsets (New!)**](https://arxiv.org/abs/2510.21618) <br>
 > **Authors:** Xiaoxi Li, Wenxiang Jiao, Jiarui Jin, Guanting Dong, Jiajie Jin, Yinuo Wang, Hao Wang, Yutao Zhu, Ji-Rong Wen, Yuan Lu, Zhicheng Dou <br>
 > **TLDR:** An end-to-end deep reasoning agent that performs autonomous thinking, tool discovery, and action execution with brain-inspired memory folding mechanism. <br>
-[![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/RUC-NLPIR/DeepAgent) [![github](https://img.shields.io/github/stars/RUC-NLPIR/DeepAgent.svg?style=social)](https://github.com/RUC-NLPIR/DeepAgent) [![arXiv](https://img.shields.io/badge/Arxiv-2510.xxxxxx-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2510.xxxxxx) [![Paper](https://img.shields.io/badge/Hugging%20Face-Paper-yellow?logo=huggingface)](https://huggingface.co/papers/2510.xxxxxx)
+[![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/RUC-NLPIR/DeepAgent) [![github](https://img.shields.io/github/stars/RUC-NLPIR/DeepAgent.svg?style=social)](https://github.com/RUC-NLPIR/DeepAgent) [![arXiv](https://img.shields.io/badge/Arxiv-2510.21618-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2510.21618) [![Paper](https://img.shields.io/badge/Hugging%20Face-Paper-yellow?logo=huggingface)](https://huggingface.co/papers/2510.21618)
 
 
  > [**WebThinker: Exploring the Deep Web with Powerful Reasoning Capability  (NeurIPS 2025)**](https://arxiv.org/abs/2504.21776) <br>
@@ -295,10 +295,10 @@ If you find this work helpful, please cite our paper:
       title={DeepAgent: A General Reasoning Agent with Scalable Toolsets}, 
       author={Xiaoxi Li and Wenxiang Jiao and Jiarui Jin and Guanting Dong and Jiajie Jin and Yinuo Wang and Hao Wang and Yutao Zhu and Ji-Rong Wen and Yuan Lu and Zhicheng Dou},
       year={2025},
-      eprint={2510.xxxxxx},
+      eprint={2510.21618},
       archivePrefix={arXiv},
       primaryClass={cs.AI},
-      url={https://arxiv.org/abs/2510.xxxxxx}, 
+      url={https://arxiv.org/abs/2510.21618}, 
 }
 ```
 
