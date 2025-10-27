@@ -297,6 +297,8 @@ Our model inference script can automatically save the model's input and output f
 > **TLDR:** An agentic search-enhanced framework that integrates autonomous knowledge retrieval with large reasoning models through Agentic RAG and reasoning-in-documents modules. <br>
 [![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/RUC-NLPIR/Search-o1) [![github](https://img.shields.io/github/stars/RUC-NLPIR/Search-o1.svg?style=social)](https://github.com/RUC-NLPIR/Search-o1) [![arXiv](https://img.shields.io/badge/Arxiv-2501.16399-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2501.05366) [![Paper](https://img.shields.io/badge/Hugging%20Face-Paper-yellow?logo=huggingface)](https://huggingface.co/papers/2501.05366) [![X (formerly Twitter) URL](https://img.shields.io/twitter/url?url=https%3A%2F%2Fx.com%2F_akhaliq%2Fstatus%2F1877584951840764166%3Ft%3DfnbTblnqhiPtAyYr1PHbbw%26s%3D19)](https://x.com/_akhaliq/status/1877584951840764166?t=fnbTblnqhiPtAyYr1PHbbw&s=19) 
 
+</details>
+
 
 ## 📄 Citation
 
