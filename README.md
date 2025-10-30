@@ -8,6 +8,7 @@
 [![License](https://img.shields.io/badge/LICENSE-MIT-green.svg)](https://opensource.org/licenses/MIT) 
 [![Python 3.10+](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/downloads/release/python-390/) 
 [![X (formerly Twitter) URL](https://img.shields.io/twitter/url?url=https%3A%2F%2Fx.com%2FXiaoxiLi0111%2Fstatus%2F1982649697467859438)](https://x.com/XiaoxiLi0111/status/1982649697467859438)
+[![WeChat](https://img.shields.io/badge/WeChat-white?logo=wechat)](https://mp.weixin.qq.com/s/ZXwMwuB8fBStJORj4tYI2g)
 </div>
 
 <h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h5>
@@ -19,8 +20,8 @@
 
 ## 📣 Latest News
 
-- **[October 29, 2025]**: The brief introduction of DeepAgent can be found on platforms like **[X](https://x.com/hasantoxr/status/1983262428826894430)** and **[WeChat](https://mp.weixin.qq.com/s/ZXwMwuB8fBStJORj4tYI2g)**.
-- **[October 29, 2025]**: We have released our benchmark datasets on **[Hugging Face](https://huggingface.co/datasets/lixiaoxi45/DeepAgent-Datasets)**.
+<!-- - **[October 29, 2025]**: The brief introduction of DeepAgent can be found on platforms like **[X](https://x.com/hasantoxr/status/1983262428826894430)** and **[WeChat](https://mp.weixin.qq.com/s/ZXwMwuB8fBStJORj4tYI2g)**. -->
+- **[October 29, 2025]**: 📊 We have released our benchmark datasets on **[Hugging Face](https://huggingface.co/datasets/lixiaoxi45/DeepAgent-Datasets)**.
 - **[October 28, 2025]**: 🔥 We are honored to be featured as Hugging Face **[Daily Paper #1](https://huggingface.co/papers/date/2025-10-27)**.
 - **[October 27, 2025]**: 📄 Our paper is now available on **[arXiv](https://arxiv.org/abs/2510.21618)** and **[Hugging Face](https://huggingface.co/papers/2510.21618)**.
 - **[October 27, 2025]**: 🚀 Our codebase released. You can now deploy DeepAgent with reasoning models like [QwQ](https://huggingface.co/collections/Qwen/qwq), [Qwen3](https://huggingface.co/collections/Qwen/qwen3) and your own toolsets.
