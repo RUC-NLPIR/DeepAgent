@@ -232,9 +232,8 @@ class ToolManager:
                     if query in self.search_cache and isinstance(self.search_cache.get(query), list):
                         print(f"Using cached search results for query: {query}")
                         return self.search_cache[query]
-                    # search_results = await google_serper_search_async(query=query, api_key=api_key)
-                    # search_results = google_serper_search(query=query, api_key=api_key)
-                    search_results = requests.get("http://10.217.69.24:8000/search", params={"query":query,"api_key":api_key,"timeout":20}).json()
+                    search_results = await google_serper_search_async(query=query, api_key=api_key)
+                    search_results = google_serper_search(query=query, api_key=api_key)
                     if search_results:
                         for result in search_results:
                             self.url_to_snippet[result['url']] = result['snippet']
