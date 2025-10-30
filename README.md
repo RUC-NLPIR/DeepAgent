@@ -3,13 +3,14 @@
 <div align="center"> 
 
 [![Paper](https://img.shields.io/badge/Paper-arXiv-b31b1b.svg?logo=arxiv)](https://arxiv.org/abs/2510.21618)
-[![Paper](https://img.shields.io/badge/Paper-Hugging%20Face-orange?logo=huggingface)](https://huggingface.co/papers/2510.21618)
-[![Dataset](https://img.shields.io/badge/Dataset-Hugging%20Face-yellow?logo=huggingface)](https://huggingface.co/datasets/lixiaoxi45/DeepAgent-Datasets)
+[![Dataset](https://img.shields.io/badge/Dataset-HuggingFace-yellow?logo=huggingface)](https://huggingface.co/datasets/lixiaoxi45/DeepAgent-Datasets)
 [![License](https://img.shields.io/badge/LICENSE-MIT-green.svg)](https://opensource.org/licenses/MIT) 
 [![Python 3.10+](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/downloads/release/python-390/) 
 [![X (formerly Twitter) URL](https://img.shields.io/twitter/url?url=https%3A%2F%2Fx.com%2FXiaoxiLi0111%2Fstatus%2F1982649697467859438)](https://x.com/XiaoxiLi0111/status/1982649697467859438)
-[![WeChat](https://img.shields.io/badge/WeChat-white?logo=wechat)](https://mp.weixin.qq.com/s/ZXwMwuB8fBStJORj4tYI2g)
+[![WeChat](https://img.shields.io/badge/WeChat-07C160?logo=wechat&logoColor=white)](https://mp.weixin.qq.com/s/ZXwMwuB8fBStJORj4tYI2g)
 </div>
+
+<!-- [![Paper](https://img.shields.io/badge/Paper-HuggingFace-orange?logo=huggingface)](https://huggingface.co/papers/2510.21618) -->
 
 <h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h5>
 
