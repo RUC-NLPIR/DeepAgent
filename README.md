@@ -38,7 +38,7 @@
     <video src="https://github.com/user-attachments/assets/7aa586e9-a47a-425d-8d41-99226d2f6835" />
 </div>
 
-**DeepAgent** is a reasoning agent with scalable toolsets, capable of tackling general tasks by searching for and using the appropriate tools from over 16,000 RapidAPIs in an end-to-end agentic reasoning process. *(Note: Due to some APIs in ToolBench being unavailable, API responses are LLM-simulated in this demo to show the system's normal functionality.)*
+**DeepAgent** is a reasoning agent with scalable toolsets, capable of tackling general tasks by searching for and using the appropriate tools from over 16,000 RapidAPIs in an end-to-end agentic reasoning process. *(Note: Due to some APIs in ToolBench being unavailable, API responses are LLM-simulated in this demo to show the system's normal functionality .)*
 
 </details>
 
