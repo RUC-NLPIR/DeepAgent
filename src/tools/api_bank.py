@@ -670,7 +670,7 @@ def main():
     """主函数，测试工具的索引、检索和执行功能"""
     
     # 配置路径
-    model_path = "/mnt/tidal-alsh01/dataset/llm_ckpt_tidal/bge/bge-large-en-v1.5"
+    model_path = "./models/bge-large-en-v1.5"
     apis_dir = "./data/API-Bank/apis"
     cache_dir = "./cache"
     

@@ -296,11 +296,11 @@ def get_openai_function_execute_python_code(file_process: bool = False):
                     "properties": {
                             "code": {
                             "type": "string",
-                            "description": "The Python code to execute. Note: all files are located in '/mnt/tidalfs-bdsz01/usr/tusen/xiaoxi/DeepAgent/data/GAIA/files/'. Please use the absolute path when accessing any files.",
+                            "description": "The Python code to execute. Note: all data files are located in the './data/GAIA/files/' directory. Please use the appropriate relative or absolute path when accessing files.",
                             "examples": [
                                 "x = 5\nprint(x * 2)",
                                 "import sympy\nx = sympy.symbols('x')\nexpr = x**2 + 2*x + 1\nprint(sympy.factor(expr))",
-                                "import pandas as pd\ndf = pd.read_csv('/mnt/tidalfs-bdsz01/usr/tusen/xiaoxi/DeepAgent/data/GAIA/files/example.csv')\nprint(df.head())"
+                                "import pandas as pd\ndf = pd.read_csv('./data/GAIA/files/example.csv')\nprint(df.head())"
                             ]
                         }
                     },

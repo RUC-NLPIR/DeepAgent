@@ -86,7 +86,7 @@ async def get_youtube_video_completion(client: AsyncOpenAI, model_name: str, you
     
     # 构建视频文件路径
     video_filename = f"{youtube_id}.mp4"
-    video_path = f"/mnt/ali-sh-1/usr/tusen/xiaoxi/DeepAgent/data/GAIA/downloaded_files/{video_filename}"
+    video_path = f"./data/GAIA/downloaded_files/{video_filename}"
     
     # 检查视频文件是否存在
     if not os.path.exists(video_path):
