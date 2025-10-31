@@ -386,11 +386,11 @@ def _extract_json_block(text: str) -> str:
 
 if __name__ == "__main__":
     # Common paths and keys
-    corpus_tsv_path = "/mnt/ali-sh-1/usr/tusen/xiaoxi/DeepAgent/data/ToolBench/retrieval/G1/corpus.tsv"
-    instruction_file_path = "/mnt/ali-sh-1/usr/tusen/xiaoxi/DeepAgent/data/ToolBench/test_instruction/G3_instruction.json"
-    model_path = "/mnt/tidal-alsh01/dataset/llm_ckpt_tidal/bge/bge-large-en-v1.5"
-    cache_dir = "/mnt/ali-sh-1/usr/tusen/xiaoxi/DeepAgent/cache/tool_index"
-    toolbench_key="K7s90nVFqHDokzwSPZCLjEAIxpuM3NWR1QyG5284tfaYOUvgBc"
+    corpus_tsv_path = "./data/ToolBench/retrieval/G1/corpus.tsv"
+    instruction_file_path = "./data/ToolBench/test_instruction/G3_instruction.json"
+    model_path = "./models/bge-large-en-v1.5"
+    cache_dir = "./cache/tool_index"
+    toolbench_key="YOUR_TOOLBENCH_API_KEY"
 
     async def demo():
         # --- Mode 1: Retrieval-based tool calling ---
