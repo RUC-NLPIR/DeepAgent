@@ -242,6 +242,38 @@ class ToolManager:
                 except Exception as e:
                     return {"error": f"web_search failed: {e}"}
 
+            # Exa AI-powered search
+            if function_name == 'exa_search':
+                try:
+                    from tools.exa_search import exa_search_async, exa_search
+                    api_key = getattr(args, 'exa_api_key', None) or os.getenv('EXA_API_KEY', '')
+                    if not api_key:
+                        return {"error": "Missing Exa API key (exa_api_key in config or EXA_API_KEY env var)."}
+                    query = arguments.get('query', '')
+                    if not query:
+                        return {"error": "Missing required parameter: query"}
+                    # Use cache if available
+                    cache_key = f"exa:{query}"
+                    if cache_key in self.search_cache and isinstance(self.search_cache.get(cache_key), list):
+                        print(f"Using cached Exa search results for query: {query}")
+                        return self.search_cache[cache_key]
+                    # Build optional filter kwargs
+                    exa_kwargs = {"query": query, "api_key": api_key}
+                    for param in ['category', 'include_domains', 'exclude_domains',
+                                  'start_published_date', 'end_published_date']:
+                        if param in arguments and arguments[param]:
+                            exa_kwargs[param] = arguments[param]
+                    search_results = await exa_search_async(**exa_kwargs)
+                    if not search_results:
+                        search_results = exa_search(**exa_kwargs)
+                    if search_results:
+                        for result in search_results:
+                            self.url_to_snippet[result['url']] = result['snippet']
+                        self.search_cache[cache_key] = search_results
+                    return search_results
+                except Exception as e:
+                    return {"error": f"exa_search failed: {e}"}
+
             # Browse multiple pages (with optional Jina)
             if function_name == 'browse_pages':
                 # return {"error": f"process_file failed"}
@@ -471,7 +503,7 @@ class ToolManager:
 
 
 
-def get_gaia_tool_docs(task_type: str = 'text'):
+def get_gaia_tool_docs(task_type: str = 'text', enable_exa: bool = False):
     from tools.google_search import (
         get_openai_function_web_search,
         get_openai_function_browse_pages,
@@ -484,21 +516,26 @@ def get_gaia_tool_docs(task_type: str = 'text'):
     )
 
     tool_list = [
-        get_openai_function_web_search(), 
+        get_openai_function_web_search(),
         get_openai_function_browse_pages(),
     ]
+
+    if enable_exa:
+        from tools.exa_search import get_openai_function_exa_search
+        tool_list.append(get_openai_function_exa_search())
+
     if task_type == 'text':
         tool_list.append(get_openai_function_execute_python_code(file_process=False))
     elif task_type == 'mm':
         tool_list.extend([
-            get_openai_function_execute_python_code(file_process=False), 
+            get_openai_function_execute_python_code(file_process=False),
             # get_openai_function_youtube_video_question_answering()
         ])
     elif task_type == 'file':
         tool_list.extend([
-            # get_openai_function_execute_python_code(file_process=True), 
-            get_openai_function_execute_python_code(file_process=False), 
-            get_openai_function_process_file(), 
+            # get_openai_function_execute_python_code(file_process=True),
+            get_openai_function_execute_python_code(file_process=False),
+            get_openai_function_process_file(),
             get_openai_function_visual_question_answering()
         ])
 
@@ -507,7 +544,7 @@ def get_gaia_tool_docs(task_type: str = 'text'):
 
 
 
-def get_hle_tool_docs(task_type: str = 'text'):
+def get_hle_tool_docs(task_type: str = 'text', enable_exa: bool = False):
     from tools.google_search import (
         get_openai_function_web_search,
         get_openai_function_browse_pages,
@@ -518,10 +555,15 @@ def get_hle_tool_docs(task_type: str = 'text'):
     )
 
     tool_list = [
-        get_openai_function_web_search(), 
+        get_openai_function_web_search(),
         get_openai_function_browse_pages(),
         get_openai_function_execute_python_code(file_process=False)
     ]
+
+    if enable_exa:
+        from tools.exa_search import get_openai_function_exa_search
+        tool_list.append(get_openai_function_exa_search())
+
     if task_type == 'mm':
         tool_list.append(get_openai_function_visual_question_answering())
 
@@ -530,7 +572,7 @@ def get_hle_tool_docs(task_type: str = 'text'):
 
 
 
-def get_browsecomp_tool_docs():
+def get_browsecomp_tool_docs(enable_exa: bool = False):
     from tools.google_search import (
         get_openai_function_web_search,
         get_openai_function_browse_pages,
@@ -540,5 +582,10 @@ def get_browsecomp_tool_docs():
         get_openai_function_web_search(),
         get_openai_function_browse_pages(),
     ]
+
+    if enable_exa:
+        from tools.exa_search import get_openai_function_exa_search
+        tool_list.append(get_openai_function_exa_search())
+
     return tool_list
 

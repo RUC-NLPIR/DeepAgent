@@ -6,6 +6,7 @@ toolbench_service_url: http://8.130.32.149:8080/rapidapi
 
 # GAIA, HLE
 google_serper_api: YOUR_GOOGLE_SERPER_API_KEY
+exa_api_key: YOUR_EXA_API_KEY
 use_jina: True
 jina_api_key: YOUR_JINA_API_KEY
 
