@@ -103,6 +103,8 @@ def parse_args():
     parser.add_argument('--use_jina', action='store_true', help="Whether to use Jina API for document fetching.")
     parser.add_argument('--jina_api_key', type=str, default='None', help="Your Jina API Key to Fetch URL Content.")
     parser.add_argument('--serper_api_key', type=str, default=None, help="Google Serper API key.")
+    parser.add_argument('--exa_api_key', type=str, default=None, help="Exa API key for AI-powered search.")
+    parser.add_argument('--enable_exa', action='store_true', default=False, help="Whether to enable Exa search as an additional search tool.")
     parser.add_argument('--eval', action='store_true', help="Whether to run evaluation after generation.")
     parser.add_argument('--seed', type=int, default=None, help="Random seed for generation. If not set, will use current timestamp as seed.")
     parser.add_argument('--concurrent_limit', type=int, default=32, help="Maximum number of concurrent API calls")
@@ -854,29 +856,32 @@ async def main_async():
             from tools.tool_manager import get_gaia_tool_docs
             question = item.get('Question', item.get('question', item.get('query', '')))
             item['question'] = question
+            exa_enabled = getattr(args, 'enable_exa', False)
             if 'file_name' in item and item['file_name']:
                 question += f"\n\nAttached file: {item['file_name']}"
-                tool_list = get_gaia_tool_docs(task_type='file')
+                tool_list = get_gaia_tool_docs(task_type='file', enable_exa=exa_enabled)
             elif ('problem_type' in item and item['problem_type'] == 'mm') or 'mm' in args.gaia_data_path:
-                tool_list = get_gaia_tool_docs(task_type='mm')
+                tool_list = get_gaia_tool_docs(task_type='mm', enable_exa=exa_enabled)
             else:
-                tool_list = get_gaia_tool_docs(task_type='text')
-        
+                tool_list = get_gaia_tool_docs(task_type='text', enable_exa=exa_enabled)
+
         elif args.dataset_name == 'hle':
             # HLE dataset
             from tools.tool_manager import get_hle_tool_docs
             question = item.get('Question', item.get('question', item.get('query', '')))
+            exa_enabled = getattr(args, 'enable_exa', False)
             if 'image' in item and item['image']:
                 question += f"\n\nAttached image: {item['image']}"
-                tool_list = get_hle_tool_docs(task_type='mm')
+                tool_list = get_hle_tool_docs(task_type='mm', enable_exa=exa_enabled)
             else:
-                tool_list = get_hle_tool_docs(task_type='text')
+                tool_list = get_hle_tool_docs(task_type='text', enable_exa=exa_enabled)
 
         elif args.dataset_name == 'browsecomp':
             # BrowseComp dataset: only provide web_search and browse_pages
             from tools.tool_manager import get_browsecomp_tool_docs
             question = item.get('Question', item.get('question', item.get('query', '')))
-            tool_list = get_browsecomp_tool_docs()
+            exa_enabled = getattr(args, 'enable_exa', False)
+            tool_list = get_browsecomp_tool_docs(enable_exa=exa_enabled)
 
         elif args.dataset_name == 'aime':
             # AIME dataset: only provide Python execution tool
