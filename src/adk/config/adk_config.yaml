@@ -1,0 +1,173 @@
+# Neuroadaptive Accessibility Agent Configuration
+
+# Model Configuration
+models:
+  reasoning_model:
+    provider: "openai"  # or "anthropic", "google"
+    model_name: "gpt-4"
+    temperature: 0.7
+    max_tokens: 2000
+
+  auxiliary_model:
+    provider: "openai"
+    model_name: "gpt-3.5-turbo"
+    temperature: 0.5
+    max_tokens: 1000
+
+  embedding_model:
+    provider: "openai"
+    model_name: "text-embedding-3-small"
+
+# Loop A: Signal Normalization
+loop_a:
+  enabled: true
+  signal_types:
+    - "eye_tracking"
+    - "speech_patterns"
+    - "interaction_timing"
+    - "device_orientation"
+    - "ambient_light"
+  normalization_strategy: "z_score"  # or "min_max", "robust"
+  outlier_threshold: 3.0
+
+# Loop B: State Estimation
+loop_b:
+  enabled: true
+  xgc_avis:
+    endpoint: "http://localhost:8080/xgc-avis"
+    timeout: 5.0
+    retry_attempts: 3
+  state_dimensions:
+    - "cognitive_load"
+    - "attention_level"
+    - "fatigue_index"
+    - "stress_level"
+    - "reading_comprehension"
+  update_frequency_ms: 500
+
+# Continuum Memory System (CMS)
+cms:
+  enabled: true
+  mem0_config:
+    provider: "mem0"
+    api_key: "${MEM0_API_KEY}"
+    vector_store: "qdrant"  # or "pinecone", "chromadb"
+  memory_types:
+    - "user_preferences"
+    - "accessibility_history"
+    - "interaction_patterns"
+    - "cognitive_profiles"
+  retention_policy:
+    short_term_hours: 24
+    long_term_days: 90
+    aggregate_threshold: 10
+
+# Loop C: Content Refinement
+loop_c:
+  enabled: true
+  specialist_agents:
+    factuality:
+      enabled: true
+      threshold: 0.85
+      fact_check_sources: 3
+    personalization:
+      enabled: true
+      adaptation_strength: 0.7
+      profile_weight: 0.6
+    coherence:
+      enabled: true
+      min_coherence_score: 0.75
+      max_iterations: 3
+
+  refinement_coordinator:
+    max_iterations: 5
+    convergence_threshold: 0.95
+    timeout_seconds: 30
+
+# UI Adaptation Agent
+ui_adaptation:
+  enabled: true
+  adaptation_categories:
+    - "text_size"
+    - "contrast"
+    - "color_scheme"
+    - "layout_density"
+    - "animation_speed"
+    - "audio_descriptions"
+    - "simplified_language"
+  real_time_updates: true
+  debounce_ms: 200
+
+# Loop E: Logging and Evaluation
+loop_e:
+  enabled: true
+  dual_logging:
+    system_log:
+      path: "logs/adk_system.log"
+      level: "INFO"
+      rotation: "daily"
+    evaluation_log:
+      path: "logs/adk_evaluation.log"
+      level: "DEBUG"
+      include_metrics: true
+  metrics:
+    - "adaptation_latency"
+    - "user_satisfaction"
+    - "accessibility_score"
+    - "refinement_iterations"
+    - "state_estimation_accuracy"
+
+# Loop Stop Checker
+loop_stop:
+  enabled: true
+  stop_conditions:
+    max_iterations: 10
+    convergence_threshold: 0.98
+    timeout_seconds: 60
+    user_satisfaction_threshold: 0.9
+  graceful_degradation: true
+
+# Accessibility Profiles
+accessibility_profiles:
+  default:
+    name: "Standard"
+    description: "Default accessibility settings"
+    settings:
+      text_size: 1.0
+      contrast: "normal"
+      color_scheme: "auto"
+
+  high_contrast:
+    name: "High Contrast"
+    description: "For users with visual impairments"
+    settings:
+      text_size: 1.2
+      contrast: "high"
+      color_scheme: "dark"
+      bold_text: true
+
+  cognitive_support:
+    name: "Cognitive Support"
+    description: "Simplified language and layout"
+    settings:
+      simplified_language: true
+      layout_density: "sparse"
+      max_sentence_length: 20
+      bullet_points: true
+
+  dyslexia_friendly:
+    name: "Dyslexia Friendly"
+    description: "OpenDyslexic font and spacing"
+    settings:
+      font_family: "OpenDyslexic"
+      letter_spacing: 1.2
+      line_height: 1.8
+      text_size: 1.1
+
+# System Configuration
+system:
+  async_enabled: true
+  max_concurrent_agents: 10
+  cache_enabled: true
+  cache_ttl_seconds: 3600
+  debug_mode: false

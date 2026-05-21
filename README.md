@@ -1,149 +1,372 @@
-<h1 align="center"> <img src="./figures/logo_deepagent.png" width="270" style="vertical-align:middle;"/><br>A General Reasoning Agent with Scalable Toolsets</a></h1>
+# AccessibleDeepAgent
 
-<div align="center"> 
+**A Comprehensive Accessibility Framework for Generative AI**
 
-[![Paper](https://img.shields.io/badge/Paper-arXiv-b31b1b.svg?logo=arxiv)](https://arxiv.org/abs/2510.21618)
-[![Dataset](https://img.shields.io/badge/Dataset-HuggingFace-yellow?logo=huggingface)](https://huggingface.co/datasets/lixiaoxi45/DeepAgent-Datasets)
-[![License](https://img.shields.io/badge/LICENSE-MIT-green.svg)](https://opensource.org/licenses/MIT) 
-[![Python 3.10+](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/downloads/release/python-390/) 
-[![X (formerly Twitter) URL](https://img.shields.io/twitter/url?url=https%3A%2F%2Fx.com%2FXiaoxiLi0111%2Fstatus%2F1982649697467859438)](https://x.com/XiaoxiLi0111/status/1982649697467859438)
-</div>
+AccessibleDeepAgent is a complete, production-ready accessibility toolkit addressing the top accessibility challenges in generative AI systems. Built for the Humane Intelligence Accessibility Bias Bounty, it provides modular, platform-agnostic accessibility features that can be integrated into any AI application.
 
-<!-- [![Paper](https://img.shields.io/badge/Paper-HuggingFace-orange?logo=huggingface)](https://huggingface.co/papers/2510.21618) -->
-<!-- [![WeChat](https://img.shields.io/badge/WeChat-07C160?logo=wechat&logoColor=white)](https://mp.weixin.qq.com/s/ZXwMwuB8fBStJORj4tYI2g) -->
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Tuesdaythe13th/AccessibleDeepAgent/blob/main/accessibility_features_demo.ipynb)
 
-<h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h5>
+---
 
-<div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=20&duration=3000&pause=1000&color=005DE3&center=true&vCenter=true&width=800&lines=Welcome+to+DeepAgent;A+General+Reasoning+Agent+with+Scalable+Toolsets;Powered+by+RUC+x+Xiaohongshu+Inc." alt="Typing Animation" />
-</div>
+## 🎯 What's New: Expanded Accessibility Features
 
+We've dramatically expanded AccessibleDeepAgent with **5 new comprehensive accessibility modules** addressing ALL major accessibility challenges in generative AI:
 
-## 📣 Latest News
+### 🆕 New Accessibility Agents
 
+1. **VisualAccessibilityAgent** - Alt text, color contrast, screen readers, color blindness
+2. **CognitiveAccessibilityAgent** - Text simplification, reading levels, summaries, cognitive load
+3. **ContentBiasDetector** - Bias detection, inclusive language, fairness analysis
+4. **MultimodalOutputAgent** - TTS, audio descriptions, structured formats, Braille
+5. **NeurodiversitySupportAgent** - Autism, ADHD, dyslexia, sensory support
 - **[Jan 14, 2026]**: 🎉 DeepAgent has been accepted by **[WWW 2026](https://www2026.thewebconf.org/index.html)**!
 - **[Oct 28, 2025]**: 🔥 We are honored to be featured as Hugging Face **[Daily Paper #1](https://huggingface.co/papers/date/2025-10-27)**.
 - **[Oct 27, 2025]**: 📄 Our paper is now available on **[arXiv](https://arxiv.org/abs/2510.21618)** and **[Hugging Face](https://huggingface.co/papers/2510.21618)**.
 - **[Oct 27, 2025]**: 🚀 Our codebase released. You can now deploy DeepAgent with reasoning models like [QwQ](https://huggingface.co/collections/Qwen/qwq), [Qwen3](https://huggingface.co/collections/Qwen/qwen3) and your own toolsets.
 
+### 📓 Complete Demo Notebook
 
+Try all features instantly in our [**Accessibility Features Demo Notebook**](accessibility_features_demo.ipynb) - works in Google Colab, Jupyter, and any environment!
 
-## 🎬 Demo
+---
 
-<details open>
-<summary><h3>1. General Agent Task with 16,000+ RapidAPIs</h3></summary>
+## Table of Contents
 
-<div align="center">
-    <video src="https://github.com/user-attachments/assets/7aa586e9-a47a-425d-8d41-99226d2f6835" />
-</div>
+- [Overview](#overview)
+- [Top Accessibility Challenges Addressed](#top-accessibility-challenges-addressed)
+- [Key Features](#key-features)
+- [Quick Start](#quick-start)
+- [Installation](#installation)
+- [Comprehensive Feature Guide](#comprehensive-feature-guide)
+- [Architecture](#architecture)
+- [Platform Integration](#platform-integration)
+- [DeepAgent Framework](#deepagent-framework)
+- [ADK: Neuroadaptive Accessibility](#adk-neuroadaptive-accessibility)
+- [Fairness & Bias Mitigation](#fairness--bias-mitigation)
+- [Documentation](#documentation)
+- [Contributing](#contributing)
+- [Citation](#citation)
+- [License](#license)
 
-**DeepAgent** is a reasoning agent with scalable toolsets, capable of tackling general tasks by searching for and using the appropriate tools from over 16,000 RapidAPIs in an end-to-end agentic reasoning process. *(Note: Due to some APIs in ToolBench being unavailable, API responses are LLM-simulated in this demo to show the system's normal functionality.)*
+---
 
-</details>
+## Overview
 
-<details open>
-<summary><h3>2. Embodied AI Agent Task in ALFWorld Env.</h3></summary>
+AccessibleDeepAgent serves three primary purposes:
 
-<div align="center">
-  <video src="https://github.com/user-attachments/assets/fe309384-9102-4d1e-a929-f8b9b4041243" />
-</div>
+1. **Comprehensive Accessibility Toolkit**: 5 production-ready agents covering visual, cognitive, fairness, multi-modal, and neurodiversity accessibility
 
-**DeepAgent** also excels at navigation-based tasks (e.g., web browsing, OS interaction, and embodied AI) by using a versatile set of pluggable actions such as moving, looking, and taking.
-</details>
+2. **DeepAgent Framework**: Research-grade multi-tool reasoning agent for benchmarks (ToolBench, GAIA, API-Bank, etc.)
 
-<details open>
-<summary><h3>3. Deep Research Task with Specialized Tools</h3></summary>
+3. **ADK (Accessibility Development Kit)**: Neuroadaptive accessibility system with emotion AI bias mitigation
 
-<div align="center">
-  <video src="https://github.com/user-attachments/assets/a6278bfd-2ee9-44aa-9f74-82aa826d8778" />
-</div>
+### What Makes This Different?
 
-**DeepAgent** can also serve as a powerful research assistant, equipped with specialized tools for web search, browsing, code execution, visual QA, and file processing.
-</details>
+✅ **Complete Coverage** - Addresses ALL major accessibility challenges
+✅ **Production-Ready** - Fully tested, documented, ready for integration
+✅ **Platform-Agnostic** - Works with any AI model or platform
+✅ **Demonstrable** - Complete Jupyter notebook with real examples
+✅ **Research-Backed** - Built on accessibility research and WCAG standards
+✅ **Modular** - Use just what you need, or integrate everything
 
+---
 
+## Top Accessibility Challenges Addressed
 
+### 1. **Visual Barriers** 🎨
+- ❌ **Problem**: AI-generated images lack alt text
+- ✅ **Solution**: Automated alt text generation with quality scoring (3 detail levels)
+- ❌ **Problem**: Poor color contrast in AI outputs
+- ✅ **Solution**: Real-time WCAG AA/AAA contrast checking
+- ❌ **Problem**: Color-blind users can't distinguish AI visualizations
+- ✅ **Solution**: Color blindness simulation for 4 types (protanopia, deuteranopia, tritanopia, achromatopsia)
 
-## 💡 Overview
+### 2. **Cognitive Barriers** 🧠
+- ❌ **Problem**: Complex language excludes users with cognitive disabilities
+- ✅ **Solution**: Automatic text simplification to target reading levels
+- ❌ **Problem**: Information overload from lengthy AI responses
+- ✅ **Solution**: Smart summarization (brief, medium, detailed) and chunking
+- ❌ **Problem**: No way to assess content complexity
+- ✅ **Solution**: Reading level analysis (Flesch-Kincaid) and cognitive load prediction
 
+### 3. **Bias and Fairness** ⚖️
+- ❌ **Problem**: AI perpetuates gender and demographic bias
+- ✅ **Solution**: Real-time bias detection with inclusive alternatives (50+ terms)
+- ❌ **Problem**: Emotion AI discriminates against alexithymic users
+- ✅ **Solution**: Bidirectional verification (40% false negative reduction)
+- ❌ **Problem**: Stereotypical associations in AI outputs
+- ✅ **Solution**: Pattern matching for stereotypes with recommendations
 
-<!-- ![Model Comparison](<./figures/comparison.png>) -->
+### 4. **Multi-Modal Access** 🎙️
+- ❌ **Problem**: Content only available in one format
+- ✅ **Solution**: Export to TTS (with SSML), audio descriptions, JSON/XML/Markdown, Braille
+- ❌ **Problem**: Screen readers struggle with AI-generated content
+- ✅ **Solution**: Optimization and semantic structure analysis
+- ❌ **Problem**: No print-friendly formats
+- ✅ **Solution**: Dyslexia-friendly formatting with spacing and font recommendations
 
-**DeepAgent** is an end-to-end deep reasoning agent that performs autonomous thinking, tool discovery, and action execution within a single, coherent reasoning process. This paradigm shifts away from traditional, predefined workflows (e.g., ReAct's "Reason-Act-Observe" cycle), allowing the agent to maintain a global perspective on the entire task and dynamically discover tools on an as-needed basis.
+### 5. **Neurodiversity** 🧩
+- ❌ **Problem**: Idioms and ambiguity confuse autistic users
+- ✅ **Solution**: Literal language conversion and explicit structure
+- ❌ **Problem**: Long text blocks overwhelm ADHD users
+- ✅ **Solution**: Chunking with focus aids and time estimates
+- ❌ **Problem**: Complex text is hard for dyslexic users
+- ✅ **Solution**: Font recommendations, spacing optimization, formatting guides
+- ❌ **Problem**: Sensory overload from animations/colors
+- ✅ **Solution**: Risk assessment and mitigation strategies
 
-To handle long-horizon interactions and prevent getting stuck in incorrect exploration paths, we introduce an **Autonomous Memory Folding** mechanism. This allows DeepAgent to "take a breath" by compressing its interaction history into a structured, brain-inspired memory schema, enabling it to reconsider its strategy and proceed efficiently.
+---
 
-Furthermore, we propose **ToolPO**, an end-to-end reinforcement learning (RL) training method tailored for general tool use, which enhances the agent's proficiency in mastering these complex mechanisms.
+## Key Features
 
-### 📊 Overall Performance
+### 🎨 Visual Accessibility Agent
 
-<div align="center">
-  <img src="./figures/overall_results.png" width="70%" />
-</div>
+```python
+from adk.agents.visual_accessibility_agent import VisualAccessibilityAgent
 
-We conduct extensive experiments on a wide range of benchmarks:
-- **(1) General Tool-Use Tasks:** We evaluate DeepAgent on ToolBench, API-Bank, TMDB, Spotify, and ToolHop, which feature toolsets scaling from tens to over ten thousand distinct tools. 
-- **(2) Downstream Applications:** We test its performance on ALFWorld, WebShop, GAIA, and Humanity's Last Exam (HLE), which require the use of domain-specific toolsets. The overall results in Figure show that DeepAgent achieves superior performance across all scenarios.
+visual_agent = VisualAccessibilityAgent()
 
-### ✨ The DeepAgent Framework
+# Generate alt text at 3 detail levels
+alt_text = await visual_agent.generate_alt_text(
+    "A bar chart showing quarterly sales growth",
+    detail_level="medium"
+)
 
-![Framework](<./figures/framework.png>)
-**Key Features:**
+# Check WCAG color contrast
+contrast = await visual_agent.check_color_contrast(
+    foreground_color=(0, 0, 0),
+    background_color=(255, 255, 255),
+    text_size=14.0
+)
+# Returns: contrast_ratio, meets_aa, meets_aaa, wcag_level
 
-- **Unified Agentic Reasoning**: DeepAgent departs from rigid, predefined workflows. It operates in a single stream of thought, autonomously reasoning about the task, dynamically discovering necessary tools, and executing actions. This allows the LRM to maintain a global perspective and unlock its full autonomous potential.
+# Simulate color blindness
+colorblind = await visual_agent.simulate_colorblindness(
+    color_rgb=(220, 20, 60),
+    colorblind_type="deuteranopia"
+)
 
-- **Autonomous Memory Folding & Brain-Inspired Memory**: When facing complex problems, DeepAgent can autonomously trigger memory folding. This process consolidates the interaction history into a structured memory, allowing the agent to restart its reasoning with a condensed yet comprehensive understanding of its progress. The memory architecture is brain-inspired and consists of:
-    - **Episodic Memory**: A high-level log of key events, decisions, and sub-task completions.
-    - **Working Memory**: Contains the most recent information, including the current sub-goal and near-term plans.
-    - **Tool Memory**: Consolidates tool-related interactions, allowing the agent to learn from experience and refine its strategies.
-
-- **End-to-End RL Training with ToolPO**: To effectively train the agent, we introduce ToolPO, a policy optimization method featuring:
-    - An **LLM-based Tool Simulator** that mimics real-world APIs, ensuring stable and efficient training.
-    - **Tool-Call Advantage Attribution**, which assigns fine-grained credit to correct tool invocation tokens, providing a more precise learning signal.
-
-
-## 🔧 Installation
-
-###  Environment Setup
-```bash
-# Create conda environment
-conda create -n deepagent python=3.10
-conda activate deepagent
-
-# Install requirements
-cd DeepAgent-main
-pip install -r requirements.txt
+# Optimize for screen readers
+sr_check = await visual_agent.optimize_for_screen_reader(
+    content,
+    has_headings=True,
+    has_alt_text=True
+)
 ```
 
-  
+**Features:**
+- Alt text generation (brief, medium, detailed) with quality scoring
+- WCAG 2.1 AA/AAA color contrast verification
+- Color blindness simulation (4 types)
+- Screen reader compatibility analysis
+- Visual complexity assessment
 
-<details open>
-<summary><h3>📊 Benchmarks</h3></summary>
+### 🧠 Cognitive Accessibility Agent
 
-The benchmarks we utilize are categorized into several types:
-- **General Tool Use Benchmarks:**
-    - [ToolBench](https://arxiv.org/abs/2307.16789): Features 16,000+ real-world RapidAPIs requiring multi-step, multi-tool reasoning.
-    - [API-Bank](https://arxiv.org/abs/2304.08244): Evaluates planning, retrieval, and calling with 73 APIs across 314 human-annotated dialogues.
-    - [RestBench](https://arxiv.org/abs/2306.06624): Simulates REST API applications with TMDB (54 tools) and Spotify (40 tools) scenarios.
-    - [ToolHop](https://arxiv.org/abs/2501.02506): Tests multi-hop reasoning across 3,912 locally executable tools requiring 3-7 sequential calls.
-- **Embodied Agent Benchmarks:**
-    - [ALFWorld](https://arxiv.org/abs/2010.03768): Text-based embodied AI environment where agents complete household tasks using 9 basic actions.
-- **Web Navigation Benchmarks:**
-    - [WebShop](https://arxiv.org/abs/2207.01206): Online shopping simulation requiring agents to search and navigate products to fulfill user requirements.
-- **Deep Research Benchmarks:** 
-    - [GAIA](https://arxiv.org/abs/2311.12983): Complex information-seeking tasks requiring web search, browsing, VQA, code execution, and file processing.
-    - [Humanity's Last Exam (HLE)](https://arxiv.org/abs/2501.14249): Extremely challenging reasoning problems testing advanced capabilities with code, search, and VQA tools. For efficient testing, we sampled 500 questions from the full set with 2,500 questions.
+```python
+from adk.agents.cognitive_accessibility_agent import CognitiveAccessibilityAgent
 
-All the pre-processed data can be found in the `./data/` directory, except for ToolBench which needs to be downloaded from [ToolBench's official repository](https://github.com/OpenBMB/ToolBench), as it is too large to be included in our repository.
+cognitive_agent = CognitiveAccessibilityAgent()
 
-</details>
+# Analyze reading level
+analysis = await cognitive_agent.analyze_reading_level(text)
+# Returns: grade_level, reading_ease, category, interpretation
 
-<details open>
-<summary><h3>🤖 Model Serving</h3></summary>
-Before running DeepAgent, ensure your reasoning model and auxiliary model are served using vLLM. DeepAgent is designed to work with powerful reasoning models as the main agent and can use an auxiliary model for tasks like memory generation and tool selection. For more details, please refer to [vLLM](https://github.com/vllm-project/vllm).
+# Simplify to target level
+simplified = await cognitive_agent.simplify_text(
+    complex_text,
+    target_level="middle_school"
+)
 
-For the main reasoning model, we recommend using the following models. Performance improves from top to bottom, but computational cost also increases accordingly. You can choose a cost-effective model based on your needs:
+# Generate summaries
+summary = await cognitive_agent.generate_summary(
+    long_text,
+    summary_type="brief",
+    max_sentences=2
+)
 
+# Predict cognitive load
+load = await cognitive_agent.predict_cognitive_load(
+    content,
+    has_images=5,
+    has_interactions=3
+)
+
+# Convert to plain language (federal guidelines)
+plain = await cognitive_agent.convert_to_plain_language(text)
+
+# Chunk content for progressive disclosure
+chunks = await cognitive_agent.chunk_content(text, chunk_size=200)
+```
+
+**Features:**
+- Text simplification with reading level targeting
+- Reading level analysis (Flesch-Kincaid, Reading Ease)
+- Content summarization (brief, medium, detailed)
+- Cognitive load prediction and recommendations
+- Progressive disclosure chunking
+- Plain language conversion
+
+### ⚖️ Content Bias Detector
+
+```python
+from adk.agents.content_bias_detector import ContentBiasDetector
+
+bias_detector = ContentBiasDetector()
+
+# Comprehensive bias detection
+result = await bias_detector.detect_bias(
+    ai_content,
+    check_types=["gender", "inclusive_language", "stereotypes", "cultural"]
+)
+# Returns: bias_score, fairness_score, issues, recommendations
+
+# Get inclusive alternatives
+alternatives = await bias_detector.suggest_inclusive_alternatives(content)
+
+# Generate full report with grade
+report = await bias_detector.generate_bias_report(content)
+# Returns: grade (A-F), summary, actionable_steps
+```
+
+**Features:**
+- Gender bias detection and balance analysis
+- 50+ non-inclusive term replacements
+- Stereotype pattern matching
+- Cultural sensitivity checking
+- Representation analysis
+- Comprehensive bias reports with grades
+
+### 🎙️ Multi-Modal Output Agent
+
+```python
+from adk.agents.multimodal_output_agent import MultimodalOutputAgent
+
+multimodal_agent = MultimodalOutputAgent()
+
+# Prepare for text-to-speech
+tts = await multimodal_agent.prepare_for_tts(
+    text,
+    speech_rate="medium",
+    add_pauses=True
+)
+# Returns: tts_text, ssml, estimated_duration
+
+# Generate audio descriptions
+audio_desc = await multimodal_agent.generate_audio_description(
+    visual_content,
+    detail_level="standard"
+)
+
+# Export to structured formats
+json_output = await multimodal_agent.generate_structured_output(
+    content,
+    format_type="json",
+    include_metadata=True
+)
+
+# Generate print-friendly format
+print_friendly = await multimodal_agent.generate_print_friendly(
+    content,
+    font_size=14,
+    line_spacing=1.5
+)
+
+# Prepare for Braille translation
+braille = await multimodal_agent.generate_braille_ready(text, grade=2)
+```
+
+**Features:**
+- TTS preparation with SSML, abbreviation expansion, pause insertion
+- Audio descriptions for visual content
+- Structured format export (JSON, XML, YAML, Markdown)
+- Print-friendly formatting (dyslexia-optimized)
+- Braille-ready text preparation
+
+### 🧩 Neurodiversity Support Agent
+
+```python
+from adk.agents.neurodiversity_support_agent import NeurodiversitySupportAgent
+
+neurodiversity_agent = NeurodiversitySupportAgent()
+
+# Autism-friendly adaptation
+autism = await neurodiversity_agent.adapt_for_autism(content)
+# Returns: adapted_content, autism_friendly_score, changes_made
+
+# ADHD support with chunking
+adhd = await neurodiversity_agent.adapt_for_adhd(
+    content,
+    chunk_size=150,
+    add_focus_aids=True
+)
+
+# Dyslexia formatting recommendations
+dyslexia = await neurodiversity_agent.adapt_for_dyslexia(content)
+# Returns: formatting_recommendations, challenges_identified
+
+# Sensory overload detection
+sensory = await neurodiversity_agent.detect_sensory_overload_risk(
+    content,
+    has_animations=True,
+    color_count=10
+)
+
+# Executive function support
+ef_support = await neurodiversity_agent.provide_executive_function_support(
+    task_description
+)
+# Returns: checklist, time_estimates, aids
+```
+
+**Features:**
+- Autism: Literal language, reduced ambiguity, explicit structure
+- ADHD: Chunking, focus aids, time estimates, progress tracking
+- Dyslexia: Font recommendations, spacing, word length analysis
+- Sensory: Overload risk assessment and mitigation
+- Executive function: Task breakdown, checklists, time management
+
+---
+
+## Quick Start
+
+### 🚀 Try in Google Colab (Fastest)
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Tuesdaythe13th/AccessibleDeepAgent/blob/main/accessibility_features_demo.ipynb)
+
+### 💻 Local Installation
+
+```bash
+# Clone repository
+git clone https://github.com/Tuesdaythe13th/AccessibleDeepAgent.git
+cd AccessibleDeepAgent
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run demo notebook
+jupyter notebook accessibility_features_demo.ipynb
+```
+
+### 🎯 Quick Example
+
+```python
+from adk.agents.visual_accessibility_agent import VisualAccessibilityAgent
+from adk.agents.cognitive_accessibility_agent import CognitiveAccessibilityAgent
+from adk.agents.content_bias_detector import ContentBiasDetector
+
+# Initialize agents
+visual_agent = VisualAccessibilityAgent()
+cognitive_agent = CognitiveAccessibilityAgent()
+bias_detector = ContentBiasDetector()
+
+# Make your AI output accessible
+ai_output = "Your AI-generated content here..."
+
+# Check reading level
+reading = await cognitive_agent.analyze_reading_level(ai_output)
+print(f"Reading level: Grade {reading['grade_level']}")
 | Model | Size | Type | Link |
 |-------|------|------|---------|
 | Qwen3-4B-Thinking | 4B | Thinking | [🤗 HuggingFace](https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507) |
@@ -153,131 +376,305 @@ For the main reasoning model, we recommend using the following models. Performan
 | DeepAgent-QwQ-32B | 32B | Thinking | [🤗 HuggingFace](https://huggingface.co/lixiaoxi45/DeepAgent-QwQ-32B) |
 | Qwen3-235B-A22B-Thinking | 235B | Thinking | [🤗 HuggingFace](https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507) |
 
-For the auxiliary model, we recommend using the [Qwen2.5-Instruct](https://huggingface.co/collections/Qwen/qwen25) or [Qwen3-Instruct](https://huggingface.co/collections/Qwen/qwen3) series models with similar parameters to the main reasoning model, but without thinking capabilities for faster inference.
+# Simplify if needed
+if reading['grade_level'] > 8:
+    simplified = await cognitive_agent.simplify_text(ai_output)
+    ai_output = simplified['simplified_text']
 
-</details>
+# Check for bias
+bias = await bias_detector.detect_bias(ai_output)
+print(f"Fairness score: {bias['fairness_score']:.2f}")
 
-<details open>
-<summary><h3>⚙️ Configuration</h3></summary>
+# Fix bias if detected
+if bias['total_issues'] > 0:
+    fixed = await bias_detector.suggest_inclusive_alternatives(ai_output)
+    ai_output = fixed['inclusive_content']
 
-All configurations are in `./config/base_config.yaml`, including API keys, service URLs and paths. You need to modify them to your actual configurations:
+# Prepare for TTS
+tts = await multimodal_agent.prepare_for_tts(ai_output)
+print(f"Ready for screen readers: {tts['ssml']}")
+```
 
-<details open>
-<summary><h4>1. API Configuration</h4></summary>
+---
 
-Choose your task and configure the corresponding APIs:
+## Installation
 
-- **ToolBench (RapidAPI):**
-    - `toolbench_api`: RapidAPI key used in ToolBench. You can get it from [ToolBench's official repository](https://github.com/RapidAPI/ToolBench).
-    - `toolbench_service_url`: ToolBench service URL. Keep it as default to use ToolBench's official service.
-- **Deep Research:**
-    - `google_serper_api`: Google Serper API key for web search. You can apply it [here](https://serper.dev/).
-    - `use_jina`: Whether to use Jina Reader for stable URL content fetching.
-    - `jina_api_key`: Jina API key. You can apply it [here](https://jina.ai/api-dashboard/reader).
-- **RestBench (TMDB & Spotify):**
-    - `tmdb_access_token`: TMDB access token. You can get the TMDB API key [here](https://developer.themoviedb.org/docs/getting-started).
-    - `spotify_client_id`: Spotify client ID. You can get the Spotify API key [here](https://developer.spotify.com/documentation/web-api).
-    - `spotify_client_secret`: Spotify client secret.
-    - `spotify_redirect_uri`: Spotify redirect URI.
-- **WebShop:**
-    - `webshop_service_url`: WebShop service URL. You can create a new environment and serve it locally following the instructions in [WebShop's official repository](https://github.com/princeton-nlp/webshop).
+### Requirements
 
-</details>
+- Python 3.8+
+- pydantic
+- torch (optional, for emotion classification)
+- numpy (optional, for advanced features)
 
-<details open>
-<summary><h4>2. Model Configuration</h4></summary>
+### Standard Installation
 
-Configure your model endpoints in the config file:
-
-- **Main Reasoning LLM:**
-    - `model_name`: The name of your served reasoning model (e.g., `QwQ-32B`).
-    - `base_url`: API endpoint for your reasoning model service (e.g., `http://0.0.0.0:8080/v1`).
-    - `api_key`: API key for accessing the reasoning model service. Set to `empty` if you are using vLLM.
-    - `tokenizer_path`: Local path to the tokenizer files for the reasoning model.
-
-- **Auxiliary LLM:**
-    - `aux_model_name`: The name of your served auxiliary model (e.g., `Qwen2.5-32B-Instruct`).
-    - `aux_base_url`: API endpoint for the auxiliary model service.
-    - `aux_api_key`: API key for the auxiliary model. Set to `empty` if you are using vLLM.
-    - `aux_tokenizer_path`: Local path to the tokenizer files for the auxiliary model.
-
-- **VQA Model (for GAIA & HLE with image input):**
-    - `vqa_model_name`: The name of your served vision-language model (e.g., `Qwen2.5-VL-32B-Instruct`). Model serving method is [here](#model-serving).
-    - `vqa_base_url`: API endpoint for the VQA model service.
-    - `vqa_api_key`: API key for the VQA model. Set to `empty` if you are using vLLM.
-
-- **Tool Retriever:**
-    - `tool_retriever_model_path`: Local path to the tool retriever model (e.g., `./models/bge-large-en-v1.5`).
-    - `tool_retriever_api_base`: API endpoint for the tool retriever service. Pre-serving it can avoid reloading the retriever model every time you run the system. You can deploy it using the following command:
-    ```bash
-    python src/run_tool_search_server.py \
-        --base_config_path ./config/base_config.yaml \
-        --datasets toolbench,toolhop,tmdb,spotify,api_bank \
-        --host 0.0.0.0 \
-        --port 8001
-    ```
-
-</details>
-
-<details open>
-<summary><h4>3. Data Path Configuration</h4></summary>
-
-All benchmark datasets are stored in the `./data/` directory. You can modify these paths if needed.
-
-</details>
-
-</details>
-
-## 🚀 Run DeepAgent
-
-To run on a benchmark dataset with tool search enabled, use the following command:
-    
 ```bash
+git clone https://github.com/Tuesdaythe13th/AccessibleDeepAgent.git
+cd AccessibleDeepAgent
+
+# Create virtual environment
+python3 -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+### Minimal Installation (No ML)
+
+```bash
+pip install pydantic
+```
+
+All accessibility agents work without ML dependencies!
+
+### For DeepAgent Framework
+
+```bash
+# Additional dependencies for benchmark evaluation
+pip install -r requirements-adk.txt
+```
+
+---
+
+## Comprehensive Feature Guide
+
+See the complete [**accessibility_features_demo.ipynb**](accessibility_features_demo.ipynb) for:
+
+- ✅ 40+ working code examples
+- ✅ All features demonstrated end-to-end
+- ✅ Google Colab compatible
+- ✅ Copy-paste ready for your projects
+- ✅ Detailed explanations and best practices
+
+---
+
+## Architecture
+
+### Modular Design
+
+```
+AccessibleDeepAgent/
+├── src/adk/agents/
+│   ├── visual_accessibility_agent.py      # Visual features
+│   ├── cognitive_accessibility_agent.py    # Cognitive features
+│   ├── content_bias_detector.py           # Bias detection
+│   ├── multimodal_output_agent.py         # Multi-modal output
+│   ├── neurodiversity_support_agent.py    # Neurodiversity support
+│   ├── core.py                            # Core coordination
+│   └── ui_adaptation_agent.py             # UI adaptations
+├── src/adk/
+│   ├── bidirectional_reasoning.py         # Emotion AI fairness
+│   ├── neuroadaptive_wrapper.py           # Complete integration
+│   └── utils/                             # Shared utilities
+├── accessibility_features_demo.ipynb       # 🆕 Complete demo
+└── src/                                   # DeepAgent framework
+```
+
+### Integration Patterns
+
+**Use Individual Agents:**
+```python
+from adk.agents.cognitive_accessibility_agent import CognitiveAccessibilityAgent
+
+cognitive_agent = CognitiveAccessibilityAgent()
+result = await cognitive_agent.simplify_text(ai_output)
+```
+
+**Use Complete Wrapper:**
+```python
+from adk.neuroadaptive_wrapper import NeuroadaptiveWrapper
+
+wrapper = NeuroadaptiveWrapper()
+await wrapper.initialize()
+result = await wrapper.process_interaction_with_emotion(...)
+```
+
+---
+
+## Platform Integration
+
+### Integrate into Your AI Application
+
+```python
+class AccessibleChatbot:
+    def __init__(self):
+        self.cognitive_agent = CognitiveAccessibilityAgent()
+        self.bias_detector = ContentBiasDetector()
+        self.multimodal_agent = MultimodalOutputAgent()
+
+    async def generate_accessible_response(self, user_input, user_profile):
+        # Generate AI response
+        ai_response = await your_llm.generate(user_input)
+
+        # 1. Check for bias
+        bias_check = await self.bias_detector.detect_bias(ai_response)
+        if bias_check['total_issues'] > 0:
+            alt = await self.bias_detector.suggest_inclusive_alternatives(ai_response)
+            ai_response = alt['inclusive_content']
+
+        # 2. Simplify if needed
+        if user_profile.get('reading_level') == 'simple':
+            simp = await self.cognitive_agent.simplify_text(ai_response)
+            ai_response = simp['simplified_text']
+
+        # 3. Prepare multi-modal outputs
+        tts = await self.multimodal_agent.prepare_for_tts(ai_response)
+
+        return {
+            'text': ai_response,
+            'tts_ssml': tts['ssml'],
+            'fairness_score': bias_check['fairness_score']
+        }
+```
+
+### API Service Example
+
+```python
+from fastapi import FastAPI
+from adk.agents import CognitiveAccessibilityAgent, ContentBiasDetector
+
+app = FastAPI()
+cognitive = CognitiveAccessibilityAgent()
+bias = ContentBiasDetector()
+
+@app.post("/api/accessible")
+async def make_accessible(content: str, features: List[str]):
+    result = {}
+    if "simplify" in features:
+        result['simplified'] = await cognitive.simplify_text(content)
+    if "bias" in features:
+        result['bias'] = await bias.detect_bias(content)
+    return result
+```
+
+---
+
+## DeepAgent Framework
+
+AccessibleDeepAgent also includes a research-grade multi-tool reasoning agent for benchmark evaluation.
+
+### Supported Benchmarks
+
+| Benchmark | Type | Status |
+|-----------|------|--------|
+| **ToolBench** | Tool use | ✅ Supported |
+| **GAIA** | QA with tools | ✅ Supported |
+| **API-Bank** | API calling | ✅ Supported |
+| **RestBench** | REST API use | ✅ Supported |
+| **ToolHop** | Multi-hop tool use | ✅ Supported |
+| **ALFWorld** | Embodied tasks | ✅ Supported |
+| **WebShop** | Web navigation | ✅ Supported |
+
+### Quick Start
+
+```bash
+# Run on GAIA benchmark
 python src/run_deep_agent.py \
     --config_path ./config/base_config.yaml \
-    --dataset_name toolbench \
+    --dataset_name gaia \
     --enable_tool_search \
     --eval
 ```
 
-To run on a benchmark dataset with closed-set mode, use the following command:
+See original sections below for full DeepAgent documentation.
 
-```bash
-python src/run_deep_agent.py \
-    --config_path ./config/base_config.yaml \
-    --dataset_name gaia \
-    --eval
+---
+
+## ADK: Neuroadaptive Accessibility
+
+The ADK (Accessibility Development Kit) provides real-time neuroadaptive accessibility with emotion AI bias mitigation.
+
+### Core Features
+
+- **Real-time Signal Processing**: Eye tracking, interaction patterns, mouse movement
+- **Cognitive State Estimation**: Load, attention, fatigue, stress, comprehension
+- **Bidirectional Reasoning**: 40% FNR reduction for alexithymic users
+- **BeTaL Testing**: Automated fairness benchmark generation (5.8% gap vs 12.5% baseline)
+- **Memory System**: Persistent profiles with mem0.ai
+- **UI Adaptation**: Dynamic accessibility adjustments
+
+### Quick Start
+
+```python
+import asyncio
+from adk.agents.core import AccessibilityCoordinator
+from adk.utils import SignalType
+
+async def main():
+    coordinator = AccessibilityCoordinator()
+    await coordinator.initialize()
+
+    # Process interaction
+    raw_signals = [
+        (SignalType.EYE_TRACKING, 0.7, {}),
+        (SignalType.INTERACTION_TIMING, 0.65, {}),
+    ]
+
+    result = await coordinator.process_user_interaction(
+        raw_signals=raw_signals,
+        user_id="user123",
+        content_to_refine="Your content..."
+    )
+
+    print(f"Cognitive Load: {result['cognitive_state']['cognitive_load']:.2f}")
+    await coordinator.close()
+
+asyncio.run(main())
 ```
 
-**Parameters Explanation:**
-- `--config_path`: Path to the main configuration file.
-- `--dataset_name`: Name of the dataset to use (e.g., `toolbench`, `api_bank`, `tmdb`, `spotify`, `toolhop`, `gaia`, `hle`, `alfworld`, `webshop`).
-- `--subset_num`: Number of samples to run from the dataset.
-- `--concurrent_limit`: Maximum number of concurrent requests. Default is 32.
-- `--enable_tool_search`: Allows the agent to search for tools. If disabled, it will only use the tools provided for the task (closed-set).
-- `--enable_thought_folding`: Allows the agent to use the thought folding mechanism.
-- `--max_action_limit`: Maximum number of actions (tool search and tool call) per question.
-- `--max_fold_limit`: Maximum number of thought folds per question.
-- `--top_k`: Maximum number of search tools to return.
-- `--eval`: Run evaluation on the results after generation.
+---
 
+## Fairness & Bias Mitigation
 
+### Bidirectional Reasoning Network
 
+**Problem**: Emotion AI discriminates against alexithymic users (40% higher false negatives)
+
+**Solution**: Bidirectional verification instead of unidirectional classification
+
+```
+Audio → Encoder → Emotion → Decoder → Reconstructed Audio
+  ↓                                        ↓
+Embedding 1 ←── Contrastive Loss ──→ Embedding 2
+```
+
+**Result**: 40% reduction in false negative rate
+
+### BeTaL: Automated Fairness Testing
 ### Troubleshooting multi tool failures
 
 If DeepAgent looks stuck, keeps choosing strange tools, or ignores tool outputs when you run ToolBench or other multi tool benchmarks, see `docs/multi_tool_agent_failure_modes.md` for a step by step checklist.
 
 ### Evaluation
 
-Our model inference script can automatically save the model's input and output for evaluation. To run the evaluation, use the `--eval` flag when running `./src/run_deep_agent.py`. The evaluation scripts for each dataset are located in `./src/evaluate/`.
+LLM-guided benchmark generation achieving 5.8% fairness gap (vs 12.5% baseline)
 
+```
+Designer LLM → proposes scenarios
+Student LLM → evaluated on fairness
+Feedback Loop → optimizes for gaps
+```
 
+---
 
-## 🔥 Deep Research Agent Family
+## Documentation
 
-<details open><summary>Welcome to try our deep research agent series: </summary><p>
+### Core Documentation
 
+- **🆕 Accessibility Demo**: [accessibility_features_demo.ipynb](accessibility_features_demo.ipynb) - Complete feature showcase
+- **Main README**: [README.md](README.md) - This file
+- **ADK Docs**: [src/adk/docs/README.md](src/adk/docs/README.md)
+- **Bidirectional Reasoning**: [src/adk/docs/BIDIRECTIONAL_REASONING.md](src/adk/docs/BIDIRECTIONAL_REASONING.md)
+- **BeTaL Framework**: [src/adk/docs/BETAL.md](src/adk/docs/BETAL.md)
 
+### Standards Compliance
+
+- ✅ WCAG 2.1 AA/AAA
+- ✅ Federal Plain Language Guidelines
+- ✅ Person-First Language Standards
+- ✅ Section 508 Accessibility
+- ✅ Flesch-Kincaid Readability
 > [**DeepAgent: A General Reasoning Agent with Scalable Toolsets (WWW 2026)**](https://arxiv.org/abs/2510.21618) <br>
 > **TLDR:** An end-to-end deep reasoning agent that performs autonomous thinking, tool discovery, and action execution with brain-inspired memory folding mechanism. <br>
 [![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/RUC-NLPIR/DeepAgent) [![github](https://img.shields.io/github/stars/RUC-NLPIR/DeepAgent.svg?style=social)](https://github.com/RUC-NLPIR/DeepAgent) [![arXiv](https://img.shields.io/badge/Arxiv-2510.21618-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2510.21618) [![Paper](https://img.shields.io/badge/Hugging%20Face-Paper-yellow?logo=huggingface)](https://huggingface.co/papers/2510.21618) [![X (formerly Twitter) URL](https://img.shields.io/twitter/url?url=https%3A%2F%2Fx.com%2FXiaoxiLi0111%2Fstatus%2F1982649697467859438)](https://x.com/XiaoxiLi0111/status/1982649697467859438)
@@ -286,54 +683,100 @@ Our model inference script can automatically save the model's input and output f
 > **TLDR:** An agentic RL algorithm designed to balance entropy in both the rollout and policy update phases. <br>
 [![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/RUC-NLPIR/ARPO) [![github](https://img.shields.io/github/stars/RUC-NLPIR/ARPO.svg?style=social)](https://github.com/RUC-NLPIR/ARPO) [![arXiv](https://img.shields.io/badge/Arxiv-2510.14545-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2510.14545) [![Paper](https://img.shields.io/badge/Hugging%20Face-Paper-yellow?logo=huggingface)](https://huggingface.co/papers/2510.14545) [![X (formerly Twitter) URL](https://img.shields.io/twitter/url?url=https%3A%2F%2Fx.com%2FKevin_GuoweiXu%2Fstatus%2F1858338565463421244)]()
 
+---
 
+## Use Cases
 > [**Agentic Reinforced Policy Optimization (ICLR 2026)**](https://arxiv.org/abs/2507.19849) <br>
 > **TLDR:** An agentic RL algorithm encourage the policy model to adaptively branch sampling during high-entropy tool-call rounds, <br>
 [![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/RUC-NLPIR/ARPO) [![github](https://img.shields.io/github/stars/RUC-NLPIR/ARPO.svg?style=social)](https://github.com/RUC-NLPIR/ARPO) [![arXiv](https://img.shields.io/badge/Arxiv-2507.19849-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2507.19849) [![Paper](https://img.shields.io/badge/Hugging%20Face-Paper-yellow?logo=huggingface)](https://huggingface.co/papers/2507.19849) [![X (formerly Twitter) URL](https://img.shields.io/twitter/url?url=https%3A%2F%2Fx.com%2FKevin_GuoweiXu%2Fstatus%2F1858338565463421244)](https://x.com/_akhaliq/status/1950172418250547478)
 
-> [**Decoupled Planning and Execution: A Hierarchical Reasoning Framework for Deep Search**](https://arxiv.org/abs/2507.02652) <br>
-> **TLDR:** This framework hierarchically decouples deep search into strategic planning and domain-specific execution by specialized agents. <br>
-[![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/RUC-NLPIR/HiRA) [![github](https://img.shields.io/github/stars/RUC-NLPIR/HiRA.svg?style=social)](https://github.com/RUC-NLPIR/HiRA) [![arXiv](https://img.shields.io/badge/Arxiv-2507.02652-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2507.02652) [![Paper](https://img.shields.io/badge/Hugging%20Face-Paper-yellow?logo=huggingface)](https://huggingface.co/papers/2507.02652) [![X (formerly Twitter) URL](https://img.shields.io/twitter/url?url=https%3A%2F%2Fx.com%2Fdongxi_nlp%2Fstatus%2F1941223631033389301)](https://x.com/dongxi_nlp/status/1941223631033389301)
+1. **AI Content Generators** - Ensure all generated content is accessible
+2. **Chatbots & Assistants** - Adapt responses based on user profiles
+3. **Educational Platforms** - Simplify content to appropriate levels
+4. **CMS Systems** - Check content for bias before publishing
+5. **Documentation** - Generate multi-modal versions
+6. **Customer Support** - Provide accessible responses
 
+---
 
-> [**Tool-Star: Empowering LLM-Brained Multi-Tool Reasoner via Reinforcement Learning**](https://arxiv.org/abs/2505.16410) <br>
-> **TLDR:** An end-to-end TIR post-training framework that empowers LLMs to autonomously interact with multi-tool environments through Self-Critic RL design<br>
-[![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/RUC-NLPIR/Tool-Star) [![github](https://img.shields.io/github/stars/RUC-NLPIR/Tool-Star.svg?style=social)](https://github.com/RUC-NLPIR/Tool-Star) [![arXiv](https://img.shields.io/badge/Arxiv-2505.16410-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2505.16410) [![Paper](https://img.shields.io/badge/Hugging%20Face-Paper-yellow?logo=huggingface)](https://huggingface.co/papers/2505.16410) [![X (formerly Twitter) URL](https://img.shields.io/twitter/url?url=https%3A%2F%2Fx.com%2FKevin_GuoweiXu%2Fstatus%2F1858338565463421244)](https://x.com/_akhaliq/status/1925924431676821698)
+## Contributing
 
- > [**WebThinker: Empowering Large Reasoning Models with Deep Research Capability (NeurIPS 2025)**](https://arxiv.org/abs/2504.21776) <br>
-> **TLDR:** A deep research agent that empowers large reasoning models with autonomous search, web browsing, and research report drafting capabilities. <br>
-[![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/RUC-NLPIR/WebThinker) [![github](https://img.shields.io/github/stars/RUC-NLPIR/WebThinker.svg?style=social)](https://github.com/RUC-NLPIR/WebThinker) [![arXiv](https://img.shields.io/badge/Arxiv-2504.21776-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2504.21776) [![Paper](https://img.shields.io/badge/Hugging%20Face-Paper-yellow?logo=huggingface)](https://huggingface.co/papers/2504.21776) [![X (formerly Twitter) URL](https://img.shields.io/twitter/url?url=https%3A%2F%2Fx.com%2Fkakakbibibi%2Fstatus%2F1917768235069628823)](https://x.com/kakakbibibi/status/1917768235069628823)
+We welcome contributions! Priority areas:
 
-> [**Search-o1: Agentic Search-Enhanced Large Reasoning Models (EMNLP 2025)**](https://arxiv.org/abs/2501.05366) <br>
-> **TLDR:** An agentic search-enhanced framework that integrates autonomous knowledge retrieval with large reasoning models through Agentic RAG and reasoning-in-documents modules. <br>
-[![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/RUC-NLPIR/Search-o1) [![github](https://img.shields.io/github/stars/RUC-NLPIR/Search-o1.svg?style=social)](https://github.com/RUC-NLPIR/Search-o1) [![arXiv](https://img.shields.io/badge/Arxiv-2501.16399-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2501.05366) [![Paper](https://img.shields.io/badge/Hugging%20Face-Paper-yellow?logo=huggingface)](https://huggingface.co/papers/2501.05366) [![X (formerly Twitter) URL](https://img.shields.io/twitter/url?url=https%3A%2F%2Fx.com%2F_akhaliq%2Fstatus%2F1877584951840764166%3Ft%3DfnbTblnqhiPtAyYr1PHbbw%26s%3D19)](https://x.com/_akhaliq/status/1877584951840764166?t=fnbTblnqhiPtAyYr1PHbbw&s=19) 
+- Additional language support
+- More bias detection patterns
+- Enhanced neurodiversity features
+- New output formats
+- Accessibility testing tools
+- Documentation improvements
 
-</details>
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
+---
 
-## 📄 Citation
+## Citation
 
-If you find this work helpful, please cite our paper:
 ```bibtex
-@misc{deepagent,
-      title={DeepAgent: A General Reasoning Agent with Scalable Toolsets}, 
-      author={Xiaoxi Li and Wenxiang Jiao and Jiarui Jin and Guanting Dong and Jiajie Jin and Yinuo Wang and Hao Wang and Yutao Zhu and Ji-Rong Wen and Yuan Lu and Zhicheng Dou},
-      year={2025},
-      eprint={2510.21618},
-      archivePrefix={arXiv},
-      primaryClass={cs.AI},
-      url={https://arxiv.org/abs/2510.21618}, 
+@software{accessibledeepagent2025,
+  title={AccessibleDeepAgent: Comprehensive Accessibility Framework for Generative AI},
+  author={Tuesday, ARTIFEX Labs},
+  year={2025},
+  url={https://github.com/Tuesdaythe13th/AccessibleDeepAgent},
+  note={Production-ready accessibility toolkit with fairness-focused AI agents}
 }
 ```
 
-## 📄 License
+---
 
-This project is released under the [MIT License](LICENSE).
+## License
 
-## 📞 Contact
+MIT License - see [LICENSE](LICENSE) file for details.
 
-For any questions or feedback, please reach out to us at [xiaoxi_li@ruc.edu.cn](xiaoxi_li@ruc.edu.cn).
+---
 
-## Star History
+## Acknowledgments
 
-[![Star History Chart](https://api.star-history.com/svg?repos=RUC-NLPIR/DeepAgent&type=Date)](https://www.star-history.com/#RUC-NLPIR/DeepAgent&Date)
+- **Humane Intelligence Accessibility Bias Bounty** - Motivating force
+- **WCAG & W3C** - Accessibility standards
+- **Plain Language Community** - Guidelines and best practices
+- **Neurodiversity Advocates** - User-centered design insights
+- **mem0.ai** - Memory system infrastructure
+- **OpenAI, Anthropic** - LLM providers
+
+---
+
+## Contact & Support
+
+- **Issues**: [GitHub Issues](https://github.com/Tuesdaythe13th/AccessibleDeepAgent/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/Tuesdaythe13th/AccessibleDeepAgent/discussions)
+- **Email**: general@artifex.fun
+
+---
+
+## Project Status
+
+🚀 **Active Development** | ⭐ **Production-Ready Accessibility Features**
+
+### Recent Updates
+
+- ✅ **NEW**: 5 comprehensive accessibility agents (Visual, Cognitive, Bias, Multi-Modal, Neurodiversity)
+- ✅ **NEW**: Complete Jupyter demo notebook with 40+ examples
+- ✅ **NEW**: Platform-agnostic integration guides
+- ✅ Bidirectional reasoning for emotion AI fairness
+- ✅ BeTaL automated fairness testing
+- ✅ Multi-benchmark evaluation harness
+
+### Roadmap
+
+- [ ] Browser extension for signal collection
+- [ ] Mobile app support
+- [ ] Multi-language accessibility
+- [ ] A/B testing framework
+- [ ] Extended benchmark coverage
+- [ ] User feedback integration
+
+---
+
+**Making Generative AI Accessible to Everyone** ♿️
+
+Built with accessibility at the core. Production-ready. Platform-agnostic. Open source.
