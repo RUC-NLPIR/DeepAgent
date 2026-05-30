@@ -1,0 +1,26 @@
+# ADK-specific dependencies for Neuroadaptive Accessibility Agent
+
+# Deep Learning
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Data Processing
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Memory System
+mem0ai>=0.0.10
+
+# API & Async
+aiohttp>=3.8.0
+pydantic>=2.0.0
+
+# Configuration
+pyyaml>=6.0
+
+# Logging
+colorama>=0.4.6
+
+# Utilities
+tqdm>=4.65.0
+scipy>=1.10.0

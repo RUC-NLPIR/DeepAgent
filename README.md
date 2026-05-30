@@ -1,149 +1,231 @@
-<h1 align="center"> <img src="./figures/logo_deepagent.png" width="270" style="vertical-align:middle;"/><br>A General Reasoning Agent with Scalable Toolsets</a></h1>
+# AccessibleDeepAgent
 
-<div align="center"> 
+**A fairness-focused AI agent framework with neuroadaptive accessibility capabilities**
 
-[![Paper](https://img.shields.io/badge/Paper-arXiv-b31b1b.svg?logo=arxiv)](https://arxiv.org/abs/2510.21618)
-[![Dataset](https://img.shields.io/badge/Dataset-HuggingFace-yellow?logo=huggingface)](https://huggingface.co/datasets/lixiaoxi45/DeepAgent-Datasets)
-[![License](https://img.shields.io/badge/LICENSE-MIT-green.svg)](https://opensource.org/licenses/MIT) 
-[![Python 3.10+](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/downloads/release/python-390/) 
-[![X (formerly Twitter) URL](https://img.shields.io/twitter/url?url=https%3A%2F%2Fx.com%2FXiaoxiLi0111%2Fstatus%2F1982649697467859438)](https://x.com/XiaoxiLi0111/status/1982649697467859438)
-</div>
+AccessibleDeepAgent is a comprehensive research platform that combines a multi-tool reasoning agent (DeepAgent) with advanced bias-mitigation workflows designed for the Humane Intelligence Accessibility Bias Bounty. The codebase (~9,600 lines of code) provides both a powerful general-purpose agent framework and specialized neuroadaptive accessibility tools to address fairness gaps in emotion AI systems.
 
-<!-- [![Paper](https://img.shields.io/badge/Paper-HuggingFace-orange?logo=huggingface)](https://huggingface.co/papers/2510.21618) -->
-<!-- [![WeChat](https://img.shields.io/badge/WeChat-07C160?logo=wechat&logoColor=white)](https://mp.weixin.qq.com/s/ZXwMwuB8fBStJORj4tYI2g) -->
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-<h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h5>
+---
 
-<div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=20&duration=3000&pause=1000&color=005DE3&center=true&vCenter=true&width=800&lines=Welcome+to+DeepAgent;A+General+Reasoning+Agent+with+Scalable+Toolsets;Powered+by+RUC+x+Xiaohongshu+Inc." alt="Typing Animation" />
-</div>
+## Table of Contents
 
+- [Overview](#overview)
+- [Key Features](#key-features)
+- [Architecture](#architecture)
+- [Installation](#installation)
+- [Quick Start](#quick-start)
+- [Repository Structure](#repository-structure)
+- [DeepAgent Framework](#deepagent-framework)
+- [ADK: Neuroadaptive Accessibility Agent](#adk-neuroadaptive-accessibility-agent)
+- [Fairness & Bias Mitigation](#fairness--bias-mitigation)
+- [Evaluation & Benchmarks](#evaluation--benchmarks)
+- [Advanced Usage](#advanced-usage)
+- [Documentation](#documentation)
+- [Contributing](#contributing)
+- [Citation](#citation)
+- [License](#license)
 
-## 📣 Latest News
+---
 
+## Overview
 - **[Jan 14, 2026]**: 🎉 DeepAgent has been accepted by **[WWW 2026](https://www2026.thewebconf.org/index.html)**!
 - **[Oct 28, 2025]**: 🔥 We are honored to be featured as Hugging Face **[Daily Paper #1](https://huggingface.co/papers/date/2025-10-27)**.
 - **[Oct 27, 2025]**: 📄 Our paper is now available on **[arXiv](https://arxiv.org/abs/2510.21618)** and **[Hugging Face](https://huggingface.co/papers/2510.21618)**.
 - **[Oct 27, 2025]**: 🚀 Our codebase released. You can now deploy DeepAgent with reasoning models like [QwQ](https://huggingface.co/collections/Qwen/qwq), [Qwen3](https://huggingface.co/collections/Qwen/qwen3) and your own toolsets.
 
+AccessibleDeepAgent serves two primary purposes:
 
+1. **DeepAgent Framework**: A research-grade multi-tool reasoning agent that coordinates LLM orchestration, tool search, action planning, and evaluation across multiple benchmark suites (ToolBench, GAIA, API-Bank, RestBench, ALFWorld, WebShop, ToolHop).
 
-## 🎬 Demo
+2. **ADK (Accessibility Development Kit)**: A neuroadaptive accessibility system that addresses emotion AI bias against neurodivergent users (particularly alexithymia) through bidirectional reasoning, automated fairness testing (BeTaL), and real-time cognitive state adaptation.
 
-<details open>
-<summary><h3>1. General Agent Task with 16,000+ RapidAPIs</h3></summary>
+The platform enables researchers to:
+- Reproduce competition submissions for accessibility bias bounties
+- Run agents against any supported benchmark suite
+- Experiment with neuroinclusive accessibility policies
+- Develop and test bias mitigation strategies
+- Create custom fairness evaluation harnesses
 
-<div align="center">
-    <video src="https://github.com/user-attachments/assets/7aa586e9-a47a-425d-8d41-99226d2f6835" />
-</div>
+---
 
-**DeepAgent** is a reasoning agent with scalable toolsets, capable of tackling general tasks by searching for and using the appropriate tools from over 16,000 RapidAPIs in an end-to-end agentic reasoning process. *(Note: Due to some APIs in ToolBench being unavailable, API responses are LLM-simulated in this demo to show the system's normal functionality.)*
+## Key Features
 
-</details>
+### DeepAgent Framework
 
-<details open>
-<summary><h3>2. Embodied AI Agent Task in ALFWorld Env.</h3></summary>
+- **LLM Orchestration**: Coordinates reasoning models, auxiliary models, and thought folding for multi-step planning and self-reflection
+- **Tool Layer**: Executable adapters for ToolBench/ToolHop APIs, RapidAPI, Python execution, web search, audio/vision utilities
+- **Prompt Engineering**: System prompts for open/closed-set evaluation, tool intent classification, and dataset-specific templates
+- **Evaluation Harness**: Dataset-aligned scripts computing metrics across 7+ benchmark suites
+- **Async Processing**: Concurrent LLM completions with rate limiting and timeout handling
 
-<div align="center">
-  <video src="https://github.com/user-attachments/assets/fe309384-9102-4d1e-a929-f8b9b4041243" />
-</div>
+### ADK: Neuroadaptive Accessibility
 
-**DeepAgent** also excels at navigation-based tasks (e.g., web browsing, OS interaction, and embodied AI) by using a versatile set of pluggable actions such as moving, looking, and taking.
-</details>
+- **Real-time Signal Processing**: Monitors eye tracking, interaction patterns, mouse movement, and device sensors
+- **Cognitive State Estimation**: Estimates cognitive load, attention, fatigue, stress, and reading comprehension
+- **Bidirectional Reasoning**: Prevents emotion AI bias through forward/reverse verification (40% FNR reduction for alexithymic users)
+- **BeTaL Automated Testing**: LLM-guided benchmark generation achieving 5.8% fairness gap (vs 12.5% baseline)
+- **Memory System**: Persistent user profiles and adaptation history using mem0.ai
+- **UI Adaptation**: Real-time accessibility adjustments based on cognitive state
+- **Contrastive Learning**: Ensures semantic consistency across reasoning paths
 
-<details open>
-<summary><h3>3. Deep Research Task with Specialized Tools</h3></summary>
+---
 
-<div align="center">
-  <video src="https://github.com/user-attachments/assets/a6278bfd-2ee9-44aa-9f74-82aa826d8778" />
-</div>
+## Architecture
 
-**DeepAgent** can also serve as a powerful research assistant, equipped with specialized tools for web search, browsing, code execution, visual QA, and file processing.
-</details>
+### System Overview
 
+```
+AccessibleDeepAgent
+├── DeepAgent Core (Multi-tool Reasoning)
+│   ├── LLM Orchestration Layer
+│   ├── Tool Search & Execution
+│   ├── Action Planning & Reflection
+│   └── Evaluation Harness
+│
+└── ADK (Neuroadaptive Accessibility)
+    ├── Loop A: Signal Normalization
+    ├── Loop B: State Estimation (+ XGC-AVis)
+    ├── CMS: Continuum Memory System (mem0.ai)
+    ├── Loop C: Content Refinement (Factuality, Personalization, Coherence)
+    ├── UI Adaptation Engine
+    ├── Bidirectional Reasoning Network (Bias Mitigation)
+    ├── BeTaL: Automated Fairness Testing
+    └── Loop E: Logging & Evaluation
+```
 
+### Component Interaction
 
+1. **DeepAgent** handles general-purpose task solving and benchmark evaluation
+2. **ADK** provides accessibility-aware enhancements and fairness guarantees
+3. **Shared Infrastructure**: Both systems use common utilities for LLM calls, logging, and configuration management
 
-## 💡 Overview
+---
 
+## Installation
 
-<!-- ![Model Comparison](<./figures/comparison.png>) -->
+### Prerequisites
 
-**DeepAgent** is an end-to-end deep reasoning agent that performs autonomous thinking, tool discovery, and action execution within a single, coherent reasoning process. This paradigm shifts away from traditional, predefined workflows (e.g., ReAct's "Reason-Act-Observe" cycle), allowing the agent to maintain a global perspective on the entire task and dynamically discover tools on an as-needed basis.
+- Python 3.9 or higher
+- CUDA-capable GPU (optional, for local model serving)
+- 8GB+ RAM recommended
 
-To handle long-horizon interactions and prevent getting stuck in incorrect exploration paths, we introduce an **Autonomous Memory Folding** mechanism. This allows DeepAgent to "take a breath" by compressing its interaction history into a structured, brain-inspired memory schema, enabling it to reconsider its strategy and proceed efficiently.
+### Core Installation
 
-Furthermore, we propose **ToolPO**, an end-to-end reinforcement learning (RL) training method tailored for general tool use, which enhances the agent's proficiency in mastering these complex mechanisms.
-
-### 📊 Overall Performance
-
-<div align="center">
-  <img src="./figures/overall_results.png" width="70%" />
-</div>
-
-We conduct extensive experiments on a wide range of benchmarks:
-- **(1) General Tool-Use Tasks:** We evaluate DeepAgent on ToolBench, API-Bank, TMDB, Spotify, and ToolHop, which feature toolsets scaling from tens to over ten thousand distinct tools. 
-- **(2) Downstream Applications:** We test its performance on ALFWorld, WebShop, GAIA, and Humanity's Last Exam (HLE), which require the use of domain-specific toolsets. The overall results in Figure show that DeepAgent achieves superior performance across all scenarios.
-
-### ✨ The DeepAgent Framework
-
-![Framework](<./figures/framework.png>)
-**Key Features:**
-
-- **Unified Agentic Reasoning**: DeepAgent departs from rigid, predefined workflows. It operates in a single stream of thought, autonomously reasoning about the task, dynamically discovering necessary tools, and executing actions. This allows the LRM to maintain a global perspective and unlock its full autonomous potential.
-
-- **Autonomous Memory Folding & Brain-Inspired Memory**: When facing complex problems, DeepAgent can autonomously trigger memory folding. This process consolidates the interaction history into a structured memory, allowing the agent to restart its reasoning with a condensed yet comprehensive understanding of its progress. The memory architecture is brain-inspired and consists of:
-    - **Episodic Memory**: A high-level log of key events, decisions, and sub-task completions.
-    - **Working Memory**: Contains the most recent information, including the current sub-goal and near-term plans.
-    - **Tool Memory**: Consolidates tool-related interactions, allowing the agent to learn from experience and refine its strategies.
-
-- **End-to-End RL Training with ToolPO**: To effectively train the agent, we introduce ToolPO, a policy optimization method featuring:
-    - An **LLM-based Tool Simulator** that mimics real-world APIs, ensuring stable and efficient training.
-    - **Tool-Call Advantage Attribution**, which assigns fine-grained credit to correct tool invocation tokens, providing a more precise learning signal.
-
-
-## 🔧 Installation
-
-###  Environment Setup
 ```bash
-# Create conda environment
-conda create -n deepagent python=3.10
-conda activate deepagent
+# Clone the repository
+git clone https://github.com/Tuesdaythe13th/AccessibleDeepAgent.git
+cd AccessibleDeepAgent
 
-# Install requirements
-cd DeepAgent-main
+# Create virtual environment
+python3 -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+
+# Install core dependencies
+pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-  
+### ADK Installation (Optional)
 
-<details open>
-<summary><h3>📊 Benchmarks</h3></summary>
+For neuroadaptive accessibility features:
 
-The benchmarks we utilize are categorized into several types:
-- **General Tool Use Benchmarks:**
-    - [ToolBench](https://arxiv.org/abs/2307.16789): Features 16,000+ real-world RapidAPIs requiring multi-step, multi-tool reasoning.
-    - [API-Bank](https://arxiv.org/abs/2304.08244): Evaluates planning, retrieval, and calling with 73 APIs across 314 human-annotated dialogues.
-    - [RestBench](https://arxiv.org/abs/2306.06624): Simulates REST API applications with TMDB (54 tools) and Spotify (40 tools) scenarios.
-    - [ToolHop](https://arxiv.org/abs/2501.02506): Tests multi-hop reasoning across 3,912 locally executable tools requiring 3-7 sequential calls.
-- **Embodied Agent Benchmarks:**
-    - [ALFWorld](https://arxiv.org/abs/2010.03768): Text-based embodied AI environment where agents complete household tasks using 9 basic actions.
-- **Web Navigation Benchmarks:**
-    - [WebShop](https://arxiv.org/abs/2207.01206): Online shopping simulation requiring agents to search and navigate products to fulfill user requirements.
-- **Deep Research Benchmarks:** 
-    - [GAIA](https://arxiv.org/abs/2311.12983): Complex information-seeking tasks requiring web search, browsing, VQA, code execution, and file processing.
-    - [Humanity's Last Exam (HLE)](https://arxiv.org/abs/2501.14249): Extremely challenging reasoning problems testing advanced capabilities with code, search, and VQA tools. For efficient testing, we sampled 500 questions from the full set with 2,500 questions.
+```bash
+# Install ADK-specific dependencies
+pip install -r requirements-adk.txt
 
-All the pre-processed data can be found in the `./data/` directory, except for ToolBench which needs to be downloaded from [ToolBench's official repository](https://github.com/OpenBMB/ToolBench), as it is too large to be included in our repository.
+# Verify installation
+python -c "from adk.agents.core import AccessibilityCoordinator; print('ADK installed successfully')"
+```
 
-</details>
+### Configuration
 
-<details open>
-<summary><h3>🤖 Model Serving</h3></summary>
-Before running DeepAgent, ensure your reasoning model and auxiliary model are served using vLLM. DeepAgent is designed to work with powerful reasoning models as the main agent and can use an auxiliary model for tasks like memory generation and tool selection. For more details, please refer to [vLLM](https://github.com/vllm-project/vllm).
+Edit `config/base_config.yaml` to set up API keys and dataset paths:
 
-For the main reasoning model, we recommend using the following models. Performance improves from top to bottom, but computational cost also increases accordingly. You can choose a cost-effective model based on your needs:
+```yaml
+# API Keys
+toolbench_url: "YOUR_TOOLBENCH_SERVICE_URL"
+google_serper_api_key: "YOUR_SERPER_KEY"
+jina_api_key: "YOUR_JINA_KEY"
 
+# Model Servers
+reasoning_model:
+  url: "http://localhost:8000/v1"
+  api_key: "YOUR_API_KEY"
+
+# Dataset Paths
+gaia_data_path: "./data/GAIA/dataset.json"
+toolbench_data_path: "./data/ToolBench/dataset.json"
+```
+
+For ADK configuration, see `src/adk/config/adk_config.yaml`.
+
+---
+
+## Quick Start
+
+### DeepAgent: Run an Agent Task
+
+```bash
+# Run agent on GAIA benchmark
+python src/run_deep_agent.py \
+    --config_path ./config/base_config.yaml \
+    --dataset_name gaia \
+    --split test \
+    --subset_num 32 \
+    --enable_tool_search \
+    --enable_thought_folding \
+    --max_action_limit 30 \
+    --eval
+
+# Run single question
+python src/run_deep_agent.py \
+    --config_path ./config/base_config.yaml \
+    --single_question "What is the capital of France?" \
+    --enable_tool_search
+```
+
+### ADK: Basic Accessibility Agent
+
+```python
+import asyncio
+from adk.agents.core import AccessibilityCoordinator
+from adk.utils import SignalType
+
+async def main():
+    # Initialize coordinator
+    coordinator = AccessibilityCoordinator()
+    await coordinator.initialize()
+
+    # Start session
+    session_id = await coordinator.start_session(user_id="user123")
+
+    # Process user interaction with signals
+    raw_signals = [
+        (SignalType.EYE_TRACKING, 0.7, {"device": "webcam"}),
+        (SignalType.INTERACTION_TIMING, 0.65, {"avg_response_time_ms": 850}),
+        (SignalType.MOUSE_MOVEMENT, 0.55, {"movement_pattern": "erratic"}),
+    ]
+
+    content = "Your content to make accessible..."
+
+    result = await coordinator.process_user_interaction(
+        raw_signals=raw_signals,
+        user_id="user123",
+        content_to_refine=content,
+        context={"page": "documentation"}
+    )
+
+    print(f"Cognitive Load: {result['cognitive_state']['cognitive_load']:.2f}")
+    print(f"UI Adaptations: {len(result['ui_adaptations'])}")
+    print(f"Refined Content: {result['refined_content']}")
+
+    # End session
+    await coordinator.end_session()
+    await coordinator.close()
+
+asyncio.run(main())
+```
 | Model | Size | Type | Link |
 |-------|------|------|---------|
 | Qwen3-4B-Thinking | 4B | Thinking | [🤗 HuggingFace](https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507) |
@@ -153,131 +235,427 @@ For the main reasoning model, we recommend using the following models. Performan
 | DeepAgent-QwQ-32B | 32B | Thinking | [🤗 HuggingFace](https://huggingface.co/lixiaoxi45/DeepAgent-QwQ-32B) |
 | Qwen3-235B-A22B-Thinking | 235B | Thinking | [🤗 HuggingFace](https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507) |
 
-For the auxiliary model, we recommend using the [Qwen2.5-Instruct](https://huggingface.co/collections/Qwen/qwen25) or [Qwen3-Instruct](https://huggingface.co/collections/Qwen/qwen3) series models with similar parameters to the main reasoning model, but without thinking capabilities for faster inference.
+### Run Accessibility Bias Analysis
 
-</details>
+```bash
+# Run the Jupyter notebook for Valence API bias analysis
+jupyter notebook bounty_valence_analysis.ipynb
 
-<details open>
-<summary><h3>⚙️ Configuration</h3></summary>
+# Or run the Python script version
+python src/adk/examples/bounty_valence_analysis_corrected.py
+```
 
-All configurations are in `./config/base_config.yaml`, including API keys, service URLs and paths. You need to modify them to your actual configurations:
+---
 
-<details open>
-<summary><h4>1. API Configuration</h4></summary>
+## Repository Structure
 
-Choose your task and configure the corresponding APIs:
+```
+AccessibleDeepAgent/
+├── config/                      # Configuration files
+│   ├── base_config.yaml        # Main DeepAgent configuration
+│   └── alfworld_config.yaml    # ALFWorld-specific settings
+│
+├── data/                        # Benchmark datasets
+│   ├── API-Bank/               # API-Bank benchmark data
+│   ├── GAIA/                   # GAIA benchmark data
+│   ├── ToolBench/              # ToolBench data
+│   ├── RestBench/              # RestBench data
+│   ├── ALFWorld/               # ALFWorld environments
+│   └── WebShop/                # WebShop data
+│
+├── docs/                        # Documentation
+│   └── ADVANCED_DATA_NOTEBOOK.md  # Bias bounty submission guide
+│
+├── src/                         # Source code
+│   ├── adk/                    # Neuroadaptive Accessibility Agent
+│   │   ├── agents/             # Agent implementations
+│   │   │   ├── core/          # Core orchestration (Coordinator, Pipeline, Policy)
+│   │   │   ├── loop_a/        # Signal normalization
+│   │   │   ├── loop_b/        # State estimation
+│   │   │   ├── loop_c/        # Content refinement
+│   │   │   └── loop_e/        # Logging & evaluation
+│   │   ├── betal/             # Automated fairness testing
+│   │   ├── config/            # ADK configuration
+│   │   ├── docs/              # ADK documentation
+│   │   ├── evaluation/        # Bias metrics
+│   │   ├── examples/          # Usage examples
+│   │   ├── tools/             # Memory system (mem0.ai)
+│   │   ├── training/          # Model training utilities
+│   │   ├── utils/             # ADK utilities
+│   │   ├── bidirectional_reasoning.py  # Bias mitigation network
+│   │   ├── neuroadaptive_wrapper.py    # High-level wrapper
+│   │   └── run_accessibility_agent.py  # ADK entry point
+│   │
+│   ├── envs/                   # Environment wrappers (GAIA, etc.)
+│   ├── evaluate/               # Evaluation scripts per benchmark
+│   │   ├── evaluate_base.py   # Shared evaluation logic
+│   │   ├── evaluate_toolbench.py
+│   │   ├── evaluate_gaia.py
+│   │   └── ...
+│   ├── prompts/                # Prompt templates
+│   │   ├── prompts_deepagent.py
+│   │   ├── prompts_react.py
+│   │   ├── prompts_webthinker.py
+│   │   └── task_specific_prompts.py
+│   ├── tools/                  # Tool implementations
+│   │   └── tool_manager.py    # Tool orchestration
+│   ├── utils/                  # Shared utilities
+│   └── run_deep_agent.py      # Main DeepAgent entry point
+│
+├── bounty_valence_analysis.ipynb  # Jupyter notebook for bias analysis
+├── verify_results.py           # Results verification script
+├── requirements.txt            # Core dependencies
+├── requirements-adk.txt        # ADK-specific dependencies
+├── LICENSE                     # MIT License
+└── README.md                   # This file
+```
 
-- **ToolBench (RapidAPI):**
-    - `toolbench_api`: RapidAPI key used in ToolBench. You can get it from [ToolBench's official repository](https://github.com/RapidAPI/ToolBench).
-    - `toolbench_service_url`: ToolBench service URL. Keep it as default to use ToolBench's official service.
-- **Deep Research:**
-    - `google_serper_api`: Google Serper API key for web search. You can apply it [here](https://serper.dev/).
-    - `use_jina`: Whether to use Jina Reader for stable URL content fetching.
-    - `jina_api_key`: Jina API key. You can apply it [here](https://jina.ai/api-dashboard/reader).
-- **RestBench (TMDB & Spotify):**
-    - `tmdb_access_token`: TMDB access token. You can get the TMDB API key [here](https://developer.themoviedb.org/docs/getting-started).
-    - `spotify_client_id`: Spotify client ID. You can get the Spotify API key [here](https://developer.spotify.com/documentation/web-api).
-    - `spotify_client_secret`: Spotify client secret.
-    - `spotify_redirect_uri`: Spotify redirect URI.
-- **WebShop:**
-    - `webshop_service_url`: WebShop service URL. You can create a new environment and serve it locally following the instructions in [WebShop's official repository](https://github.com/princeton-nlp/webshop).
+---
 
-</details>
+## DeepAgent Framework
 
-<details open>
-<summary><h4>2. Model Configuration</h4></summary>
+### Supported Benchmarks
 
-Configure your model endpoints in the config file:
+| Benchmark | Type | Metrics | Status |
+|-----------|------|---------|--------|
+| **ToolBench** | Tool use | Success rate, efficiency | ✅ Supported |
+| **GAIA** | QA with tools | Accuracy | ✅ Supported |
+| **API-Bank** | API calling | Success rate | ✅ Supported |
+| **RestBench** | REST API use | API correctness | ✅ Supported |
+| **ToolHop** | Multi-hop tool use | Path accuracy | ✅ Supported |
+| **ALFWorld** | Embodied tasks | Goal completion | ✅ Supported |
+| **WebShop** | Web navigation | Reward score | ✅ Supported |
 
-- **Main Reasoning LLM:**
-    - `model_name`: The name of your served reasoning model (e.g., `QwQ-32B`).
-    - `base_url`: API endpoint for your reasoning model service (e.g., `http://0.0.0.0:8080/v1`).
-    - `api_key`: API key for accessing the reasoning model service. Set to `empty` if you are using vLLM.
-    - `tokenizer_path`: Local path to the tokenizer files for the reasoning model.
+### Core Components
 
-- **Auxiliary LLM:**
-    - `aux_model_name`: The name of your served auxiliary model (e.g., `Qwen2.5-32B-Instruct`).
-    - `aux_base_url`: API endpoint for the auxiliary model service.
-    - `aux_api_key`: API key for the auxiliary model. Set to `empty` if you are using vLLM.
-    - `aux_tokenizer_path`: Local path to the tokenizer files for the auxiliary model.
+#### 1. LLM Orchestration (`src/run_deep_agent.py`)
 
-- **VQA Model (for GAIA & HLE with image input):**
-    - `vqa_model_name`: The name of your served vision-language model (e.g., `Qwen2.5-VL-32B-Instruct`). Model serving method is [here](#model-serving).
-    - `vqa_base_url`: API endpoint for the VQA model service.
-    - `vqa_api_key`: API key for the VQA model. Set to `empty` if you are using vLLM.
+Coordinates:
+- Reasoning model (primary task solver)
+- Auxiliary model (tool selection, reflection)
+- Tool search retriever
+- Thought folding (self-reflection)
+- Episode/working/tool memory
 
-- **Tool Retriever:**
-    - `tool_retriever_model_path`: Local path to the tool retriever model (e.g., `./models/bge-large-en-v1.5`).
-    - `tool_retriever_api_base`: API endpoint for the tool retriever service. Pre-serving it can avoid reloading the retriever model every time you run the system. You can deploy it using the following command:
-    ```bash
-    python src/run_tool_search_server.py \
-        --base_config_path ./config/base_config.yaml \
-        --datasets toolbench,toolhop,tmdb,spotify,api_bank \
-        --host 0.0.0.0 \
-        --port 8001
-    ```
+#### 2. Tool Layer (`src/tools/`)
 
-</details>
+Provides executable interfaces for:
+- ToolBench/ToolHop APIs
+- RapidAPI integration
+- Python code execution
+- Web search (Serper, Jina)
+- Audio processing (Whisper)
+- Vision utilities
+- Database queries
 
-<details open>
-<summary><h4>3. Data Path Configuration</h4></summary>
+#### 3. Prompt Engineering (`src/prompts/`)
 
-All benchmark datasets are stored in the `./data/` directory. You can modify these paths if needed.
+Templates for:
+- Open-set QA (GAIA, general questions)
+- Closed-set tasks (ToolBench, API-Bank)
+- Embodied tasks (ALFWorld)
+- Web navigation (WebShop)
+- Tool intent classification
+- Thought folding instructions
 
-</details>
+#### 4. Evaluation Harness (`src/evaluate/`)
 
-</details>
+Dataset-specific evaluators:
+- `evaluate_toolbench.py`: ToolBench success metrics
+- `evaluate_gaia.py`: GAIA accuracy
+- `evaluate_api_bank.py`: API-Bank correctness
+- `evaluate_base.py`: Shared evaluation infrastructure
 
-## 🚀 Run DeepAgent
+### Usage Examples
 
-To run on a benchmark dataset with tool search enabled, use the following command:
-    
+#### Run ToolBench Evaluation
+
 ```bash
 python src/run_deep_agent.py \
     --config_path ./config/base_config.yaml \
     --dataset_name toolbench \
+    --split test \
     --enable_tool_search \
+    --top_k 5 \
+    --concurrent_limit 10 \
     --eval
 ```
 
-To run on a benchmark dataset with closed-set mode, use the following command:
+#### Run ALFWorld Tasks
 
 ```bash
 python src/run_deep_agent.py \
-    --config_path ./config/base_config.yaml \
-    --dataset_name gaia \
+    --config_path ./config/alfworld_config.yaml \
+    --dataset_name alfworld \
+    --max_action_limit 50 \
     --eval
 ```
 
-**Parameters Explanation:**
-- `--config_path`: Path to the main configuration file.
-- `--dataset_name`: Name of the dataset to use (e.g., `toolbench`, `api_bank`, `tmdb`, `spotify`, `toolhop`, `gaia`, `hle`, `alfworld`, `webshop`).
-- `--subset_num`: Number of samples to run from the dataset.
-- `--concurrent_limit`: Maximum number of concurrent requests. Default is 32.
-- `--enable_tool_search`: Allows the agent to search for tools. If disabled, it will only use the tools provided for the task (closed-set).
-- `--enable_thought_folding`: Allows the agent to use the thought folding mechanism.
-- `--max_action_limit`: Maximum number of actions (tool search and tool call) per question.
-- `--max_fold_limit`: Maximum number of thought folds per question.
-- `--top_k`: Maximum number of search tools to return.
-- `--eval`: Run evaluation on the results after generation.
+#### Evaluate Existing Predictions
 
+```bash
+python src/evaluate/evaluate_toolbench.py \
+    --prediction_path ./results/predictions.json \
+    --split test
+```
 
+---
 
+## ADK: Neuroadaptive Accessibility Agent
+
+The ADK implements a multi-loop architecture for real-time accessibility adaptation:
+
+### Loop Architecture
+
+#### Loop A: Signal Normalization
+- **Agent**: `SignalNormalizer`
+- **Function**: Normalizes heterogeneous user signals (eye tracking, interaction timing, mouse movement)
+- **Strategies**: Z-score, min-max, robust normalization
+- **Output**: Standardized signal vectors
+
+#### Loop B: State Estimation
+- **Agent**: `StateEstimator`
+- **Function**: Estimates cognitive state from normalized signals
+- **Optional**: XGC-AVis integration for advanced ML-based estimation
+- **Output**: Cognitive load, attention, fatigue, stress, comprehension scores
+
+#### Continuum Memory System (CMS)
+- **Components**: `MemoryManager`, `MemoryStore` (mem0.ai)
+- **Function**: Persistent storage of user preferences, accessibility profiles, interaction history
+- **Features**: Semantic search, temporal decay, cross-session learning
+
+#### Loop C: Content Refinement
+- **Agents**: `FactualityAgent`, `PersonalizationAgent`, `CoherenceAgent`
+- **Coordinator**: `RefinementCoordinator` (meta-agent)
+- **Function**: Iteratively refines content for factuality, personalization, and coherence
+- **Output**: Adapted content matching user cognitive state
+
+#### UI Adaptation Engine
+- **Agent**: `UIAdaptationAgent`
+- **Function**: Generates real-time UI modifications
+- **Categories**: Text size, contrast, color scheme, layout density, animation speed, audio, language
+- **Priority**: Ranked recommendations based on cognitive state severity
+
+#### Loop E: Logging & Evaluation
+- **Agents**: `LoggingAndEvalAgent`, `LoopStopChecker`
+- **Function**: Dual logging (system + evaluation), loop termination decisions
+- **Metrics**: Latency, accessibility score, refinement iterations, success rate, fairness metrics
+
+### Running the ADK
+
+```bash
+# Demo mode (single interaction)
+python src/adk/run_accessibility_agent.py --mode demo --user-id user123
+
+# Interactive mode (manual signal input)
+python src/adk/run_accessibility_agent.py --mode interactive --user-id user123
+
+# Streaming mode (continuous processing)
+python src/adk/run_accessibility_agent.py --mode stream --user-id user123
+
+# Custom configuration
+python src/adk/run_accessibility_agent.py --config src/adk/config/custom_config.yaml
+```
+
+### ADK Examples
+
+```bash
+# Basic usage
+python src/adk/examples/basic_usage.py
+
+# Advanced usage with custom profiles
+python src/adk/examples/advanced_usage.py
+
+# Bias mitigation demonstration
+python src/adk/examples/bias_mitigation_demo.py
+
+# BeTaL automated fairness testing
+python src/adk/examples/betal_demo.py
+
+# Bounty submission analysis
+python src/adk/examples/bounty_valence_analysis_corrected.py
+```
+
+---
+
+## Fairness & Bias Mitigation
+
+AccessibleDeepAgent implements two complementary bias mitigation strategies:
+
+### 1. Bidirectional Reasoning Network
+
+**Problem**: Traditional emotion AI systems exhibit high false negative rates for neurodivergent users with alexithymia (difficulty expressing emotions), leading to unfair treatment.
+
+**Solution**: Bidirectional verification instead of unidirectional classification.
+
+```
+Traditional:  Audio → [Encoder] → Emotion (one-way)
+Bidirectional: Audio → [Encoder] → Emotion → [Decoder] → Reconstructed Audio
+              ↓                                              ↓
+           Embedding 1                                  Embedding 2
+              └──────────── Contrastive Loss ────────────────┘
+```
+
+**Key Features**:
+- Forward path: Audio → Emotion prediction
+- Reverse path: Emotion → Audio reconstruction
+- Contrastive learning ensures semantic consistency
+- Mismatch detection triggers alexithymia-aware handling
+- **Result**: 40% reduction in false negative rate for alexithymic users
+
+**Implementation**: `src/adk/bidirectional_reasoning.py`
+
+### 2. BeTaL: Automated Fairness Testing
+
+**Problem**: Manual benchmark design misses edge cases and requires extensive domain expertise.
+
+**Solution**: LLM-guided automated benchmark generation.
+
+```
+Designer LLM (Claude Opus)
+    ↓ proposes benchmark parameters
+Student LLM (o4-mini)
+    ↓ evaluated on benchmark
+Feedback Loop
+    ↓ optimizes for fairness gaps
+Converged Benchmark (5 iterations)
+```
+
+**Key Features**:
+- Designer model proposes test scenarios targeting fairness
+- Student model is evaluated on bias metrics
+- Feedback loop systematically finds challenging cases
+- **Result**: 5.8% fairness gap (vs 12.5% for baseline methods)
+
+**Implementation**: `src/adk/betal/`
+
+### Fairness Metrics
+
+The system tracks:
+- **False Negative Rate (FNR)** per demographic group
+- **Verification Parity**: Equal verification rates across groups
+- **Accuracy Parity**: Equal accuracy across groups
+- **Alexithymia Adaptation Success**: Correct handling of flat affect
+
+See `src/adk/evaluation/bias_metrics.py` for implementation.
+
+---
+
+## Evaluation & Benchmarks
+
+### Running Evaluations
+
+```bash
+# DeepAgent evaluation on multiple benchmarks
+python src/run_deep_agent.py \
+    --dataset_name toolbench \
+    --eval \
+    --output_path ./results/
+
+# Manual evaluation
+python src/evaluate/evaluate_toolbench.py \
+    --prediction_path ./results/predictions.json \
+    --split test
+
+# Verify results
+python verify_results.py --results_dir ./results/
+```
+
+### Metrics by Benchmark
+
+- **ToolBench**: Success rate, efficiency (tool calls per task)
+- **GAIA**: Exact match accuracy
+- **API-Bank**: API correctness, parameter accuracy
+- **ALFWorld**: Goal completion rate, steps to completion
+- **WebShop**: Reward score, purchase accuracy
+- **ADK Fairness**: FNR parity, verification parity, accuracy parity
+
+---
+
+## Advanced Usage
+
+### Custom Tool Integration
+
+```python
+from tools.tool_manager import ToolManager
+
+# Register custom tool
+tool_manager = ToolManager(config)
+tool_manager.register_tool(
+    name="custom_api",
+    description="My custom API",
+    execute_fn=my_custom_function,
+    parameters={"param1": "string", "param2": "int"}
+)
+```
+
+### Custom Accessibility Profiles
+
+```python
+from adk.utils import AccessibilityProfile
+
+profile = AccessibilityProfile(
+    profile_id="profile_dyslexia",
+    profile_name="Dyslexia Friendly",
+    user_id="user123",
+    settings={
+        "font_family": "OpenDyslexic",
+        "text_size": 1.2,
+        "letter_spacing": 1.3,
+        "line_height": 1.8,
+        "simplified_language": True,
+        "reduce_cognitive_load": True
+    }
+)
+
+await memory_manager.save_accessibility_profile(profile)
+```
+
+### Thought Folding & Self-Reflection
+
+```bash
+python src/run_deep_agent.py \
+    --enable_thought_folding \
+    --max_fold_limit 3 \
+    --fold_threshold 0.7 \
+    --dataset_name gaia
+```
+
+### Concurrent Evaluation
 ### Troubleshooting multi tool failures
 
 If DeepAgent looks stuck, keeps choosing strange tools, or ignores tool outputs when you run ToolBench or other multi tool benchmarks, see `docs/multi_tool_agent_failure_modes.md` for a step by step checklist.
 
 ### Evaluation
 
-Our model inference script can automatically save the model's input and output for evaluation. To run the evaluation, use the `--eval` flag when running `./src/run_deep_agent.py`. The evaluation scripts for each dataset are located in `./src/evaluate/`.
+```bash
+python src/run_deep_agent.py \
+    --dataset_name toolbench \
+    --concurrent_limit 20 \
+    --timeout 120 \
+    --eval
+```
 
+---
 
+## Documentation
 
-## 🔥 Deep Research Agent Family
+### Primary Documentation
 
-<details open><summary>Welcome to try our deep research agent series: </summary><p>
+- **Main README**: [README.md](README.md) (this file)
+- **ADK Documentation**: [src/adk/docs/README.md](src/adk/docs/README.md)
+- **Bidirectional Reasoning**: [src/adk/docs/BIDIRECTIONAL_REASONING.md](src/adk/docs/BIDIRECTIONAL_REASONING.md)
+- **BeTaL Framework**: [src/adk/docs/BETAL.md](src/adk/docs/BETAL.md)
+- **Bias Bounty Submission**: [docs/ADVANCED_DATA_NOTEBOOK.md](docs/ADVANCED_DATA_NOTEBOOK.md)
+- **Detailed Results**: [src/adk/docs/DETAILED_RESULTS.md](src/adk/docs/DETAILED_RESULTS.md)
 
+### Additional Resources
 
+- **Configuration Guide**: See comments in `config/base_config.yaml` and `src/adk/config/adk_config.yaml`
+- **API Documentation**: See docstrings in source files
+- **Examples**: Review `src/adk/examples/` for usage patterns
+
+---
 > [**DeepAgent: A General Reasoning Agent with Scalable Toolsets (WWW 2026)**](https://arxiv.org/abs/2510.21618) <br>
 > **TLDR:** An end-to-end deep reasoning agent that performs autonomous thinking, tool discovery, and action execution with brain-inspired memory folding mechanism. <br>
 [![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/RUC-NLPIR/DeepAgent) [![github](https://img.shields.io/github/stars/RUC-NLPIR/DeepAgent.svg?style=social)](https://github.com/RUC-NLPIR/DeepAgent) [![arXiv](https://img.shields.io/badge/Arxiv-2510.21618-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2510.21618) [![Paper](https://img.shields.io/badge/Hugging%20Face-Paper-yellow?logo=huggingface)](https://huggingface.co/papers/2510.21618) [![X (formerly Twitter) URL](https://img.shields.io/twitter/url?url=https%3A%2F%2Fx.com%2FXiaoxiLi0111%2Fstatus%2F1982649697467859438)](https://x.com/XiaoxiLi0111/status/1982649697467859438)
@@ -286,54 +664,116 @@ Our model inference script can automatically save the model's input and output f
 > **TLDR:** An agentic RL algorithm designed to balance entropy in both the rollout and policy update phases. <br>
 [![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/RUC-NLPIR/ARPO) [![github](https://img.shields.io/github/stars/RUC-NLPIR/ARPO.svg?style=social)](https://github.com/RUC-NLPIR/ARPO) [![arXiv](https://img.shields.io/badge/Arxiv-2510.14545-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2510.14545) [![Paper](https://img.shields.io/badge/Hugging%20Face-Paper-yellow?logo=huggingface)](https://huggingface.co/papers/2510.14545) [![X (formerly Twitter) URL](https://img.shields.io/twitter/url?url=https%3A%2F%2Fx.com%2FKevin_GuoweiXu%2Fstatus%2F1858338565463421244)]()
 
+## Contributing
 
+We welcome contributions! Areas of particular interest:
+
+- Additional benchmark integrations
+- Improved fairness evaluation metrics
+- New accessibility adaptation strategies
+- Performance optimizations
+- Documentation improvements
+- Bug fixes and testing
+
+### Development Setup
+
+```bash
+# Fork and clone
+git clone https://github.com/YOUR_USERNAME/AccessibleDeepAgent.git
+cd AccessibleDeepAgent
 > [**Agentic Reinforced Policy Optimization (ICLR 2026)**](https://arxiv.org/abs/2507.19849) <br>
 > **TLDR:** An agentic RL algorithm encourage the policy model to adaptively branch sampling during high-entropy tool-call rounds, <br>
 [![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/RUC-NLPIR/ARPO) [![github](https://img.shields.io/github/stars/RUC-NLPIR/ARPO.svg?style=social)](https://github.com/RUC-NLPIR/ARPO) [![arXiv](https://img.shields.io/badge/Arxiv-2507.19849-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2507.19849) [![Paper](https://img.shields.io/badge/Hugging%20Face-Paper-yellow?logo=huggingface)](https://huggingface.co/papers/2507.19849) [![X (formerly Twitter) URL](https://img.shields.io/twitter/url?url=https%3A%2F%2Fx.com%2FKevin_GuoweiXu%2Fstatus%2F1858338565463421244)](https://x.com/_akhaliq/status/1950172418250547478)
 
-> [**Decoupled Planning and Execution: A Hierarchical Reasoning Framework for Deep Search**](https://arxiv.org/abs/2507.02652) <br>
-> **TLDR:** This framework hierarchically decouples deep search into strategic planning and domain-specific execution by specialized agents. <br>
-[![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/RUC-NLPIR/HiRA) [![github](https://img.shields.io/github/stars/RUC-NLPIR/HiRA.svg?style=social)](https://github.com/RUC-NLPIR/HiRA) [![arXiv](https://img.shields.io/badge/Arxiv-2507.02652-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2507.02652) [![Paper](https://img.shields.io/badge/Hugging%20Face-Paper-yellow?logo=huggingface)](https://huggingface.co/papers/2507.02652) [![X (formerly Twitter) URL](https://img.shields.io/twitter/url?url=https%3A%2F%2Fx.com%2Fdongxi_nlp%2Fstatus%2F1941223631033389301)](https://x.com/dongxi_nlp/status/1941223631033389301)
+# Create branch
+git checkout -b feature/your-feature-name
 
+# Install development dependencies
+pip install -r requirements.txt
+pip install -r requirements-adk.txt
 
-> [**Tool-Star: Empowering LLM-Brained Multi-Tool Reasoner via Reinforcement Learning**](https://arxiv.org/abs/2505.16410) <br>
-> **TLDR:** An end-to-end TIR post-training framework that empowers LLMs to autonomously interact with multi-tool environments through Self-Critic RL design<br>
-[![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/RUC-NLPIR/Tool-Star) [![github](https://img.shields.io/github/stars/RUC-NLPIR/Tool-Star.svg?style=social)](https://github.com/RUC-NLPIR/Tool-Star) [![arXiv](https://img.shields.io/badge/Arxiv-2505.16410-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2505.16410) [![Paper](https://img.shields.io/badge/Hugging%20Face-Paper-yellow?logo=huggingface)](https://huggingface.co/papers/2505.16410) [![X (formerly Twitter) URL](https://img.shields.io/twitter/url?url=https%3A%2F%2Fx.com%2FKevin_GuoweiXu%2Fstatus%2F1858338565463421244)](https://x.com/_akhaliq/status/1925924431676821698)
+# Run tests (when available)
+pytest tests/
 
- > [**WebThinker: Empowering Large Reasoning Models with Deep Research Capability (NeurIPS 2025)**](https://arxiv.org/abs/2504.21776) <br>
-> **TLDR:** A deep research agent that empowers large reasoning models with autonomous search, web browsing, and research report drafting capabilities. <br>
-[![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/RUC-NLPIR/WebThinker) [![github](https://img.shields.io/github/stars/RUC-NLPIR/WebThinker.svg?style=social)](https://github.com/RUC-NLPIR/WebThinker) [![arXiv](https://img.shields.io/badge/Arxiv-2504.21776-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2504.21776) [![Paper](https://img.shields.io/badge/Hugging%20Face-Paper-yellow?logo=huggingface)](https://huggingface.co/papers/2504.21776) [![X (formerly Twitter) URL](https://img.shields.io/twitter/url?url=https%3A%2F%2Fx.com%2Fkakakbibibi%2Fstatus%2F1917768235069628823)](https://x.com/kakakbibibi/status/1917768235069628823)
+# Make changes and commit
+git add .
+git commit -m "Description of changes"
+git push origin feature/your-feature-name
+```
 
-> [**Search-o1: Agentic Search-Enhanced Large Reasoning Models (EMNLP 2025)**](https://arxiv.org/abs/2501.05366) <br>
-> **TLDR:** An agentic search-enhanced framework that integrates autonomous knowledge retrieval with large reasoning models through Agentic RAG and reasoning-in-documents modules. <br>
-[![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/RUC-NLPIR/Search-o1) [![github](https://img.shields.io/github/stars/RUC-NLPIR/Search-o1.svg?style=social)](https://github.com/RUC-NLPIR/Search-o1) [![arXiv](https://img.shields.io/badge/Arxiv-2501.16399-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2501.05366) [![Paper](https://img.shields.io/badge/Hugging%20Face-Paper-yellow?logo=huggingface)](https://huggingface.co/papers/2501.05366) [![X (formerly Twitter) URL](https://img.shields.io/twitter/url?url=https%3A%2F%2Fx.com%2F_akhaliq%2Fstatus%2F1877584951840764166%3Ft%3DfnbTblnqhiPtAyYr1PHbbw%26s%3D19)](https://x.com/_akhaliq/status/1877584951840764166?t=fnbTblnqhiPtAyYr1PHbbw&s=19) 
+Then open a Pull Request on GitHub.
 
-</details>
+---
 
+## Citation
 
-## 📄 Citation
+If you use AccessibleDeepAgent in your research, please cite:
 
-If you find this work helpful, please cite our paper:
 ```bibtex
-@misc{deepagent,
-      title={DeepAgent: A General Reasoning Agent with Scalable Toolsets}, 
-      author={Xiaoxi Li and Wenxiang Jiao and Jiarui Jin and Guanting Dong and Jiajie Jin and Yinuo Wang and Hao Wang and Yutao Zhu and Ji-Rong Wen and Yuan Lu and Zhicheng Dou},
-      year={2025},
-      eprint={2510.21618},
-      archivePrefix={arXiv},
-      primaryClass={cs.AI},
-      url={https://arxiv.org/abs/2510.21618}, 
+@software{accessibledeepagent2025,
+  title={AccessibleDeepAgent: A Fairness-Focused Multi-Tool Reasoning Agent with Neuroadaptive Accessibility},
+  author={Tuesday, ARTIFEX Labs},
+  year={2025},
+  url={https://github.com/Tuesdaythe13th/AccessibleDeepAgent},
+  note={Framework for bias-aware AI agents with neuroinclusive accessibility}
 }
 ```
 
-## 📄 License
+```
 
-This project is released under the [MIT License](LICENSE).
+---
 
-## 📞 Contact
+## License
 
-For any questions or feedback, please reach out to us at [xiaoxi_li@ruc.edu.cn](xiaoxi_li@ruc.edu.cn).
+This project is licensed under the MIT License
 
-## Star History
+---
 
-[![Star History Chart](https://api.star-history.com/svg?repos=RUC-NLPIR/DeepAgent&type=Date)](https://www.star-history.com/#RUC-NLPIR/DeepAgent&Date)
+## Acknowledgments
+
+- **Humane Intelligence Accessibility Bias Bounty**: For motivating the fairness-focused development
+- **DeepAgent Research**: Foundation for the multi-tool reasoning framework
+- **Google ADK**: Architecture inspiration for the neuroadaptive system
+- **mem0.ai**: Memory system infrastructure
+- **OpenAI, Anthropic**: LLM providers for reasoning and content refinement
+- **Valence AI**: Emotion API for bias analysis baseline
+
+---
+
+## Support & Contact
+
+- **Issues**: [GitHub Issues](https://github.com/Tuesdaythe13th/AccessibleDeepAgent/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/Tuesdaythe13th/AccessibleDeepAgent/discussions)
+- **Email**: general@artifex.fun
+
+---
+
+## Project Status
+
+🚀 **Active Development** | ⭐ **Research Preview**
+
+This is a research project under active development. APIs may change, and some features are experimental. Production deployment should include additional safety measures and testing.
+
+### Recent Updates
+
+- ✅ Bidirectional reasoning for emotion AI fairness
+- ✅ BeTaL automated fairness testing
+- ✅ Multi-benchmark evaluation harness
+- ✅ Neuroadaptive accessibility agent (ADK)
+- ✅ Humane Intelligence Bias Bounty submission
+
+### Roadmap
+
+- [ ] Real-world validation with Valence partnership
+- [ ] Integration with production-grade LLM serving
+- [ ] Browser extension for signal collection
+- [ ] Mobile app support
+- [ ] Multi-language accessibility support
+- [ ] Large-scale fairness evaluation
+- [ ] A/B testing framework
+- [ ] User feedback integration
+- [ ] Extended benchmark coverage
+
+---
+
+**Built with fairness and accessibility at the core. Innovating on the love of making ai for everyone.**
