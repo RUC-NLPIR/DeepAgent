@@ -5,6 +5,7 @@ aiohttp
 alfworld
 beautifulsoup4
 chardet
+exa-py>=2.0.0
 fastapi
 fuzzywuzzy
 func-timeout

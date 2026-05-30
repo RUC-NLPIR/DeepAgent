@@ -29,6 +29,10 @@ AccessibleDeepAgent is a comprehensive research platform that combines a multi-t
 ---
 
 ## Overview
+- **[Jan 14, 2026]**: 🎉 DeepAgent has been accepted by **[WWW 2026](https://www2026.thewebconf.org/index.html)**!
+- **[Oct 28, 2025]**: 🔥 We are honored to be featured as Hugging Face **[Daily Paper #1](https://huggingface.co/papers/date/2025-10-27)**.
+- **[Oct 27, 2025]**: 📄 Our paper is now available on **[arXiv](https://arxiv.org/abs/2510.21618)** and **[Hugging Face](https://huggingface.co/papers/2510.21618)**.
+- **[Oct 27, 2025]**: 🚀 Our codebase released. You can now deploy DeepAgent with reasoning models like [QwQ](https://huggingface.co/collections/Qwen/qwq), [Qwen3](https://huggingface.co/collections/Qwen/qwen3) and your own toolsets.
 
 AccessibleDeepAgent serves two primary purposes:
 
@@ -222,6 +226,14 @@ async def main():
 
 asyncio.run(main())
 ```
+| Model | Size | Type | Link |
+|-------|------|------|---------|
+| Qwen3-4B-Thinking | 4B | Thinking | [🤗 HuggingFace](https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507) |
+| Qwen3-8B | 8B | Hybrid | [🤗 HuggingFace](https://huggingface.co/Qwen/Qwen3-8B) |
+| Qwen3-30B-A3B-Thinking | 30B | Thinking | [🤗 HuggingFace](https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507) |
+| QwQ-32B | 32B | Thinking | [🤗 HuggingFace](https://huggingface.co/Qwen/QwQ-32B) |
+| DeepAgent-QwQ-32B | 32B | Thinking | [🤗 HuggingFace](https://huggingface.co/lixiaoxi45/DeepAgent-QwQ-32B) |
+| Qwen3-235B-A22B-Thinking | 235B | Thinking | [🤗 HuggingFace](https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507) |
 
 ### Run Accessibility Bias Analysis
 
@@ -610,6 +622,11 @@ python src/run_deep_agent.py \
 ```
 
 ### Concurrent Evaluation
+### Troubleshooting multi tool failures
+
+If DeepAgent looks stuck, keeps choosing strange tools, or ignores tool outputs when you run ToolBench or other multi tool benchmarks, see `docs/multi_tool_agent_failure_modes.md` for a step by step checklist.
+
+### Evaluation
 
 ```bash
 python src/run_deep_agent.py \
@@ -639,6 +656,13 @@ python src/run_deep_agent.py \
 - **Examples**: Review `src/adk/examples/` for usage patterns
 
 ---
+> [**DeepAgent: A General Reasoning Agent with Scalable Toolsets (WWW 2026)**](https://arxiv.org/abs/2510.21618) <br>
+> **TLDR:** An end-to-end deep reasoning agent that performs autonomous thinking, tool discovery, and action execution with brain-inspired memory folding mechanism. <br>
+[![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/RUC-NLPIR/DeepAgent) [![github](https://img.shields.io/github/stars/RUC-NLPIR/DeepAgent.svg?style=social)](https://github.com/RUC-NLPIR/DeepAgent) [![arXiv](https://img.shields.io/badge/Arxiv-2510.21618-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2510.21618) [![Paper](https://img.shields.io/badge/Hugging%20Face-Paper-yellow?logo=huggingface)](https://huggingface.co/papers/2510.21618) [![X (formerly Twitter) URL](https://img.shields.io/twitter/url?url=https%3A%2F%2Fx.com%2FXiaoxiLi0111%2Fstatus%2F1982649697467859438)](https://x.com/XiaoxiLi0111/status/1982649697467859438)
+
+> [**Agentic Entropy-Balanced Policy Optimization (WWW 2026)**](https://arxiv.org/abs/2510.14545) <br>
+> **TLDR:** An agentic RL algorithm designed to balance entropy in both the rollout and policy update phases. <br>
+[![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/RUC-NLPIR/ARPO) [![github](https://img.shields.io/github/stars/RUC-NLPIR/ARPO.svg?style=social)](https://github.com/RUC-NLPIR/ARPO) [![arXiv](https://img.shields.io/badge/Arxiv-2510.14545-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2510.14545) [![Paper](https://img.shields.io/badge/Hugging%20Face-Paper-yellow?logo=huggingface)](https://huggingface.co/papers/2510.14545) [![X (formerly Twitter) URL](https://img.shields.io/twitter/url?url=https%3A%2F%2Fx.com%2FKevin_GuoweiXu%2Fstatus%2F1858338565463421244)]()
 
 ## Contributing
 
@@ -657,6 +681,9 @@ We welcome contributions! Areas of particular interest:
 # Fork and clone
 git clone https://github.com/YOUR_USERNAME/AccessibleDeepAgent.git
 cd AccessibleDeepAgent
+> [**Agentic Reinforced Policy Optimization (ICLR 2026)**](https://arxiv.org/abs/2507.19849) <br>
+> **TLDR:** An agentic RL algorithm encourage the policy model to adaptively branch sampling during high-entropy tool-call rounds, <br>
+[![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/RUC-NLPIR/ARPO) [![github](https://img.shields.io/github/stars/RUC-NLPIR/ARPO.svg?style=social)](https://github.com/RUC-NLPIR/ARPO) [![arXiv](https://img.shields.io/badge/Arxiv-2507.19849-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2507.19849) [![Paper](https://img.shields.io/badge/Hugging%20Face-Paper-yellow?logo=huggingface)](https://huggingface.co/papers/2507.19849) [![X (formerly Twitter) URL](https://img.shields.io/twitter/url?url=https%3A%2F%2Fx.com%2FKevin_GuoweiXu%2Fstatus%2F1858338565463421244)](https://x.com/_akhaliq/status/1950172418250547478)
 
 # Create branch
 git checkout -b feature/your-feature-name
