@@ -5,6 +5,9 @@ toolbench_api: YOUR_TOOLBENCH_API_KEY
 toolbench_service_url: http://8.130.32.149:8080/rapidapi
 
 # GAIA, HLE
+# Optional: set to parallel for anonymous MCP search and page excerpts.
+# Install requirements-parallel.txt first. Serper/Jina remain the default.
+research_web_provider: serper
 google_serper_api: YOUR_GOOGLE_SERPER_API_KEY
 exa_api_key: YOUR_EXA_API_KEY
 use_jina: True

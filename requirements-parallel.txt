@@ -1,0 +1,6 @@
+# Optional native research web provider (Python 3.10+).
+mcp>=1.26,<2
+httpx>=0.27,<1
+# Also allow the tool-dispatch smoke example without the model stack.
+requests
+pyyaml

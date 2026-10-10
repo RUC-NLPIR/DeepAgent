@@ -171,6 +171,7 @@ Choose your task and configure the corresponding APIs:
     - `toolbench_api`: RapidAPI key used in ToolBench. You can get it from [ToolBench's official repository](https://github.com/RapidAPI/ToolBench).
     - `toolbench_service_url`: ToolBench service URL. Keep it as default to use ToolBench's official service.
 - **Deep Research:**
+    - `research_web_provider`: Defaults to `serper`. Set to `parallel` to use free [Parallel Search MCP](https://docs.parallel.ai/integrations/mcp/search-mcp) for the existing `web_search` and `browse_pages` tools on GAIA, HLE and BrowseComp. Search uses Fast mode; no account or API key is needed. Install the optional dependency with `pip install -r requirements-parallel.txt` (Python 3.10+). Page browsing returns markdown excerpts, and anonymous access has lower rate limits. Parallel results use separate cache entries. The optional `exa_search` tool remains independent.
     - `google_serper_api`: Google Serper API key for web search. You can apply it [here](https://serper.dev/).
     - `use_jina`: Whether to use Jina Reader for stable URL content fetching.
     - `jina_api_key`: Jina API key. You can apply it [here](https://jina.ai/api-dashboard/reader).
@@ -262,6 +263,19 @@ python src/run_deep_agent.py \
 - `--eval`: Run evaluation on the results after generation.
 
 
+
+### Try Parallel research tools without a model
+
+From the repository root, install and exercise the native tool dispatcher:
+
+```bash
+python -m venv .venv-parallel
+source .venv-parallel/bin/activate
+pip install -r requirements-parallel.txt
+python src/run_parallel_smoke.py --query "Python asyncio official documentation"
+```
+
+This prints search records and page excerpts through `ToolManager`, without loading saved web caches or credentials. To use the same backend in a benchmark run, set `research_web_provider: parallel` in the YAML passed to `--config_path` and use the existing run command with `--dataset_name gaia` or `hle`. Keep the model setup described above for those runs.
 
 ### Troubleshooting multi tool failures
 
