@@ -217,6 +217,10 @@ class ToolManager:
             function_name = adapted_tool_call["function"].get("name")
             arguments = adapted_tool_call["function"].get("arguments", {})
 
+            # Opt-in backend for the existing research web tools.
+            if function_name in ('web_search', 'browse_pages') and getattr(args, 'research_web_provider', 'serper') == 'parallel':
+                return await self._call_parallel(function_name, arguments, seq)
+
             # Web search via Serper
             if function_name == 'web_search':
                 # return {"error": f"web_search failed"}
@@ -411,6 +415,39 @@ class ToolManager:
 
     def call_tool_sync(self, adapted_tool_call: Dict, seq: Dict) -> Any:
         return asyncio.run(self.call_tool(adapted_tool_call, seq))
+
+    async def _call_parallel(self, function_name: str, arguments: Dict, seq: Dict) -> Any:
+        """Keep Parallel results separate from saved Serper/Jina cache entries."""
+        try:
+            from tools.parallel_search import parallel_search, parallel_fetch
+            from uuid import uuid4
+            # Stable across related calls within one reasoning sequence.
+            if 'parallel_session_id' not in seq:
+                seq['parallel_session_id'] = str(uuid4())
+            session_id = seq['parallel_session_id']
+            if function_name == 'web_search':
+                query = arguments.get('query', '')
+                if not isinstance(query, str) or not query.strip():
+                    return {"error": "Missing required parameter: query"}
+                cache_key = f"parallel:{query}"
+                if cache_key in self.search_cache and isinstance(self.search_cache[cache_key], list):
+                    return self.search_cache[cache_key]
+                results = await parallel_search(query, session_id)
+                if results:
+                    self.search_cache[cache_key] = results
+                return results
+
+            urls = arguments.get('urls', [])
+            if not isinstance(urls, list) or not urls or any(not isinstance(url, str) for url in urls):
+                return {"error": "Missing or invalid parameter: urls (non-empty list of strings required)"}
+            uncached = [url for url in urls if f"parallel:{url}" not in self.url_cache]
+            if uncached:
+                pages = await parallel_fetch(uncached, session_id)
+                for url, text in pages.items():
+                    self.url_cache[f"parallel:{url}"] = text
+            return {url: self.url_cache[f"parallel:{url}"] for url in urls}
+        except Exception as exc:
+            return {"error": f"{function_name} failed: {str(exc) or type(exc).__name__}"}
 
     def read_web_cache(self) -> None:
         """Load search and URL caches from disk into memory if present."""
